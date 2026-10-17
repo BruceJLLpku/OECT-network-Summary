@@ -3,124 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11685b">
-  <title>OECT 网络设计文献库</title>
-  <meta name="description" content="按设计方案分类整理 OECT 交联/双网络文献：结构配方、OECT 测试条件、电学与形貌对照，以及结构→形貌→电学的因果链。">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/app.js" defer></script>
+  <meta name="theme-color" content="#f4f7fc">
+  <meta name="description" content="从化学结构读懂 OECT 网络设计。原文结构图、配比趋势与电学对照。">
+  <title>OECT · 网络设计图谱</title>
+  <link rel="stylesheet" href="css/styles.css?v=2">
+  <script src="js/charts.js?v=2" defer></script>
+  <script src="js/app.js?v=2" defer></script>
 </head>
 <body>
-  <a class="skip" href="#reading">跳到正文</a>
-
+  <a class="skip-link" href="#main">跳到内容</a>
   <header class="site-header">
-    <a class="site-brand" href="#about">
-      <span class="mark">OECT</span>
-      <strong>网络设计文献库</strong>
-      <span>交联 · 双网络 · 形貌—电学</span>
-    </a>
-    <div class="header-tools">
-      <button class="menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-expanded="false">分类</button>
-      <button class="search-launch" id="search-launch" aria-haspopup="dialog" aria-controls="search-dialog">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
-        <span class="search-placeholder">搜索半导体、交联剂、结论…</span>
-        <kbd>Ctrl K</kbd>
-      </button>
-      <a class="repository-link" href="data/papers.json" download>数据 JSON</a>
-    </div>
+    <a class="brand" href="#about" aria-label="OECT 网络设计图谱首页"><span class="brand-symbol">OECT<span></span></span><span class="brand-name">网络设计图谱</span></a>
+    <nav class="primary-nav" aria-label="主导航"><a href="#about" data-nav="about">结构图谱</a><a href="#all" data-nav="all">全部文献</a></nav>
+    <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">搜索材料、交联剂或文献</span><input id="search" type="search" placeholder="搜索材料、交联剂…" autocomplete="off"><kbd>Ctrl K</kbd></label>
   </header>
-
-  <aside class="sidebar" id="sidebar" aria-label="设计方案">
-    <a class="about-link" id="about-link" href="#about">介绍与使用</a>
-    <div class="panel-heading">
-      <h2>设计方案</h2>
-      <button class="panel-close" data-close-panel aria-label="关闭">×</button>
-    </div>
-    <nav id="categories" aria-label="OECT 网络设计方案"></nav>
-    <div class="sidebar-bottom" id="library-status">正在加载文献库…</div>
-  </aside>
-
-  <div class="overlay" id="overlay" hidden></div>
-
-  <main class="app-main" id="main">
-    <div class="reading" id="reading">
-      <section class="introduction" id="introduction" aria-labelledby="intro-title">
-        <h1 id="intro-title">OECT 网络设计文献库</h1>
-        <p class="intro-lead">把散落在各处的交联网络 / 双网络 OECT 文献，收成一张可以指导配方的表。</p>
-        <p>
-          这个站按<strong>设计方案</strong>而不是按年份组织文献：交联密度怎么调、亲水 OMIEC 该接疏水交联剂还是亲水网络、
-          疏水半导体要不要拖一条亲水网络、溶胀到底怎样改写电学……每个文件夹是一种解法。
-          打开任意一篇，先看它<strong>用了什么结构</strong>，再看<strong>形貌上发生了什么</strong>，最后看<strong>电学数字怎么变</strong>——
-          并把这条因果链写清楚，方便你决定要不要抄。
-        </p>
-        <section class="intro-usage" aria-labelledby="usage-title">
-          <h2 id="usage-title">怎么用</h2>
-          <p><strong>按设计方案浏览。</strong>左侧选一类，页面顶部是该方案的【总览设计规则】——这类文献共同回答的问题、可调的结构旋钮、形貌与电学上的共性后果。往下是逐篇精读卡片。</p>
-          <p><strong>按关键词搜。</strong>点顶部搜索框或按 Ctrl K，可搜半导体名、交联剂（GOPS / DtFDA / PEGDA…）、材料缩写、结论词。多个关键词用空格分隔，需同时命中。</p>
-          <p><strong>读一篇文献。</strong>卡片折叠摘要，展开后依次是：结构配方 → OECT 条件（电解液 / 溶胀 / 电极）→ 各状态的电学与形貌 → 因果链 → 可借鉴点与局限。文末可下载原文 PDF。</p>
-          <p><strong>缺项说明。</strong>原文没写的数字或材料一律标「未报道」，不靠常识补全。比例若为换算所得会标注「推算」。</p>
-        </section>
-        <div id="about" class="cat-overview" aria-label="设计方案总览"></div>
-        <footer class="copyright">
-          组内学术交流使用。原文版权归各出版社与作者所有；本站仅做结构化精读与索引，请勿用于商业用途。
-        </footer>
-      </section>
-
-      <section class="reading" id="category-view" hidden>
-        <div class="topic-head">
-          <div>
-            <h1 id="topic-title"></h1>
-            <p class="lede" id="topic-lede"></p>
-            <div class="topic-meta" id="topic-meta"></div>
-          </div>
-          <div class="pc-actions" id="topic-actions"></div>
-        </div>
-
-        <div class="design-rules" id="design-rules">
-          <h2>总览设计规则</h2>
-          <p class="dr-sub" id="dr-question"></p>
-          <div class="dr-grid" id="dr-grid"></div>
-          <div class="causal" id="dr-causal"></div>
-        </div>
-
-        <h2 class="sr-only">文献精读</h2>
-        <div class="paper-list" id="paper-list"></div>
-
-        <footer class="copyright">
-          组内学术交流使用。原文版权归各出版社与作者所有；本站仅做结构化精读与索引，请勿用于商业用途。
-        </footer>
-      </section>
-
-      <section class="reading" id="search-view" hidden>
-        <div class="topic-head">
-          <div>
-            <h1>搜索结果</h1>
-            <p class="lede" id="search-view-lede"></p>
-          </div>
-          <button class="btn" id="back-from-search">返回</button>
-        </div>
-        <div class="paper-list" id="search-hits"></div>
-      </section>
-    </div>
+  <main id="main" tabindex="-1">
+    <section id="atlas-view" aria-labelledby="atlas-title">
+      <div class="atlas-heading"><div><p class="eyebrow">从化学结构出发</p><h1 id="atlas-title">找到你的网络方案<span class="heading-dot">.</span></h1></div><p class="library-count" id="library-count" role="status">加载文献…</p></div>
+      <div class="atlas-grid" id="atlas-grid"></div>
+    </section>
+    <section id="library-view" hidden aria-labelledby="library-title">
+      <div class="library-heading"><div><a class="back-link" href="#about">返回图谱</a><h1 id="library-title">全部文献</h1><p id="library-subtitle"></p></div><label class="sort-control">排序<select id="sort"><option value="default">方案顺序</option><option value="newest">年份由近到远</option><option value="oldest">年份由远到近</option></select></label></div>
+      <nav class="filter-strip" id="filters" aria-label="筛选设计方案"></nav>
+      <details class="category-guide" id="category-guide" hidden><summary>设计要点 <span aria-hidden="true">＋</span></summary><div id="guide-content"></div></details>
+      <div class="paper-grid" id="paper-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>没有匹配文献。试试材料缩写，或清除筛选。</p>
+    </section>
+    <p id="load-error" class="empty-state" hidden>文献加载失败。请刷新页面重试。</p>
   </main>
-
-  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
-    <div class="search-heading">
-      <h2 id="search-title">查找文献</h2>
-      <button class="dialog-close" id="search-close" aria-label="关闭搜索">×</button>
-    </div>
-    <form id="search-form" class="search-form">
-      <label class="sr-only" for="search-input">关键词</label>
-      <input id="search-input" type="search" placeholder="如：GOPS、DtFDA、PEDOT、溶胀、transconductance" autocomplete="off">
-      <button type="submit">搜索</button>
-    </form>
-    <div class="search-filters">
-      <label>方案
-        <select id="search-topic"><option value="all">全部方案</option></select>
-      </label>
-    </div>
-    <p class="search-help">多个关键词用空格分隔，结果需同时包含这些词。只检索文字内容，图中数据可能搜不到。</p>
-    <p id="search-status" class="search-status" role="status" aria-live="polite">输入关键词，搜索全部文献。</p>
-    <div class="search-results" id="search-results" tabindex="0" aria-label="搜索结果"></div>
-  </dialog>
+  <footer class="site-footer"><span>结构 → 形貌 → 电学</span><span>原图与数据均可追溯至文献</span><a href="data/papers.json" download>完整数据</a></footer>
+  <dialog class="paper-dialog" id="paper-dialog" aria-labelledby="paper-title"><div id="paper-content"></div></dialog>
+  <dialog class="image-dialog" id="image-dialog" aria-label="原图放大"><button class="icon-button image-close" data-close-image aria-label="关闭大图">×</button><img id="large-image" alt=""><p id="large-image-caption"></p></dialog>
+  <noscript>请启用 JavaScript 查看结构图谱。<a href="data/papers.json">下载完整数据</a></noscript>
 </body>
 </html>

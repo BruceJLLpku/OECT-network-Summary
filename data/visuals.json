@@ -1,0 +1,1842 @@
+{
+  "version": 1,
+  "papers": {
+    "2017-inal-mme-gops-density": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.69,
+            0.116,
+            0.91,
+            0.175
+          ],
+          "label": "GOPS · Fig. 1 插图",
+          "src": "assets/figures/2017-inal-mme-gops-density-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.53,
+            0.49,
+            0.94,
+            0.91
+          ],
+          "label": "跨导随 GOPS 含量变化 · Fig. 2",
+          "src": "assets/figures/2017-inal-mme-gops-density-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "GOPS",
+        "monomer": "无独立单体"
+      }
+    },
+    "2024-chen-jmca-gate-window-cycling": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 6,
+          "crop": [
+            0.12,
+            0.06,
+            0.38,
+            0.19
+          ],
+          "label": "Homo-gDPP · Fig. 5a",
+          "src": "assets/figures/2024-chen-jmca-gate-window-cycling-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.06,
+            0.94,
+            0.37
+          ],
+          "label": "栅压窗口与循环稳定性 · Fig. 1",
+          "src": "assets/figures/2024-chen-jmca-gate-window-cycling-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "p(g2T-T) / Homo-gDPP",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2024-yu-nanoenergy-high-loading-dtfda": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.5,
+            0.065,
+            0.94,
+            0.23
+          ],
+          "label": "DtFDA 光交联反应 · Fig. 1c",
+          "src": "assets/figures/2024-yu-nanoenergy-high-loading-dtfda-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.06,
+            0.94,
+            0.63
+          ],
+          "label": "交联配方与薄膜表征 · Fig. 1",
+          "src": "assets/figures/2024-yu-nanoenergy-high-loading-dtfda-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "纯膜",
+              "value": 342.9,
+              "error": 27.3,
+              "state": 0,
+              "source_text": "gm_peak = 342.9 ± 27.3 mS（绝对值）；面积归一化gm最高报道值378 μS/μm²（1:1样品）"
+            },
+            {
+              "label": "6:1",
+              "value": 333.5,
+              "error": 20.4,
+              "state": 2,
+              "source_text": "6:1: 333.5 ± 20.4 mS；3:1: 331.2 ± 24.9 mS"
+            },
+            {
+              "label": "3:1",
+              "value": 331.2,
+              "error": 24.9,
+              "state": 2,
+              "source_text": "6:1: 333.5 ± 20.4 mS；3:1: 331.2 ± 24.9 mS"
+            },
+            {
+              "label": "1:1",
+              "value": 339.7,
+              "error": 21.4,
+              "state": 1,
+              "source_text": "gm_peak = 339.7 ± 21.4 mS（绝对值）；与neat相当；面积归一化378 μS/μm²"
+            },
+            {
+              "label": "1:3",
+              "value": 220.7,
+              "error": 25.6,
+              "state": 3,
+              "source_text": "gm_peak = 220.7 ± 25.6 mS（明显下降）"
+            }
+          ],
+          "condition": "p 型 P(g2T-T)；冷却台制膜；同篇配方系列。",
+          "source_field": "gm",
+          "page": 5,
+          "type": "trend",
+          "axis": "OMIEC : DtFDA 质量比",
+          "lower_better": false
+        },
+        {
+          "title": "开启时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯膜",
+              "value": 6.09,
+              "error": 0.86,
+              "state": 0,
+              "source_text": "τon = 6.09 ± 0.86 ms"
+            },
+            {
+              "label": "6:1",
+              "value": 3.76,
+              "error": 0.61,
+              "state": 2,
+              "source_text": "6:1 τon=3.76±0.61 ms；3:1 τon=3.04±0.54 ms"
+            },
+            {
+              "label": "3:1",
+              "value": 3.04,
+              "error": 0.54,
+              "state": 2,
+              "source_text": "6:1 τon=3.76±0.61 ms；3:1 τon=3.04±0.54 ms"
+            },
+            {
+              "label": "1:1",
+              "value": 1.88,
+              "error": 0.32,
+              "state": 1,
+              "source_text": "τon = 1.88 ± 0.32 ms（冷却台）；无冷却台2.93 ± 0.41 ms"
+            },
+            {
+              "label": "1:3",
+              "value": 1.04,
+              "error": 0.18,
+              "state": 3,
+              "source_text": "τon = 1.04 ± 0.18 ms（最快）"
+            }
+          ],
+          "condition": "p 型 P(g2T-T)；冷却台制膜；同篇配方系列。",
+          "source_field": "ton",
+          "page": 5,
+          "type": "trend",
+          "axis": "OMIEC : DtFDA 质量比",
+          "lower_better": true
+        },
+        {
+          "title": "关闭时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯膜",
+              "value": 9.58,
+              "error": 1.46,
+              "state": 0,
+              "source_text": "τoff = 9.58 ± 1.46 ms"
+            },
+            {
+              "label": "6:1",
+              "value": 4.56,
+              "error": 0.92,
+              "state": 2,
+              "source_text": "6:1 τoff=4.56±0.92 ms；3:1 τoff=0.73±0.23 ms"
+            },
+            {
+              "label": "3:1",
+              "value": 0.73,
+              "error": 0.23,
+              "state": 2,
+              "source_text": "6:1 τoff=4.56±0.92 ms；3:1 τoff=0.73±0.23 ms"
+            },
+            {
+              "label": "1:1",
+              "value": 0.48,
+              "error": 0.19,
+              "state": 1,
+              "source_text": "τoff = 0.48 ± 0.19 ms"
+            },
+            {
+              "label": "1:3",
+              "value": 0.16,
+              "error": 0.09,
+              "state": 3,
+              "source_text": "τoff = 0.16 ± 0.09 ms"
+            }
+          ],
+          "condition": "p 型 P(g2T-T)；冷却台制膜；同篇配方系列。",
+          "source_field": "toff",
+          "page": 5,
+          "type": "trend",
+          "axis": "OMIEC : DtFDA 质量比",
+          "lower_better": true
+        }
+      ],
+      "materials": {
+        "semiconductor": "P(g2T-T) / PEG-N2200",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-wang-am-pr-trace-dual-crosslink": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 4,
+          "crop": [
+            0.08,
+            0.09,
+            0.92,
+            0.255
+          ],
+          "label": "PBFDO 与 PR · Fig. 2a–b",
+          "src": "assets/figures/2025-wang-am-pr-trace-dual-crosslink-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PBFDO",
+        "crosslinker": "PR 聚轮烷",
+        "monomer": "无独立单体"
+      }
+    },
+    "2021-rivnay-natcommun-pthf-ion-memory": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.585,
+            0.08,
+            0.92,
+            0.24
+          ],
+          "label": "PEDOT:Tos 与 PTHF · Fig. 1a",
+          "src": "assets/figures/2021-rivnay-natcommun-pthf-ion-memory-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.07,
+            0.27,
+            0.94,
+            0.47
+          ],
+          "label": "分子量与器件响应 · Fig. 1b–c",
+          "src": "assets/figures/2021-rivnay-natcommun-pthf-ion-memory-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PEDOT:Tos",
+        "crosslinker": "无共价交联剂",
+        "monomer": "PTHF"
+      }
+    },
+    "2025-huang-am-channel-confinement": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.08,
+            0.39,
+            0.69,
+            0.505
+          ],
+          "label": "BBL 与 CPE-K · Fig. 1e",
+          "src": "assets/figures/2025-huang-am-channel-confinement-structure-0.webp",
+          "panels": [
+            [
+              0.08,
+              0.39,
+              0.27,
+              0.505
+            ],
+            [
+              0.5,
+              0.39,
+              0.69,
+              0.505
+            ]
+          ],
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "BBL / CPE-K",
+        "crosslinker": "见器件条件",
+        "monomer": "无独立单体"
+      }
+    },
+    "2022-leong-am-selfheal-paampsa": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.085,
+            0.085,
+            0.475,
+            0.28
+          ],
+          "label": "PAAMPSA、PEDOT:PSS 与离子液体 · Fig. 1a",
+          "src": "assets/figures/2022-leong-am-selfheal-paampsa-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.29,
+            0.94,
+            0.66
+          ],
+          "label": "薄膜电导与光谱 · Fig. 1c–g",
+          "src": "assets/figures/2022-leong-am-selfheal-paampsa-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "动态氢键 / 离子相互作用",
+        "monomer": "PAAMPSA / EMIM OTF"
+      }
+    },
+    "2023-wang-science-bap-bioadhesive-dn": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.14,
+            0.45,
+            0.66,
+            0.525
+          ],
+          "label": "刷状黏附单体与半导体 · Fig. 1E–F",
+          "src": "assets/figures/2023-wang-science-bap-bioadhesive-dn-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.07,
+            0.94,
+            0.73
+          ],
+          "label": "形貌与力学表征 · Fig. 2",
+          "src": "assets/figures/2023-wang-science-bap-bioadhesive-dn-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "响应时间 τ",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 p(g2T-T)",
+              "value": 12.9,
+              "error": null,
+              "state": 0,
+              "source_text": "τ=12.9 ms（脉冲响应）"
+            },
+            {
+              "label": "BASC",
+              "value": 11.4,
+              "error": null,
+              "state": 1,
+              "source_text": "τ=11.4 ms（脉冲响应，与p(g2T-T)的12.9 ms相当）"
+            }
+          ],
+          "condition": "同篇脉冲响应时间 τ。",
+          "source_field": "ton",
+          "page": 4,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        }
+      ],
+      "supplement": "2023_Wang_Science_BAP生物黏附双网络_SI.pdf",
+      "materials": {
+        "semiconductor": "p(g2T-T)",
+        "crosslinker": "见配方详情",
+        "monomer": "刷状 BAP 单体"
+      }
+    },
+    "2024-lei-science-n-type-ppyv-dbshydrogel": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.07,
+            0.26,
+            0.94,
+            0.35
+          ],
+          "label": "P(PyV) 与 DBS · Fig. 1D",
+          "src": "assets/figures/2024-lei-science-n-type-ppyv-dbshydrogel-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.07,
+            0.94,
+            0.73
+          ],
+          "label": "器件电学与稳定性 · Fig. 2",
+          "src": "assets/figures/2024-lei-science-n-type-ppyv-dbshydrogel-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "P(PyV)",
+        "crosslinker": "DBS",
+        "monomer": "PAM / PVA 等"
+      }
+    },
+    "2024-wang-science-hydrogel-sc-dn": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.735,
+            0.275,
+            0.93,
+            0.44
+          ],
+          "label": "PAAc 与 p(g2T-T) · Fig. 1C",
+          "src": "assets/figures/2024-wang-science-hydrogel-sc-dn-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.07,
+            0.94,
+            0.73
+          ],
+          "label": "水凝胶形成与形貌变化 · Fig. 2",
+          "src": "assets/figures/2024-wang-science-hydrogel-sc-dn-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [],
+      "supplement": "2024_Wang_Science_水凝胶半导体双网络_SI.pdf",
+      "materials": {
+        "semiconductor": "p(g2T-T)",
+        "crosslinker": "TEGDMA",
+        "monomer": "AAc"
+      }
+    },
+    "2025-fabiano-am-pegda-solid-electrolyte": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.1,
+            0.24,
+            0.61,
+            0.326
+          ],
+          "label": "固态电解质组成 · Fig. 1b",
+          "src": "assets/figures/2025-fabiano-am-pegda-solid-electrolyte-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.27,
+            0.94,
+            0.59
+          ],
+          "label": "电解质形貌与力学 · Fig. 1",
+          "src": "assets/figures/2025-fabiano-am-pegda-solid-electrolyte-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "BBL / P(g2T-TT)",
+        "crosslinker": "PEGDA",
+        "monomer": "ι-CGN 固态电解质"
+      }
+    },
+    "2025-huang-natcommun-all-gel-pam": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.09,
+            0.34,
+            0.93,
+            0.44
+          ],
+          "label": "PAM 凝胶组成 · Fig. 1a",
+          "src": "assets/figures/2025-huang-natcommun-all-gel-pam-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.45,
+            0.94,
+            0.86
+          ],
+          "label": "全凝胶器件与制备 · Fig. 1",
+          "src": "assets/figures/2025-huang-natcommun-all-gel-pam-evidence-1.webp",
+          "domains": []
+        }
+      ],
+      "charts": [
+        {
+          "title": "厚度与跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "0.59",
+              "value": 29.7,
+              "error": null,
+              "state": 1,
+              "source_text": "267 µm→48.0 mS；4.4 µm→63.5 mS；1.8 µm→86.4 mS；590 nm→29.7 mS"
+            },
+            {
+              "label": "1.8",
+              "value": 86.4,
+              "error": null,
+              "state": 1,
+              "source_text": "267 µm→48.0 mS；4.4 µm→63.5 mS；1.8 µm→86.4 mS；590 nm→29.7 mS"
+            },
+            {
+              "label": "4.4",
+              "value": 63.5,
+              "error": null,
+              "state": 1,
+              "source_text": "267 µm→48.0 mS；4.4 µm→63.5 mS；1.8 µm→86.4 mS；590 nm→29.7 mS"
+            },
+            {
+              "label": "267",
+              "value": 48,
+              "error": null,
+              "state": 1,
+              "source_text": "267 µm→48.0 mS；4.4 µm→63.5 mS；1.8 µm→86.4 mS；590 nm→29.7 mS"
+            }
+          ],
+          "condition": "PEDOT:PSS/PAM；同篇薄膜厚度系列。",
+          "source_field": "gm",
+          "page": 4,
+          "type": "trend",
+          "axis": "膜厚 (μm，对数坐标)",
+          "lower_better": false,
+          "x_values": [
+            0.59,
+            1.8,
+            4.4,
+            267
+          ],
+          "x_scale": "log"
+        }
+      ],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "MBA",
+        "monomer": "AM"
+      }
+    },
+    "2026-vandeburgt-am-pedot-pegda-sin": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.13,
+            0.055,
+            0.5,
+            0.27
+          ],
+          "label": "PEDOT:PSS、PEGDA、LAP 与 MPTMS · Fig. 1a",
+          "src": "assets/figures/2026-vandeburgt-am-pedot-pegda-sin-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.28,
+            0.94,
+            0.6
+          ],
+          "label": "器件转移与输出曲线 · Fig. 1",
+          "src": "assets/figures/2026-vandeburgt-am-pedot-pegda-sin-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "几何归一化跨导",
+          "unit": "S/cm",
+          "points": [
+            {
+              "label": "GOPS",
+              "value": 33.2,
+              "error": 1,
+              "state": 1,
+              "source_text": "gm,max,norm=33.2±1.0 S/cm"
+            },
+            {
+              "label": "PEGDA 700",
+              "value": 62.3,
+              "error": 2.4,
+              "state": 0,
+              "source_text": "gm,max,norm=62.3±2.4 S/cm（几何归一，干态）"
+            }
+          ],
+          "condition": "同篇干态几何归一化；不同于绝对跨导 mS。",
+          "source_field": "gm",
+          "page": 7,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        },
+        {
+          "title": "PEGDA 分子量与跨导",
+          "unit": "S/cm",
+          "points": [
+            {
+              "label": "250",
+              "value": 52.6,
+              "error": 2.3,
+              "state": 3,
+              "source_text": "gm,max,norm：250=52.6±2.3，575=55.9±1.4，700=62.3±2.4 S/cm"
+            },
+            {
+              "label": "575",
+              "value": 55.9,
+              "error": 1.4,
+              "state": 3,
+              "source_text": "gm,max,norm：250=52.6±2.3，575=55.9±1.4，700=62.3±2.4 S/cm"
+            },
+            {
+              "label": "700",
+              "value": 62.3,
+              "error": 2.4,
+              "state": 3,
+              "source_text": "gm,max,norm：250=52.6±2.3，575=55.9±1.4，700=62.3±2.4 S/cm"
+            }
+          ],
+          "condition": "PEGDA 分子量系列；几何归一化。",
+          "source_field": "gm",
+          "page": 5,
+          "type": "trend",
+          "axis": "PEGDA 分子量 (g/mol)",
+          "lower_better": false,
+          "x_values": [
+            250,
+            575,
+            700
+          ]
+        }
+      ],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "PEGDA",
+        "monomer": "PEGDA / LAP / MPTMS"
+      }
+    },
+    "2017-mecerreyes-ami-dvs-pedot": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.22,
+            0.085,
+            0.82,
+            0.15
+          ],
+          "label": "PEDOT:PSS 与 DVS · Fig. 1",
+          "src": "assets/figures/2017-mecerreyes-ami-dvs-pedot-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "DVS / GOPS",
+        "monomer": "无独立单体"
+      }
+    },
+    "2023-facchetti-nature-cin-cell-voect": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.06,
+            0.15,
+            0.5,
+            0.4
+          ],
+          "label": "OMIEC 与 Cin-Cell · Fig. 1",
+          "src": "assets/figures/2023-facchetti-nature-cin-cell-voect-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.06,
+            0.07,
+            0.94,
+            0.42
+          ],
+          "label": "垂直器件电学 · Fig. 2",
+          "src": "assets/figures/2023-facchetti-nature-cin-cell-voect-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "gDPP-g2T / Homo-gDPP",
+        "crosslinker": "Cin-Cell",
+        "monomer": "无独立单体"
+      }
+    },
+    "2023-yamamoto-pegde-gops-thermo": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 19,
+          "crop": [
+            0.32,
+            0.12,
+            0.55,
+            0.4
+          ],
+          "label": "GOPS、PEGDE、PEDOT:PSS · Fig. 1c–e",
+          "src": "assets/figures/2023-yamamoto-pegde-gops-thermo-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "PEGDE / GOPS",
+        "monomer": "PNIPAM"
+      }
+    },
+    "2024-feng-aggregate-dtfda-ambipolar": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.07,
+            0.08,
+            0.94,
+            0.39
+          ],
+          "label": "双极聚合物结构 · Scheme 1",
+          "src": "assets/figures/2024-feng-aggregate-dtfda-ambipolar-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "IDT 类双极聚合物",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2024-feng-angew-dtfda-pattern-voect": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.1,
+            0.46,
+            0.91,
+            0.68
+          ],
+          "label": "OMIEC 与二氮杂环丙烷交联剂 · Scheme 1",
+          "src": "assets/figures/2024-feng-angew-dtfda-pattern-voect-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "p(g2T-T) / Homo-gDPP",
+        "crosslinker": "长 / 中 / 短链 DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-huang-acsml-4bx-stretchable": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.28,
+            0.355,
+            0.48,
+            0.515
+          ],
+          "label": "4Bx 与 p(g2T-T) · Fig. 1b",
+          "src": "assets/figures/2025-huang-acsml-4bx-stretchable-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 2,
+          "crop": [
+            0.53,
+            0.425,
+            0.94,
+            0.675
+          ],
+          "label": "光学图像与拉伸电学 · Fig. 2",
+          "src": "assets/figures/2025-huang-acsml-4bx-stretchable-evidence-1.webp",
+          "domains": [
+            "morphology",
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "p(g2T-T)",
+        "crosslinker": "4Bx",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-huang-mre-voect-channel-length": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.12,
+            0.24,
+            0.94,
+            0.39
+          ],
+          "label": "OMIEC 与 DtFDA · Fig. 1",
+          "src": "assets/figures/2025-huang-mre-voect-channel-length-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.12,
+            0.06,
+            0.94,
+            0.38
+          ],
+          "label": "沟道长度与器件结构 · Fig. 1",
+          "src": "assets/figures/2025-huang-mre-voect-channel-length-evidence-1.webp",
+          "domains": []
+        }
+      ],
+      "charts": []
+    },
+    "2025-yamamoto-small-pegde-gops-thermo": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.19,
+            0.22,
+            0.78,
+            0.415
+          ],
+          "label": "PNIPAM、PEGDE、GOPS 与 PEDOT:PSS · Fig. 1b",
+          "src": "assets/figures/2025-yamamoto-small-pegde-gops-thermo-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 2,
+          "crop": [
+            0.13,
+            0.36,
+            0.86,
+            0.52
+          ],
+          "label": "热响应与光谱 · Fig. 1",
+          "src": "assets/figures/2025-yamamoto-small-pegde-gops-thermo-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "GOPS",
+              "value": 664,
+              "error": 140,
+              "state": 1,
+              "source_text": "664±140 mS（微图案器件，VD=-0.5 V，22°C，n=5）"
+            },
+            {
+              "label": "PEGDE + GOPS",
+              "value": 400,
+              "error": 26.2,
+              "state": 2,
+              "source_text": "400±26.2 mS（微图案器件，VD=-0.5 V，22°C，n=5）"
+            }
+          ],
+          "condition": "PEDOT:PSS:PNIPAM = 1:2；22 °C；VD = −0.5 V；n = 5。",
+          "source_field": "gm",
+          "page": 8,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        }
+      ],
+      "materials": {
+        "semiconductor": "PEDOT:PSS",
+        "crosslinker": "PEGDE / GOPS",
+        "monomer": "PNIPAM"
+      }
+    },
+    "2025-yu-chemosensors-dtfda-synapse": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 5,
+          "crop": [
+            0.54,
+            0.134,
+            0.94,
+            0.27
+          ],
+          "label": "Pg2T-T、pDADMAC 与 DtFDA · Fig. 1b",
+          "src": "assets/figures/2025-yu-chemosensors-dtfda-synapse-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "Pg2T-T",
+        "crosslinker": "DtFDA",
+        "monomer": "pDADMAC 电解质"
+      }
+    },
+    "2026-chen-afm-tdq-ambipolar": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.08,
+            0.08,
+            0.94,
+            0.44
+          ],
+          "label": "喹喔啉聚合物 · Scheme 1",
+          "src": "assets/figures/2026-chen-afm-tdq-ambipolar-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "TDQ 类双极聚合物",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2026-feng-advsci-dppse-ambipolar": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.1,
+            0.045,
+            0.92,
+            0.16
+          ],
+          "label": "硒吩桥联聚合物 · Fig. 1a",
+          "src": "assets/figures/2026-feng-advsci-dppse-ambipolar-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.09,
+            0.19,
+            0.94,
+            0.45
+          ],
+          "label": "聚合物物性与载流子传输 · Fig. 1b–d",
+          "src": "assets/figures/2026-feng-advsci-dppse-ambipolar-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "P(gTDPPT) / P(gTDPPSe)",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2026-yue-amt-onr-oligomer": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.1,
+            0.18,
+            0.94,
+            0.55
+          ],
+          "label": "寡聚 OMIEC · Fig. 1b–c",
+          "src": "assets/figures/2026-yue-amt-onr-oligomer-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "寡聚 OMIEC",
+        "crosslinker": "DtFDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2024-lee-materhoriz-nips-synapse": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 4,
+          "crop": [
+            0.115,
+            0.28,
+            0.62,
+            0.43
+          ],
+          "label": "PDPP3T 与 3-NIPS · Fig. 1b",
+          "src": "assets/figures/2024-lee-materhoriz-nips-synapse-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "PDPP3T",
+        "crosslinker": "3-NIPS",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-chung-acsnano-4fpa-teg-p3ht": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.11,
+            0.07,
+            0.61,
+            0.2
+          ],
+          "label": "4FPA-2SA-TEG · Fig. 1a",
+          "src": "assets/figures/2025-chung-acsnano-4fpa-teg-p3ht-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 2,
+          "crop": [
+            0.08,
+            0.21,
+            0.94,
+            0.34
+          ],
+          "label": "交联前后输运表征 · Fig. 1",
+          "src": "assets/figures/2025-chung-acsnano-4fpa-teg-p3ht-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "开启时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 P3HT",
+              "value": 504,
+              "error": null,
+              "state": 0,
+              "source_text": "504 ms"
+            },
+            {
+              "label": "5% 亲水交联剂",
+              "value": 112,
+              "error": null,
+              "state": 1,
+              "source_text": "112 ms（快~4.5倍）"
+            }
+          ],
+          "condition": "P3HT 与 5 wt% 4FPA-2SA-TEG；同篇器件对照。",
+          "source_field": "ton",
+          "page": 5,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        },
+        {
+          "title": "关闭时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 P3HT",
+              "value": 71,
+              "error": null,
+              "state": 0,
+              "source_text": "71 ms"
+            },
+            {
+              "label": "5% 亲水交联剂",
+              "value": 10,
+              "error": null,
+              "state": 1,
+              "source_text": "10 ms（快~7倍）"
+            }
+          ],
+          "condition": "P3HT 与 5 wt% 4FPA-2SA-TEG；同篇器件对照。",
+          "source_field": "toff",
+          "page": 5,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        }
+      ],
+      "materials": {
+        "semiconductor": "P3HT",
+        "crosslinker": "4FPA-2SA-TEG",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-feng-smartmat-dtfgda-separated-conduction": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.07,
+            0.64,
+            0.5,
+            0.815
+          ],
+          "label": "P3HT、PBTTT 与 DtFGDA · Fig. 1a",
+          "src": "assets/figures/2025-feng-smartmat-dtfgda-separated-conduction-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "纯 P3HT",
+              "value": 69.5,
+              "error": 21,
+              "state": 0,
+              "source_text": "69.5 ± 21.0 mS（gm,peak）"
+            },
+            {
+              "label": "P3HT:DtFGDA = 1:4",
+              "value": 131,
+              "error": 46.9,
+              "state": 1,
+              "source_text": "131.0 ± 46.9 mS（gm,peak）"
+            }
+          ],
+          "condition": "同篇 P3HT 器件；DtFGDA 共混质量比 1:4。",
+          "source_field": "gm",
+          "page": 8,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        },
+        {
+          "title": "开启时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 P3HT",
+              "value": 266.7,
+              "error": 15.5,
+              "state": 0,
+              "source_text": "266.7 ± 15.5 ms"
+            },
+            {
+              "label": "P3HT:DtFGDA = 1:4",
+              "value": 79.1,
+              "error": 4.68,
+              "state": 1,
+              "source_text": "79.1 ± 4.68 ms（降低3.4倍）"
+            }
+          ],
+          "condition": "同篇 P3HT 器件；DtFGDA 共混质量比 1:4。",
+          "source_field": "ton",
+          "page": 8,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        },
+        {
+          "title": "关闭时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 P3HT",
+              "value": 250.6,
+              "error": 9.1,
+              "state": 0,
+              "source_text": "250.6 ± 9.1 ms"
+            },
+            {
+              "label": "P3HT:DtFGDA = 1:4",
+              "value": 5.42,
+              "error": 0.99,
+              "state": 1,
+              "source_text": "5.42 ± 0.99 ms（降低46倍）"
+            }
+          ],
+          "condition": "同篇 P3HT 器件；DtFGDA 共混质量比 1:4。",
+          "source_field": "toff",
+          "page": 8,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        }
+      ],
+      "materials": {
+        "semiconductor": "P3HT / PBTTT 等",
+        "crosslinker": "DtFGDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2026-facchetti-pnas-pegdma-hydrophilic-additive": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.51,
+            0.32,
+            0.86,
+            0.48
+          ],
+          "label": "DPP-EDOT 与 PEGDMA · Fig. 1A",
+          "src": "assets/figures/2026-facchetti-pnas-pegdma-hydrophilic-additive-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 2,
+          "crop": [
+            0.08,
+            0.49,
+            0.94,
+            0.85
+          ],
+          "label": "共混前后器件响应 · Fig. 1",
+          "src": "assets/figures/2026-facchetti-pnas-pegdma-hydrophilic-additive-evidence-1.webp",
+          "domains": [
+            "morphology",
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "纯 DPP-EDOT",
+              "value": 21.87,
+              "error": 2.57,
+              "state": 0,
+              "source_text": "21.87 ± 2.57 mS（gm,peak）"
+            },
+            {
+              "label": "PEGDMA 共混",
+              "value": 53.42,
+              "error": 1.74,
+              "state": 1,
+              "source_text": "53.42 ± 1.74 mS（gm,peak，+144%）"
+            }
+          ],
+          "condition": "DPP-EDOT:PEGDMA = 1:1；此组为未交联共混对照。",
+          "source_field": "gm",
+          "page": 3,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        },
+        {
+          "title": "开启时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 DPP-EDOT",
+              "value": 229.31,
+              "error": 15.36,
+              "state": 0,
+              "source_text": "229.31 ± 15.36 ms"
+            },
+            {
+              "label": "PEGDMA 共混",
+              "value": 7.82,
+              "error": 0.36,
+              "state": 1,
+              "source_text": "7.82 ± 0.36 ms（快29倍）"
+            }
+          ],
+          "condition": "DPP-EDOT:PEGDMA = 1:1；此组为未交联共混对照。",
+          "source_field": "ton",
+          "page": 3,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        },
+        {
+          "title": "关闭时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "纯 DPP-EDOT",
+              "value": 71.01,
+              "error": 3.62,
+              "state": 0,
+              "source_text": "71.01 ± 3.62 ms"
+            },
+            {
+              "label": "PEGDMA 共混",
+              "value": 1.95,
+              "error": 0.21,
+              "state": 1,
+              "source_text": "1.95 ± 0.21 ms"
+            }
+          ],
+          "condition": "DPP-EDOT:PEGDMA = 1:1；此组为未交联共混对照。",
+          "source_field": "toff",
+          "page": 3,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        }
+      ],
+      "materials": {
+        "semiconductor": "DPP-EDOT",
+        "crosslinker": "PEGDMA",
+        "monomer": "PEGDMA / PEGDME / PEG"
+      }
+    },
+    "2018-bao-chemmater-crosslinker-crystallinity": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 2,
+          "crop": [
+            0.07,
+            0.07,
+            0.93,
+            0.41
+          ],
+          "label": "聚合物与不同交联剂 · Scheme 1–2",
+          "src": "assets/figures/2018-bao-chemmater-crosslinker-crystallinity-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.07,
+            0.08,
+            0.94,
+            0.27
+          ],
+          "label": "结晶与光谱 · Fig. 1",
+          "src": "assets/figures/2018-bao-chemmater-crosslinker-crystallinity-evidence-1.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": [],
+      "materials": {
+        "semiconductor": "DPP-10C5DE（OFET）",
+        "crosslinker": "支化 / 线性交联剂",
+        "monomer": "无独立单体"
+      }
+    },
+    "2025-feng-mme-photocrosslinker-review": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.1,
+            0.92,
+            0.59
+          ],
+          "label": "光交联反应结构 · Fig. 2",
+          "src": "assets/figures/2025-feng-mme-photocrosslinker-review-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        }
+      ],
+      "charts": []
+    },
+    "2026-huang-aggregate-mw-suppress-swelling": {
+      "figures": [
+        {
+          "kind": "structure",
+          "page": 3,
+          "crop": [
+            0.145,
+            0.07,
+            0.515,
+            0.175
+          ],
+          "label": "p(g2T-T) 合成结构 · Fig. 1a",
+          "src": "assets/figures/2026-huang-aggregate-mw-suppress-swelling-structure-0.webp",
+          "domains": [
+            "structure"
+          ]
+        },
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.25,
+            0.94,
+            0.57
+          ],
+          "label": "分子量与器件性能 · Fig. 1",
+          "src": "assets/figures/2026-huang-aggregate-mw-suppress-swelling-evidence-1.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "19 kDa",
+              "value": 11.4,
+              "error": 0.45,
+              "state": 0,
+              "source_text": "cOECT: 11.40 ± 0.45 mS；vOECT: 99.18 ± 6.32 mS（gm,max）"
+            },
+            {
+              "label": "143 kDa",
+              "value": 2.2,
+              "error": 0.15,
+              "state": 1,
+              "source_text": "cOECT: 2.20 ± 0.15 mS（-81%）；vOECT: 71.13 ± 2.14 mS"
+            }
+          ],
+          "condition": "p(g2T-T)；仅比较同篇平面 cOECT 系列。",
+          "source_field": "gm",
+          "page": 2,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        },
+        {
+          "title": "循环后电流保持率",
+          "unit": "%",
+          "points": [
+            {
+              "label": "19 kDa",
+              "value": 52.6,
+              "error": null,
+              "state": 0,
+              "source_text": "cOECT 20 000圈后保持52.6% ID（线性区）；vOECT 3 000 000圈（~42 h）后保持86.22% ID / 51.45% gm（VD=-0.1 V, VG=+0.3→-0.4 V）"
+            },
+            {
+              "label": "143 kDa",
+              "value": 14.7,
+              "error": null,
+              "state": 1,
+              "source_text": "cOECT 20 000圈后仅14.70% ID保持；vOECT 45 000圈失效（膜破裂/短路）"
+            }
+          ],
+          "condition": "平面 cOECT；线性区；20 000 次循环后 ID 保持率。",
+          "source_field": "cycling",
+          "page": 4,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        }
+      ],
+      "materials": {
+        "semiconductor": "p(g2T-T) / BBL",
+        "crosslinker": "DtFDA / DtFGDA",
+        "monomer": "无独立单体"
+      }
+    },
+    "2024-mombru-polymers-pva-ga-pedot": {
+      "figures": [
+        {
+          "kind": "evidence",
+          "page": 5,
+          "crop": [
+            0.28,
+            0.6,
+            0.63,
+            0.81
+          ],
+          "label": "红外光谱 · Fig. 3",
+          "src": "assets/figures/2024-mombru-polymers-pva-ga-pedot-evidence-0.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": []
+    },
+    "2022-guo-mip-gops-pedot": {
+      "figures": [
+        {
+          "kind": "evidence",
+          "page": 9,
+          "crop": [
+            0.14,
+            0.27,
+            0.88,
+            0.62
+          ],
+          "label": "MIP 栅极形貌与器件响应 · Fig. 1b–g",
+          "src": "assets/figures/2022-guo-mip-gops-pedot-evidence-0.webp",
+          "domains": [
+            "morphology",
+            "electrical"
+          ]
+        }
+      ],
+      "charts": []
+    },
+    "2016-zhao-am-paam-alginate-dn-background": {
+      "figures": [
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.08,
+            0.91,
+            0.69
+          ],
+          "label": "水凝胶力学与界面 · Fig. 2",
+          "src": "assets/figures/2016-zhao-am-paam-alginate-dn-background-evidence-0.webp",
+          "domains": [
+            "morphology"
+          ]
+        }
+      ],
+      "charts": []
+    },
+    "2025-huang-nanoscale-patterning-geometry": {
+      "figures": [
+        {
+          "kind": "evidence",
+          "page": 3,
+          "crop": [
+            0.08,
+            0.27,
+            0.94,
+            0.59
+          ],
+          "label": "器件电学原图 · Fig. 2",
+          "src": "assets/figures/2025-huang-nanoscale-patterning-geometry-evidence-0.webp",
+          "domains": [
+            "electrical"
+          ]
+        }
+      ],
+      "charts": [
+        {
+          "title": "跨导",
+          "unit": "mS",
+          "points": [
+            {
+              "label": "边距 2 μm",
+              "value": 1.21,
+              "error": 0.03,
+              "state": 0,
+              "source_text": "1.21 ± 0.03 mS（gm,peak）"
+            },
+            {
+              "label": "边距 100 μm",
+              "value": 2.39,
+              "error": 0.12,
+              "state": 1,
+              "source_text": "2.39 ± 0.12 mS（gm,peak，+102.9%）"
+            }
+          ],
+          "condition": "BBL 垂直 OECT；只改变图案边缘余量 lM。",
+          "source_field": "gm",
+          "page": 4,
+          "type": "bars",
+          "axis": "",
+          "lower_better": false
+        },
+        {
+          "title": "开启时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "边距 2 μm",
+              "value": 2.16,
+              "error": 0.11,
+              "state": 0,
+              "source_text": "2.16 ± 0.11 ms"
+            },
+            {
+              "label": "边距 100 μm",
+              "value": 7.64,
+              "error": 0.93,
+              "state": 1,
+              "source_text": "7.64 ± 0.93 ms（增加3.5倍）"
+            }
+          ],
+          "condition": "BBL 垂直 OECT；只改变图案边缘余量 lM。",
+          "source_field": "ton",
+          "page": 5,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        },
+        {
+          "title": "关闭时间",
+          "unit": "ms",
+          "points": [
+            {
+              "label": "边距 2 μm",
+              "value": 0.43,
+              "error": 0.07,
+              "state": 0,
+              "source_text": "0.43 ± 0.07 ms"
+            },
+            {
+              "label": "边距 100 μm",
+              "value": 1.6,
+              "error": 0.17,
+              "state": 1,
+              "source_text": "1.60 ± 0.17 ms"
+            }
+          ],
+          "condition": "BBL 垂直 OECT；只改变图案边缘余量 lM。",
+          "source_field": "toff",
+          "page": 5,
+          "type": "bars",
+          "axis": "",
+          "lower_better": true
+        }
+      ]
+    }
+  }
+}
