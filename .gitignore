@@ -1,0 +1,8 @@
+﻿# intermediate extraction dumps
+extracted/
+# local toolchain
+tools/
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

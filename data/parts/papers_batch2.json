@@ -1,0 +1,1489 @@
+{
+  "papers": {
+    "2022-leong-am-selfheal-paampsa": {
+      "id": "2022-leong-am-selfheal-paampsa",
+      "title_en": "A Highly Conducting Polymer for Self-Healable, Printable, and Stretchable Organic Electrochemical Transistor Arrays and Near Hysteresis-Free Soft Tactile Sensors",
+      "title_cn": "高导电自愈可拉伸PEDOT:PSS/PAAMPSA/离子液体复合膜用于OECT阵列与近零迟滞触觉传感",
+      "short_name": "2022 Leong AM 动态自愈PAAMPSA网络",
+      "authors": "X. Su, X. Wu, S. Chen, A. M. Nedumaran, M. Stephen, K. Hou, B. Czarny, W. L. Leong",
+      "corr_author": "Wei Lin Leong",
+      "year": 2022,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.202200682",
+      "pdf": "pdf/2022-Leong-AM-动态自愈网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "在PEDOT:PSS中引入软聚合物PAAMPSA构筑动态氢键/离子键可逆网络实现自愈与大形变，同时用离子液体EMIM OTF诱导PEDOT结晶以抵消电导损失，兼顾高电导、高拉伸与自主自愈的OECT阵列。",
+
+      "structure": {
+        "semiconductor": "PEDOT:PSS（poly(3,4-ethylenedioxythiophene):poly(styrenesulfonate)）",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "无共价交联剂；动态网络由PAAMPSA的酰胺/磺酸基与PSS、PEDOT之间的氢键与离子键构成",
+        "crosslinker_amount": "未报道（非化学计量交联剂）",
+        "network_monomer": "poly(2-acrylamido-2-methyl-1-propanesulfonic acid)（PAAMPSA）",
+        "network_monomer_amount": "最优 67 wt%（相对复合物总质量）",
+        "ratio_sc_monomer_xl": "PEDOT:PSS : PAAMPSA : EMIM OTF = 16.6 : 67 : 16.6 wt%（推算自文中最优配方；EMIM OTF质量等于PEDOT:PSS）",
+        "crosslink_type": "动态/可逆（氢键+离子键，非共价）",
+        "film_prep": "溶液共混后滴铸（自由膜≈150 µm）或喷涂（沟道≈200 nm）；室温干燥，无退火条件报道",
+        "notes": "EMIM OTF（1-ethyl-3-methylimidazolium trifluoromethanesulfonate）用量等于PEDOT:PSS质量；纯PEDOT:PSS中50 wt% EMIM OTF电导最高1018 S/cm，更高会析出；离子液体同时作增塑剂。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "固态聚合物电解质 PVDF-HFP/EMIM OTF",
+          "solvent": "固态（离子液体基，非水溶液）",
+          "ions": "EMIM+/OTF-",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道",
+          "notes": "自愈机制依赖PAAMPSA/PSS吸湿，但未给溶胀比定量；湿度依赖电导252.6 S/cm(30%RH)→363.5 S/cm(85%RH)"
+        },
+        "electrodes": {
+          "source_drain": "银纳米线（AgNWs）",
+          "gate": "单壁碳纳米管（SWCNT）",
+          "geometry": "共面固态电解质OECT；W=1000 µm，L=250 µm"
+        },
+        "device": {
+          "architecture": "共面固态电解质OECT，5×4阵列，SEBS弹性基底",
+          "channel_dimensions": "W=1000 µm, L=250 µm, 沟道厚≈200 nm",
+          "vds": "-0.5 V",
+          "vg_range": "0 ~ +0.8 V（输出曲线）"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "电导为四探针法（自由膜）；OECT电学在固态PVDF-HFP/EMIM OTF电解质、VDS=-0.5 V下测得；gm为20个沟道平均；力学为≈150 µm自由膜拉伸（≈23°C, ≈50%RH）。",
+        "states": [
+          {
+            "label": "pristine PEDOT:PSS",
+            "structure_delta": "无PAAMPSA、无IL对照",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "电导 σ=1.1 S/cm（四探针）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "颗粒状（granular-like）形貌",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "最大应变≈7%"
+            }
+          },
+          {
+            "label": "PEDOT:PSS + 67 wt% PAAMPSA（无IL）",
+            "structure_delta": "加入67 wt% PAAMPSA，不加EMIM OTF",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "σ≈0.3 S/cm（四探针），与纯PEDOT:PSS相当（1.1 S/cm）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "加入IL后为纤维状相分离（本条无IL时形貌见SI）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "PEDOT结晶度低于含IL样品（XRD）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "最大应变390%"
+            }
+          },
+          {
+            "label": "最优 PEDOT:PSS/PAAMPSA/EMIM OTF（16.6/67/16.6 wt%）",
+            "structure_delta": "在67 wt% PAAMPSA基础上加入与PEDOT:PSS等质量的EMIM OTF",
+            "electrical": {
+              "gm": "未报道（本条为薄膜电导）",
+              "gm_notes": "薄膜σ=320 S/cm（四探针，室温）",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "最大应变630%；杨氏模量≈0.8 MPa；切口后电导≈100%恢复，τ≈900 ms；力学自愈效率>80%，愈合后应变510%"
+            },
+            "morphology": {
+              "sem": "切口愈合后SEM显示微缝隙完全消失",
+              "tem": "",
+              "afm": "EMIM OTF诱导明显相分离与纤维状结构（fibrillar-like）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "XRD显示PEDOT结晶度高于无IL样品",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "流变：G'>G''（固体状黏弹）；应力松弛时间≈5.6 min；自愈依赖PAAMPSA吸湿（切口1–5 µm约2 h愈合，5–15 µm过夜）"
+            }
+          },
+          {
+            "label": "OECT（最优复合膜沟道，固态电解质）",
+            "structure_delta": "喷涂≈200 nm沟道于SEBS，AgNWs S/D，SWCNT栅，PVDF-HFP/EMIM OTF电解质",
+            "electrical": {
+              "gm": "12.95 ± 1.85 mS（20沟道平均，绝对值）；最高16.8 mS",
+              "gm_notes": "未报道几何归一化gm；VDS=-0.5 V",
+              "ton": "瞬态响应 7.1 ms",
+              "toff": "未报道",
+              "ion_ioff": "≈10^3",
+              "on_current": "应变0%时≈5.07 mA（平行沟道方向拉伸测试）",
+              "cycling": "脉冲测试1000次连续掺杂/去掺杂稳定",
+              "vth": "未报道",
+              "stability_other": "5×4阵列on-current与gm分布窄；切割后10 min电流恢复>85%，6 h恢复97%；100%应变平行拉伸后Id 5.07→1.22 mA、gm 13.39→4.46 mS，释放后恢复68%/88%"
+            },
+            "morphology": {
+              "sem": "愈合后微缝隙消失",
+              "tem": "",
+              "afm": "未报道（沟道级）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道（沟道级）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "阵列厚≈200 nm"
+            }
+          }
+        ],
+        "before_after_summary": "加入PAAMPSA把脆性PEDOT:PSS（应变7%）变成可拉伸390%的动态网络但电导降到0.3 S/cm；再加EMIM OTF后电导回升至320 S/cm且拉伸达630%，并赋予室温自主自愈能力，OECT gm达12.95 mS且切割后6 h基本恢复。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "PAAMPSA（酰胺+磺酸）与PSS/PEDOT形成氢键与离子键动态网络，其吸湿性使切口处链段扩散并重建键合（SEM显示缝隙消失）；EMIM OTF的CF3吸电子基团诱导PEDOT链重排，AFM见纤维状相分离、XRD见结晶度提升。",
+        "morphology_to_electrical": "纤维状富PEDOT域与高结晶度利于链内/链间空穴传输→σ=320 S/cm；动态键断裂耗散能量→630%应变；PAAMPSA网络承担力学与自愈，PEDOT富域提供电子通道，IL既提升结晶又作增塑剂。OECT中EMIM+注入去掺杂PEDOT，沟道保持高gm与快速瞬态。",
+        "net_effect": "软聚合物动态键网络（力学/自愈）+离子液体促结晶（电导）双管齐下，可在≈200 nm薄膜上同时实现>300 S/cm、600%拉伸与微米级切口自主愈合。",
+        "evidence_quality": "强（四探针电导+AFM/XRD形貌+力学/自愈+OECT阵列统计互证）"
+      },
+
+      "design_takeaways": [
+        "PAAMPSA最优占比67 wt%（16.6/67/16.6 = PEDOT:PSS/PAAMPSA/IL），60–67 wt%区间可同时做到σ>300 S/cm与应变>300%",
+        "EMIM OTF用量与PEDOT:PSS等质量即可，过多会溶液析出；50 wt%（相对PEDOT:PSS）在纯膜中电导峰值1018 S/cm",
+        "动态氢键+离子键网络适合薄膜级（≈200 nm）自愈；切口宽度需<15 µm才能室温自主愈合，更大需水汽等外激励",
+        "固态PVDF-HFP/EMIM OTF电解质 + AgNWs S/D + SWCNT栅可做全固态可拉伸OECT阵列"
+      ],
+      "limitations": [
+        "力学与电导强依赖湿度（30%RH应变仅110%、σ=252.6 S/cm；85%RH应变880%），环境稳定性需封装控制",
+        "未报道几何归一化gm、Vth、离子电导/溶胀比定量",
+        "自愈时间随切口尺寸急剧变慢（1–5 µm约2 h，5–15 µm过夜），大幅损伤需外部激励",
+        "OECT阵列循环仅1000次脉冲，未做长期偏压应力/水稳定"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "The optimal film exhibits outstanding stretchability as high as 630% and high electrical conductivity of 320 S cm−1, while possessing the ability to repair both mechanical and electrical breakdowns", "why": "最优复合膜同时具备630%拉伸、320 S/cm电导与自愈"},
+        {"page": 2, "text": "the optimal loading of EMIM OTF in the nanocomposite used in this report is equal to the mass of PEDOT:PSS", "why": "IL用量规则：与PEDOT:PSS等质量"},
+        {"page": 4, "text": "the film containing 67 wt% of PAAMPSA leads to excellent extensibility (630%), which is around 1.5 times higher than the film with 60 wt% of PAAMPSA, while maintaining a comparable electrical conductivity (320 S cm−1)", "why": "67 wt% PAAMPSA为最优配比"},
+        {"page": 7, "text": "These PEDOT:PSS/PAAMPSA/IL OECTs showed high transconductance of 12.95 ± 1.85 mS (average of 20 channels), with the highest value reaching 16.8 mS, fast transient response of 7.1 ms, and good ON/OFF ratio of ≈ 103", "why": "OECT核心电学指标（固态电解质）"},
+        {"page": 8, "text": "The drain current of the transistors recovered over 85% after 10 min of healing. Within 6 h of healing, current was observed to recover to close to its initial values (97%)", "why": "OECT切割后自愈恢复比例"}
+      ]
+    },
+
+    "2023-wang-science-bap-bioadhesive-dn": {
+      "id": "2023-wang-science-bap-bioadhesive-dn",
+      "title_en": "Bioadhesive polymer semiconductors and transistors for intimate biointerfaces",
+      "title_cn": "生物黏附聚合物半导体与晶体管用于紧密生物界面",
+      "short_name": "2023 Wang Science BAP生物黏附双网络",
+      "authors": "N. Li, Y. Li, Z. Cheng, Y. Liu, Y. Dai, S. Kang, et al.",
+      "corr_author": "Sihong Wang",
+      "year": 2023,
+      "journal": "Science",
+      "doi": "10.1126/science.adg8758",
+      "pdf": "pdf/2023-Wang-Science-BAP生物黏附双网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "将刷状生物黏附聚合物（BAP，COOH+NHS酯端基）与半导体p(g2T-T)原位光聚合形成双网络，使半导体膜本身对湿态组织产生快速强黏附，同时保持高迁移率OECT性能，用于心电/肌电稳定记录。",
+
+      "structure": {
+        "semiconductor": "p(g2T-T) = poly(3,3′-bis(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)-2,2′:5′,2″-terthiophene)",
+        "semiconductor_type": "亲水（寡聚乙二醇侧链）",
+        "crosslinker": "tetraethylene glycol dimethylacrylate（四乙二醇二甲基丙烯酸酯）作BAP网络交联剂；光引发剂 2-hydroxy-2-methyl-propiophenone",
+        "crosslinker_amount": "交联剂与光引发剂各 0.5 wt%（相对丙烯酸酯单体总量）",
+        "network_monomer": "ACTEGCOOH（COOH端丙烯酸酯）+ ACTEGNHS（NHS酯端丙烯酸酯），刷状侧链含tetra(ethylene glycol)",
+        "network_monomer_amount": "BASC最优质量比 p(g2T-T):ACTEGCOOH:ACTEGNHS = 1:20:20",
+        "ratio_sc_monomer_xl": "p(g2T-T):ACTEGCOOH:ACTEGNHS = 1:20:20（质量比，Table S2）；对照有1:40:0（BASC-COOH）与1:0:40（BASC-NHS）",
+        "crosslink_type": "光交联（UV 365 nm 5 min 原位聚合BAP）+ 双网络互穿",
+        "film_prep": "氯仿中共混p(g2T-T)（5 mg/mL）与单体，旋涂1000 rpm 1 min（N2手套箱）→ 365 nm UV 5 min聚合 → 110°C 5 min退火；BASC膜厚≈1.9 µm（对照p(g2T-T)≈35 nm）",
+        "notes": "NHS酯与组织伯胺共价键合提供主黏附力；COOH吸水干燥组织表面并提供静电作用；刷状长侧链克服p(g2T-T)长侧链对黏附基团的屏蔽。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M NaCl 水溶液（电学表征）；1× PBS（EIS/黏附相关）",
+          "solvent": "水",
+          "ions": "NaCl（Na+/Cl-）；EIS用PBS",
+          "concentration": "0.1 M NaCl"
+        },
+        "swelling": {
+          "test_solution": "PBS",
+          "swelling_ratio": "BAP质量吸水≈20%（2 min）后24 h缓慢吸水；横向膨胀比≈1.05",
+          "method": "称重法+尺寸测量",
+          "notes": "BAP中等吸水，远低于PAAc；1:1 COOH:NHS比例使吸水居中"
+        },
+        "electrodes": {
+          "source_drain": "Au（60 nm，e-beam蒸镀）；柔性器件用微裂纹Ti/Au（5 nm/80 nm）",
+          "gate": "Ag/AgCl（电学表征）；全黏附器件用BASC作氧化还原活性栅",
+          "geometry": "平面；L=200 µm，W=4 mm（电学表征）"
+        },
+        "device": {
+          "architecture": "平面底接触OECT（电解质滴在沟道上）；全生物黏附可拉伸OECT（TPU基底+SEBS封装≈570 nm）",
+          "channel_dimensions": "L=200 µm, W=4 mm（表征器件）；BASC厚≈1.9 µm",
+          "vds": "-0.6 V（拉伸测试）；其他见图注",
+          "vg_range": "-0.8 ~ +0.2 V（转移曲线范围，图3B）"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "电学在0.1 M NaCl、Ag/AgCl栅、Keithley 4200下测；µ由gm公式或恒定栅电流法提取，C*由EIS；黏附在湿猪肌肉上180°剥离/搭接剪切/拉伸，~5 kPa按压1 min后4–8°C放置2 h再测。",
+        "states": [
+          {
+            "label": "neat p(g2T-T) 薄膜（对照）",
+            "structure_delta": "无BAP双网络",
+            "electrical": {
+              "gm": "≈数mS量级（图3C对照，具体均值未单列）",
+              "gm_notes": "µ≈0.76–1 cm²/V/s（Table S4对照值0.76；正文称BASC与之相当）",
+              "ton": "τ=12.9 ms（脉冲响应）",
+              "toff": "未报道",
+              "ion_ioff": "~10^5（Table S4文献值）；转移曲线与BASC相当",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "-0.2 V（Table S4文献对照）",
+              "stability_other": "PTFE摩擦1000次后膜损坏、OECT性能下降；湿组织界面韧性2.9 J/m²（Table S3）"
+            },
+            "morphology": {
+              "sem": "未报道（对照）",
+              "tem": "",
+              "afm": "表面形貌见fig. S6",
+              "uvvis": "归一化吸收与BASC对比（0-0/0-1比更低，短程聚集较弱）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "GIXD显示明显长程结晶峰（100/200/300/010）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "厚≈35 nm；断裂应变低"
+            }
+          },
+          {
+            "label": "BASC（p(g2T-T):BAP = 1:40，COOH:NHS=1:1）",
+            "structure_delta": "引入刷状BAP双网络（ACTEGCOOH+ACTEGNHS 1:1，UV聚合）",
+            "electrical": {
+              "gm": "略高于p(g2T-T)（图3C，约8–12 mS量级；n=5）",
+              "gm_notes": "µ≈1.01 cm²/V/s（Table S4）；µC*=2.9 F cm^-1 V^-1 s^-1；C*=2.9 F/cm³（EIS）",
+              "ton": "τ=11.4 ms（脉冲响应，与p(g2T-T)的12.9 ms相当）",
+              "toff": "未报道",
+              "ion_ioff": "~10^4",
+              "on_current": "未报道",
+              "cycling": "100%应变拉伸100次后转移曲线稳定（Vd=-0.6 V）",
+              "vth": "0.07 V（Table S4）",
+              "stability_other": "PTFE 1 kPa摩擦1000次后OECT on-current基本保持；100%应变无裂纹"
+            },
+            "morphology": {
+              "sem": "BAP-COOH/PAAc干态SEM对比见fig. S5",
+              "tem": "",
+              "afm": "顶/底表面相图显示p(g2T-T)纳米纤维互连网络",
+              "uvvis": "0-0/0-1比高于neat p(g2T-T)，短程聚集更强（解释迁移率保持）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "GIXD几乎完全压制长程结晶（利于软化）",
+              "ftir_xps": "深度XPS显示从顶到底p(g2T-T)比例增加（相分离梯度）",
+              "swelling_in_situ": "",
+              "other": "膜厚≈1.9 µm；断裂韧性785.8 J/m²（FOW）；100%应变无裂纹并出现纳米纤维取向"
+            }
+          },
+          {
+            "label": "BASC湿组织黏附（猪肌肉）",
+            "structure_delta": "同BASC 1:40配方贴附湿组织",
+            "electrical": {
+              "gm": "未报道（黏附态）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "界面韧性≈24 J/m²，剪切强度≈7 kPa，拉伸强度≈4.4 kPa（约10× neat p(g2T-T)）；轻压~5 kPa 1 min即可黏附"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "BAP 2 min吸水~20%质量，帮助干燥组织表面",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "NHS与组织伯胺共价键合（化学设计）",
+              "swelling_in_situ": "",
+              "other": "BASC-COOH/BASC-NHS单侧链黏附均低于1:1配比（湿组织）"
+            }
+          }
+        ],
+        "before_after_summary": "引入BAP双网络后迁移率保持≈1 cm²/V/s、on/off≈10^4，响应不变慢；同时湿组织界面韧性从2.9提升到24 J/m²，并实现100%可拉伸与抗摩擦，使OECT可直接黏附心脏/肌肉稳定记录ECG/EMG。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "原位UV聚合BAP避免预聚物大尺度相分离（fig. S2对照），p(g2T-T)自组装成互连纳米纤维（AFM）；刷状长侧链保证COOH/NHS暴露在膜表面；GIXD显示长程结晶被压制但UV-vis显示短程聚集增强。",
+        "morphology_to_electrical": "p(g2T-T)渗流网络负责电子通道，BAP提供离子/水通道与组织黏附（NHS共价+COOH吸水）；短程聚集增强抵消结晶损失，故µ保持≈1 cm²/V/s；BAP主导力学（低模量、黏弹），厚膜≈1.9 µm仍不拖慢响应（离子在BAP中高效传输）。",
+        "net_effect": "刷状BAP双网络把「组织黏附/力学/离子通道」从半导体相中解耦出来，半导体相只管电子渗流，从而在黏附+可拉伸的同时不牺牲OECT迁移率。",
+        "evidence_quality": "强（GIXD/UV-vis/XPS深度/AFM + OECT电学 + 系统黏附力学 + 体内/离体电生理互证）"
+      },
+
+      "design_takeaways": [
+        "BASC最优质量比 p(g2T-T):ACTEGCOOH:ACTEGNHS = 1:20:20；COOH:NHS=1:1在湿组织上黏附最佳",
+        "单体原位UV聚合（而非掺预聚BAP）才能控制相分离尺度、避免大尺度分相",
+        "刷状TEG长侧链是克服半导体长侧链屏蔽黏附基团的关键；PAAc共混反而使黏附降约90%",
+        "轻压~5 kPa、1 min即可形成黏附；180°剥离按ASTM D3330/F2256表征"
+      ],
+      "limitations": [
+        "BASC体电容C*仅2.9 F/cm³，远低于neat p(g2T-T)文献值220 F/cm³，µC*偏低",
+        "膜厚1.9 µm vs 对照35 nm，gm对比未完全公平归一化",
+        "NHS酯水解稳定性、长期体内黏附寿命未系统报道",
+        "未报道on/off循环寿命、Vth漂移等长期电学稳定性（生物相容性有1月植入数据）"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "We report a bioadhesive polymer semiconductor through a double-network structure formed by a bioadhesive brush polymer and a redox-active semiconducting polymer.", "why": "双网络设计核心：刷状BAP+氧化还原半导体"},
+        {"page": 2, "text": "For preparing BASC polymer, the weight ratio of p(g2T-T) to ACTEGCOOH to ACTEGNHS is 1-20-20.", "why": "SI Methods给出BASC最优质量配比"},
+        {"page": 4, "text": "the obtained charge-carrier mobility of the BASC film approaches 1 cm2 V−1 s−1, which is comparable to that of the neat p(g2T-T) film", "why": "双网络几乎不损失迁移率"},
+        {"page": 4, "text": "BASC films achieve an interfacial toughness of ~24 J m−2, a shear strength of ~7 kPa, and a tensile strength of ~4.4 kPa, which are values that are ~10 times greater than those of neat p(g2T-T) films", "why": "湿组织黏附性能量化提升"},
+        {"page": 5, "text": "blending with the brush-architected BAP almost completely suppresses the long-range crystallization... the p(g2T-T) phase in the BASC film has a higher level of short-range aggregation", "why": "形貌指认：压长程结晶、增短程聚集，解释迁移率保持"}
+      ],
+      "notes": "正文与SI合并条目；SI文件：hyd_sc_xl_net__2023-Wang-Science-BAP生物黏附双网络-SI.txt（含Materials and Methods、Tables S1–S4、Figs. S1–S40）。"
+    },
+
+    "2024-lei-science-n-type-ppyv-dbshydrogel": {
+      "id": "2024-lei-science-n-type-ppyv-dbshydrogel",
+      "title_en": "N-type semiconducting hydrogel",
+      "title_cn": "n型半导体水凝胶（P(PyV)/DBS离子交联）",
+      "short_name": "2024 Lei Science P(PyV)-DBS离子水凝胶",
+      "authors": "P. Li, W. Sun, J. Li, J.-P. Chen, et al.",
+      "corr_author": "Ting Lei",
+      "year": 2024,
+      "journal": "Science",
+      "doi": "10.1126/science.adj4397",
+      "pdf": "pdf/2024-Lei-Science-PPyV-DBS离子水凝胶网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "设计无侧链阳离子型水溶性n型半导体P(PyV)，用二价阴离子DBS静电交联成单网络半导体水凝胶，再与PAM/PVA或PAA/gelatin等构成多网络，使水凝胶具备半导体开关/放大能力并用于生物电放大。",
+
+      "structure": {
+        "semiconductor": "P(PyV)：阳离子主链n型水溶性共轭聚合物，Cl-对离子，无侧链",
+        "semiconductor_type": "亲水（离子主链水溶）",
+        "crosslinker": "disodium 1,3-benzenedisulfonate（DBS，1,3-苯二磺酸二钠）——二价阴离子静电交联",
+        "crosslinker_amount": "未报道具体浓度（浸泡DBS的DMSO溶液）；最优交联时间5 min",
+        "network_monomer": "单网络：无额外单体（DBS离子交联P(PyV)）；多网络MNH-1：PAM+PVA；MNH-2：PAA+gelatin+gelMA+AAc-NHS",
+        "network_monomer_amount": "MNH-1中P(PyV) 12.9 wt%；MNH-2中P(PyV) 8.6 wt%（其余为常规水凝胶组分）",
+        "ratio_sc_monomer_xl": "P(PyV):DBS 摩尔比未报道；MNH中P(PyV) 8.6–12.9 wt%（其余网络占主体）",
+        "crosslink_type": "动态/可逆（静电离子交联，DBS²⁻交换Cl⁻）；MNH为热聚合共价网络+离子交联半导体网络",
+        "film_prep": "旋涂P(PyV)水溶液于基底→浸泡DBS/DMSO正交溶剂5 min交联→水洗；图案化：阴影掩模喷涂DBS后水洗，分辨率≈200 µm",
+        "notes": "DFT显示苯磺酸与主链结合能大于Cl⁻，交换热力学有利；电化学操作中仅1/3 DBS²⁻被Cl⁻置换，网络稳定。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "水溶液（正文未给具体盐浓度；生物测试中以脑组织/体液为电解质）",
+          "solvent": "水",
+          "ions": "未报道（OECT表征用常规水系电解质）",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "水（浸泡稳定性）",
+          "swelling_ratio": "P(PyV)-H含水量≈40%；MNH含水量60–70%",
+          "method": "含水量/质量法（fig. S25）",
+          "notes": "UV-vis-NIR证实水浸泡1 h稳定不溶"
+        },
+        "electrodes": {
+          "source_drain": "Au（未给厚度）",
+          "gate": "未报道（标准三电极/晶体管栅；体内ECoG用Ag/AgCl作参考）",
+          "geometry": "平面；W/L = 100/10（原文单位作mm，PDF提取丢失µ符号，应为µm量级）"
+        },
+        "device": {
+          "architecture": "平面OECT；互补反相器用p型P(lgDPP-MeOT2) + n型P(PyV)-H",
+          "channel_dimensions": "W/L = 100/10（同上）",
+          "vds": "0.6 V（n型IDS-VGS瞬态）",
+          "vg_range": "0 ~ 1 V（VGS脉冲）；反相器VDD=0.8 V"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "µC*由OECT转移曲线提取，C*由EIS；µ由µC*/C*计算；瞬态VGS 0→1 V、VDS=0.6 V；MNH电学为多网络复合后OECT；反相器增益在VDD=0.8 V、Vin 0–0.8 V扫描。",
+        "states": [
+          {
+            "label": "P(PyV)-H 单网络（DBS交联5 min）",
+            "structure_delta": "P(PyV)经DBS/DMSO离子交联成水凝胶",
+            "electrical": {
+              "gm": "未报道绝对值；µC*最高120（112±6）F cm^-1 V^-1 s^-1",
+              "gm_notes": "µ=0.25（0.23±0.01）cm²/V/s；C*=485±56.3 F/cm³（EIS）",
+              "ton": "1.58 ms",
+              "toff": "0.18 ms",
+              "ion_ioff": ">10^7",
+              "on_current": "未报道",
+              "cycling": "未报道具体圈数；水浸泡1 h光谱稳定",
+              "vth": "未报道",
+              "stability_other": "掺杂后载流子密度1.75×10^21 cm^-3（每3个重复单元2个电荷）；反相器增益250（VDD=0.8 V），两级达385，功耗<1 mW；放大器1 Hz时增益79（1 mV正弦输入）"
+            },
+            "morphology": {
+              "sem": "冻干SEM显示多孔3D网络（区别于致密共轭膜）",
+              "tem": "",
+              "afm": "交联未明显改变膜形貌",
+              "uvvis": "电化学还原时400–500 nm吸收下降、500–800 nm极化子吸收上升；水浸泡稳定",
+              "wettability": "未报道",
+              "xrd_giwaxs": "GIWAXS显示层状与π-π间距较pristine略增大",
+              "ftir_xps": "XPS：Cl信号消失、S信号出现，证明阴离子完全交换",
+              "swelling_in_situ": "",
+              "other": "喷涂图案分辨率≈200 µm"
+            }
+          },
+          {
+            "label": "MNH-1 多网络（PAM+PVA+P(PyV) 12.9 wt%）",
+            "structure_delta": "P(PyV)-H与PAM/PVA热聚合网络复合",
+            "electrical": {
+              "gm": "µC*=13.5 F cm^-1 V^-1 s^-1（按质量比换算等价105）",
+              "gm_notes": "含水量60–70%",
+              "ton": "未报道（响应慢于P(PyV)-H）",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "OECT截止频率≈100 Hz"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "断裂应变>100%；加入少量P(PyV)显著提高断裂应力（P(PyV)更刚）"
+            }
+          },
+          {
+            "label": "MNH-2 多网络（PAA+gelatin+gelMA+AAc-NHS+P(PyV) 8.6 wt%）",
+            "structure_delta": "可拉伸+生物黏附多网络",
+            "electrical": {
+              "gm": "µC*=9.72 F cm^-1 V^-1 s^-1（质量换算等价113）",
+              "gm_notes": "MNH-2 8.6%反相器最大增益279，功耗<3 mW",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "长时间运行放大性能基本不变；超声1 h（NaCl溶液）后性能不变（对比PEDOT:PSS/GOPS与pristine P(PyV)-H急剧下降）",
+              "vth": "未报道",
+              "stability_other": "适合低频生物信号（EOG/ECG）；放大输出较商用凝胶电极大40倍"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "猪皮界面韧性≈100 J/m²，剪切强度25 kPa；断裂应变>100%"
+            }
+          }
+        ],
+        "before_after_summary": "DBS离子交联把水溶P(PyV)变成稳定多孔半导体水凝胶，µC*达120 F cm^-1 V^-1 s^-1、on/off>10^7、ton/toff=1.58/0.18 ms；再与常规水凝胶组成多网络后力学/黏附大幅增强，µC*换算后仍≈105–113，可搭互补反相器放大生物电。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "DBS²⁻与P(PyV)阳离子主链静电交联（XPS证实Cl→S交换）→冻干SEM多孔3D网络；GIWAXS层状/π-π略松，AFM形貌不变；MNH中P(PyV)均匀分散于PAM/PVA或PAA/gelatin网络。",
+        "morphology_to_electrical": "多孔网络富水、离子存储强（C*=485 F/cm³）→高µC*；P(PyV)主链本身提供电子通道（无侧链设计利电子性能），DBS网络提供离子通道与水凝胶力学；MNH中常规水凝胶网络承担力学/黏附，P(PyV)网络承担半导体功能，故换算µC*几乎不降。",
+        "net_effect": "离子交联（而非共价改侧链）是给水溶n型共轭聚合物「凝胶化」且不伤电子性能的捷径；多网络可叠加力学/生物黏附而保持半导体性能。",
+        "evidence_quality": "强（XPS/SEM/GIWAXS/AFM + OECT/EIS + DFT + 互补电路与生物电放大互证）"
+      },
+
+      "design_takeaways": [
+        "阳离子主链+二价阴离子（DBS）静电交联是单网络半导体水凝胶的简洁路线；最优交联浸泡5 min",
+        "P(PyV)-H：µC*≈112 F cm^-1 V^-1 s^-1，C*=485 F/cm³，ton/toff=1.58/0.18 ms，on/off>10^7",
+        "多网络掺入8.6–12.9 wt% P(PyV)即可保留等效µC*≈105–113，同时获得>100%断裂应变与生物黏附（MNH-2猪皮韧性≈100 J/m²）",
+        "与p型P(lgDPP-MeOT2)组成互补反相器：增益250（单级）/385（两级），VDD=0.8 V，功耗<1 mW"
+      ],
+      "limitations": [
+        "OECT电解液浓度、扫描速率未在正文明确报道",
+        "MNH响应较慢，截止频率仅≈100 Hz，不适合EEG/ECoG高频（P(PyV)-H更适合）",
+        "DBS在电化学循环中部分被Cl⁻置换（约1/3），超长期离子交联稳定性未量化",
+        "几何尺寸单位在PDF提取中丢失µ符号（W/L=100/10），需核对原文"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "We chose disodium 1,3-benzenedisulfonate (DBS) as the cross-linker because it is a dianion, and its small size minimizes effects on electronic properties.", "why": "交联剂选择逻辑：二价阴离子、小尺寸、少伤电子性能"},
+        {"page": 2, "text": "The P(PyV)-H shows n-type OECT performance, with μC* values of up to 120 F cm−1 V−1 s−1 (112 ± 6 F cm−1 V−1 s−1), on/off ratios >107, and response times (ton/toff) of 1.58/0.18 ms", "why": "单网络半导体水凝胶核心电学指标"},
+        {"page": 2, "text": "The maximal C* was extracted to be 485 ± 56.3 F cm−3. Such high capacitance value suggests that P(PyV)-H has excellent ion storage and transport capabilities.", "why": "高体积电容证明离子通道/储能能力"},
+        {"page": 5, "text": "MNH-1 (12.9 wt %) displayed a μC* value of 13.5 F cm−1 V−1 s−1 (equivalent to 105 F cm−1 V−1 s−1 after conversion by mass ratio), and MNH-2 (8.6 wt %) displayed a μC* value of 9.72 F cm−1 V−1 s−1 (equivalent to 113 F cm−1 V−1 s−1 after conversion).", "why": "多网络掺杂后半导体性能几乎保持"}
+      ]
+    },
+
+    "2024-mombru-polymers-pva-ga-pedot": {
+      "id": "2024-mombru-polymers-pva-ga-pedot",
+      "title_en": "Exploring Mixed Ionic–Electronic-Conducting PVA/PEDOT:PSS Hydrogels as Channel Materials for Organic Electrochemical Transistors",
+      "title_cn": "PVA/PEDOT:PSS混合离子-电子导电水凝胶作为OECT沟道材料",
+      "short_name": "2024 Mombrú Polymers PVA-GA水凝胶网络",
+      "authors": "T. Gregorio, D. Mombrú, M. Romero, R. Faccio, Á. W. Mombrú",
+      "corr_author": "Dominique Mombrú / Mariano Romero / Álvaro W. Mombrú",
+      "year": 2024,
+      "journal": "Polymers",
+      "doi": "10.3390/polym16111478",
+      "pdf": "pdf/2024-Mombru-Polymers-PVA-GA水凝胶网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "用戊二醛（GA）交联PVA并共混PEDOT:PSS形成混合离子-电子导电水凝胶，直接作OECT沟道，系统研究配比对结晶、溶胀、沟道电流与电荷传输机制的影响。",
+
+      "structure": {
+        "semiconductor": "PEDOT:PSS（商品1.3% w/w水分散液）",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "glutaraldehyde（戊二醛，GA，50%水溶液）——与PVA缩醛交联",
+        "crosslinker_amount": "0.01 mL 50% GA / 20 mL PVA/PEDOT:PSS前体液（盐酸调pH≈2催化）",
+        "network_monomer": "poly(vinyl alcohol)（PVA，Mn 30,000–70,000）",
+        "network_monomer_amount": "PVA 5.0 g / 100 mL 去离子水；PEDOT:PSS重量分数系列 PP-0/3/12/20 = 0/3/12/20%",
+        "ratio_sc_monomer_xl": "最优PP-12：PEDOT:PSS 12 wt%（相对干凝胶组分）；GA用量相对PVA未给摩尔比（推算困难，未报道）",
+        "crosslink_type": "共价（PVA-GA缩醛/半缩醛）+ 氢键（PVA与PEDOT:PSS）",
+        "film_prep": "PVA 60°C溶解→加PEDOT:PSS过夜搅拌→HCl调pH≈2→加GA→浇铸塑料板室温固化72 h；器件上滴铸~6 µL前体液，室温/50%RH干燥20 h得d≈20 µm",
+        "notes": "FTIR O-H红移表明PVA与PEDOT:PSS氢键相互作用，会削弱PVA自身交联；PP-20宏观力学在水中下降。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M KCl 水溶液",
+          "solvent": "水",
+          "ions": "KCl（K+/Cl-）",
+          "concentration": "0.1 M"
+        },
+        "swelling": {
+          "test_solution": "去离子水（溶胀测试）",
+          "swelling_ratio": "PP-0/3/12 ≈180% w/w；PP-20 ≈200% w/w",
+          "method": "称重法，每60 s测至恒重",
+          "notes": "PEDOT:PSS增多略增溶胀；SEM显示高含量样品溶胀后孔隙更多"
+        },
+        "electrodes": {
+          "source_drain": "Au（溅射，0.2 mbar Ar, 30 mA, 300 s）",
+          "gate": "Au（同一溅射工艺）",
+          "geometry": "平面；L≈20 µm，W≈100 µm，d≈20 µm（干态凝胶厚度）"
+        },
+        "device": {
+          "architecture": "平面三电极OECT，绝缘聚合物掩模仅露沟道与栅",
+          "channel_dimensions": "W≈100 µm, L≈20 µm, d≈20 µm",
+          "vds": "-0.5 V ~ -0.1 V（电流-时间）；输出曲线Vg=-0.3~+0.5 V",
+          "vg_range": "-0.3 ~ +0.5 V；in operando Raman在Vg=-0.6与+0.6 V"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "chronoamperometry：Vds与Vg各预加5 min后再采5 min；EIS：Vg,ac=20 mV，0.01 Hz–1 MHz；C*由CPE拟合得C=9.2×10^-8 F再按体积归一（L=20 µm,W=100 µm,d=20 µm干态）。",
+        "states": [
+          {
+            "label": "PP-3（3 wt% PEDOT:PSS）",
+            "structure_delta": "PVA-GA网络中含3 wt% PEDOT:PSS",
+            "electrical": {
+              "gm": "未报道（仅给Ids）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "Ids≈-0.4 nA @ Vg=-0.3 V, Vds=-0.5 V",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "电流不稳定稳态"
+            },
+            "morphology": {
+              "sem": "溶胀后表面起皱（真空SEM伪影），孔隙较低",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "XRD CI≈79%（与PVA 78%相当）",
+              "ftir_xps": "FTIR见PEDOT特征峰1525/976/820 cm^-1",
+              "swelling_in_situ": "溶胀≈180% w/w",
+              "other": "Raman以PEDOT峰为主（共振增强）"
+            }
+          },
+          {
+            "label": "PP-12（12 wt% PEDOT:PSS，最优）",
+            "structure_delta": "PEDOT:PSS 12 wt%，PVA-GA交联+氢键",
+            "electrical": {
+              "gm": "gm,max≈1.05 µS（Vg≈0.2 V, Vds=-0.5 V）",
+              "gm_notes": "未报道几何归一化gm",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "Ids≈-1.1 µA @ Vg=-0.3 V, Vds=-0.5 V",
+              "cycling": "10次循环电流变化<1%",
+              "vth": "≈0.4 V（Ids^1/2 vs Vg）",
+              "stability_other": "耗尽模式工作；沟道必须全程浸电解液，干燥后严重损坏；C*≈2.3 F/cm³（EIS/CPE）；Rs=500 Ω, Rhg=3.2 MΩ, Rct=10.5 MΩ"
+            },
+            "morphology": {
+              "sem": "溶胀后较高孔隙（相对PP-0/3）",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "XRD CI≈70%（结晶度下降）",
+              "ftir_xps": "O-H红移→PVA/PEDOT:PSS氢键；1140 cm^-1结晶峰几乎消失",
+              "swelling_in_situ": "溶胀≈180% w/w",
+              "other": "in operando Raman：Vg从-0.6→+0.6 V时C=C伸缩蓝移，证实去掺杂（K+入、Cl-出）"
+            }
+          },
+          {
+            "label": "PP-20（20 wt% PEDOT:PSS）",
+            "structure_delta": "更高PEDOT:PSS载量",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "Ids≈-9.6 nA @ Vg=-0.3 V, Vds=-0.5 V",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "水中宏观力学下降；PEDOT:PSS可能相分离破坏连续电子通道"
+            },
+            "morphology": {
+              "sem": "溶胀后孔隙更多、起皱更明显",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "XRD CI≈67%（进一步非晶化）",
+              "ftir_xps": "同系列氢键证据",
+              "swelling_in_situ": "溶胀≈200% w/w",
+              "other": "衍射峰宽随PEDOT:PSS增加而增大"
+            }
+          }
+        ],
+        "before_after_summary": "PEDOT:PSS 12 wt%是连续电子渗流与凝胶稳定性的最佳平衡点：Ids≈-1.1 µA、gm,max≈1.05 µS、C*≈2.3 F/cm³、Vth≈0.4 V；3%电流太小，20%发生相分离且力学恶化，溶胀180–200%几乎不随配比变。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "GA与PVA缩醛交联形成骨架；PEDOT:PSS经氢键嵌入（FTIR O-H红移）并使PVA非晶化（XRD CI 78%→67%）；高载量时SEM暗示更高孔隙/可能相分离。",
+        "morphology_to_electrical": "PVA-GA提供离子导水相（溶胀180–200%）与力学骨架，PEDOT:PSS提供电子通道；12 wt%刚好形成连续电子渗流（Ids µA级），3 wt%不渗流（nA级），20 wt%反而因团聚/相分离断路（nA级）且力学变差。离子在凝胶内的传输与溶液不同，低频由电荷转移+扩散主导（等效电路Rhg//Chg + Rct-Wb//CPEdl）。",
+        "net_effect": "PVA-GA/PEDOT:PSS凝胶可直接作OECT沟道，但PEDOT:PSS载量存在窄窗口（≈12 wt%）；须保持湿润。",
+        "evidence_quality": "中（XRD/FTIR/Raman/SEM/溶胀+EIS/chronoamperometry/in operando Raman/DFT，但仅单一最优配方有完整电学，无独立迁移率）"
+      },
+
+      "design_takeaways": [
+        "配方：PVA 5 g/100 mL + PEDOT:PSS 12 wt% + 0.01 mL 50% GA/20 mL前体 + HCl调pH≈2，室温固化72 h",
+        "PEDOT:PSS 12 wt%为OECT性能峰值；3%与20%均不可用",
+        "溶胀比~180% w/w（PP-20~200%），与PEDOT:PSS含量弱相关",
+        "器件几何W/L≈100/20 µm，d≈20 µm，0.1 M KCl，Au同材料S/D/G；必须全程湿态工作"
+      ],
+      "limitations": [
+        "gm仅µS级、Ids仅µA级，远低于添加剂/离子液体增强的PEDOT:PSS（mA级）",
+        "沟道干燥即损坏，无法干态存储/操作",
+        "未报道ton/toff、on/off比、长期循环（仅10次）",
+        "C*计算用干态厚度，作者自认溶胀后体积可增2–3倍，存在不确定性",
+        "无迁移率独立提取"
+      ],
+      "quote_evidence": [
+        {"page": 3, "text": "0.01 mL of glutaraldehyde (50% aqueous) was added to 20 mL of the previously prepared PVA/PEDOT:PSS solution", "why": "GA交联剂用量配方"},
+        {"page": 7, "text": "the best composition for channel materials was obtained for PP-12, for which acceptable channel currents are observed (Ids~−1.1 µA at Vg = −0.3 V and Vds = −0.5 V)", "why": "12 wt% PEDOT:PSS为最优沟道组成"},
+        {"page": 7, "text": "the hydrogel-based channel needs to be always exposed to the electrolyte solution during the whole set of data collection and the channel is drastically damaged after drying.", "why": "关键使用限制：必须湿态"},
+        {"page": 9, "text": "the corresponding volumetric capacitance yields C* = 2.3 F.cm−3", "why": "最优凝胶体积电容"},
+        {"page": 11, "text": "the optimal hydrogel composition for OECT channel material exhibiting better current and transconductance was observed for PVA/PEDOT:PSS with 12% PEDOT:PSS content.", "why": "结论中的最优配比"}
+      ]
+    },
+
+    "2024-wang-science-hydrogel-sc-dn": {
+      "id": "2024-wang-science-hydrogel-sc-dn",
+      "title_en": "Soft hydrogel semiconductors with augmented biointeractive functions",
+      "title_cn": "具有增强生物交互功能的软水凝胶半导体",
+      "short_name": "2024 Wang Science 水凝胶半导体双网络",
+      "authors": "Y. Dai, S. Wai, P. Li, N. Shan, et al.",
+      "corr_author": "Sihong Wang",
+      "year": 2024,
+      "journal": "Science",
+      "doi": "10.1126/science.adp9314",
+      "pdf": "pdf/2024-Wang-Science-水凝胶半导体双网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "用溶剂亲和诱导组装（DMSO中UV交联水凝胶网络→水交换）把水不溶聚合物半导体p(g2T-T)原位析出成渗流网络，嵌入多孔PAAc水凝胶骨架，实现组织级软度（81 kPa）与高迁移率（1.4 cm²/V/s）兼得的双网络水凝胶半导体。",
+
+      "structure": {
+        "semiconductor": "p(g2T-T) = poly(3,3′-bis{2-[2-(2-methoxyethoxy)ethoxy]ethoxy}2,2′:5′,2″-terthiophene)",
+        "semiconductor_type": "亲水（寡聚乙二醇侧链）",
+        "crosslinker": "tetraethylene glycol dimethylacrylate（TEGDMA）；光引发剂 2-hydroxy-2-methyl-propiophenone",
+        "crosslinker_amount": "默认0.5 wt%（相对AAc单体）；对比0.2 / 0.5 / 2 / 10 wt%；光引发剂0.5 wt%（相对AAc）",
+        "network_monomer": "acrylic acid（AAc，聚合为PAAc）；葡萄糖传感用polyacrylamide（PAAm）水凝胶网络",
+        "network_monomer_amount": "AAc默认200 mg/mL（DMSO）；p(g2T-T)默认20 mg/mL",
+        "ratio_sc_monomer_xl": "p(g2T-T):AAc = 10:100 质量比（默认）；系列5/100 ~ 13.3/100（推算自浓度20:200 mg/mL = 10:100）",
+        "crosslink_type": "光交联（UV 380 nm 10 min交联PAAc）+ 溶剂交换诱导半导体析出互穿双网络",
+        "film_prep": "p(g2T-T)溶于DMSO 90°C 4 h→加AAc/TEGDMA/光引发剂60°C混合→旋涂1000 rpm 5 s→UV 380 nm 10 min（手套箱）→浸DI水2 min溶剂交换",
+        "notes": "阶段表征：stage1 DMSO溶液（有纳米聚集体）→stage2 DMSO凝胶（聚集体保持，渗流被打断）→stage3 水交换后p(g2T-T)纤维互连网络。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "100 mM NaCl 水溶液（默认）；stage1/2对照用Ch+Cl-的DMSO溶液；EIS同100 mM NaCl",
+          "solvent": "水（最终器件）",
+          "ions": "NaCl（Na+/Cl-）",
+          "concentration": "100 mM"
+        },
+        "swelling": {
+          "test_solution": "100 mM NaCl 或 PBS（FOW力学）",
+          "swelling_ratio": "未报道具体百分比；液相AFM测溶胀（SI）",
+          "method": "液相AFM / FOW",
+          "notes": "作者指出NaCl/PBS环境下溶胀略小于纯水、模量略高"
+        },
+        "electrodes": {
+          "source_drain": "Ti 5 nm / Au 100 nm",
+          "gate": "Ag/AgCl pellet（Warner E210）",
+          "geometry": "平面；L=1 mm，W=2 mm"
+        },
+        "device": {
+          "architecture": "平面OECT，PDMS条围栏限制电解液；hydro-OECT用SEBS+微裂纹金+水凝胶基底",
+          "channel_dimensions": "W=2 mm, L=1 mm；膜厚依配方（约µm级，未单列默认值）",
+          "vds": "-0.8 V",
+          "vg_range": "未报道完整范围；转移扫描速率40 mV/s"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "µ由gm公式提取；C*由EIS（100 mM NaCl，1 kHz–0.1 Hz，10 mV AC，0.2 V DC）；力学用FOW法在100 mM NaCl或PBS中测；OECT Vds=-0.8 V，扫描40 mV/s。",
+        "states": [
+          {
+            "label": "stage1：p(g2T-T)/AAc DMSO溶液（对照）",
+            "structure_delta": "未交联、未溶剂交换",
+            "electrical": {
+              "gm": "Gm=8.54 mS（DMSO/Ch+Cl-电解质）",
+              "gm_notes": "证明溶液态已有分子级渗流",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "n=3独立测量"
+            },
+            "morphology": {
+              "sem": "未报道（cryo-EM替代）",
+              "tem": "cryo-EM显示高密度纳米聚集体（DMSO对侧链溶剂化、主链疏水）",
+              "afm": "未报道",
+              "uvvis": "短程有序随阶段变化（fig. S17）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": ""
+            }
+          },
+          {
+            "label": "stage2：UV交联DMSO凝胶（对照）",
+            "structure_delta": "PAAc网络UV交联，仍在DMSO中",
+            "electrical": {
+              "gm": "较stage1下降约两个数量级",
+              "gm_notes": "PAAc 3D网络打断p(g2T-T)分子级渗流",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "n=3"
+            },
+            "morphology": {
+              "sem": "SEM/STEM显示p(g2T-T)颗粒尺寸基本保持",
+              "tem": "STEM-EDS（Pd/Sn标记）",
+              "afm": "未报道",
+              "uvvis": "短程有序变化",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": ""
+            }
+          },
+          {
+            "label": "stage3：hydro-SC（p(g2T-T):AAc=10:100，XL 0.2%）",
+            "structure_delta": "水交换后p(g2T-T)析出成互连纤维网络嵌于多孔PAAc",
+            "electrical": {
+              "gm": "µ=1.22 cm²/V/s（XL 0.2%）；最高µ=1.43 cm²/V/s（13.3/100配比）",
+              "gm_notes": "C*与pristine p(g2T-T)相近（fig. S28）",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "150%应变拉伸释放后µC*保持；反复弯曲/生理条件稳定",
+              "vth": "未报道",
+              "stability_other": "性能恢复到与stage1相当；杨氏模量最低81.8 kPa（比neat p(g2T-T)低3个数量级以上）"
+            },
+            "morphology": {
+              "sem": "冻干SEM：p(g2T-T)互连网络穿插多孔PAAc骨架",
+              "tem": "STEM/EDS验证两相互穿",
+              "afm": "C-AFM显示导电通路；液相AFM测溶胀",
+              "uvvis": "0-0/0-1比高于neat p(g2T-T)（短程聚集增强）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "GIXD无可观察长程结晶（快速析出抑制结晶）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "水交换2 min完成",
+              "other": "暗场显微多尺度验证；孔隙使PEG-FITC（20 kDa）24 h可扩散透过~5 µm膜（neat p(g2T-T) ~500 nm膜不能）"
+            }
+          },
+          {
+            "label": "交联密度系列（0.2 / 0.5 / 2 / 10 wt% TEGDMA，10/100）",
+            "structure_delta": "改变PAAc网络交联密度",
+            "electrical": {
+              "gm": "0.2%时µ最高1.22 cm²/V/s；0.5与2%略低（2%因溶胀低而略高于0.5%）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "2%模量239 kPa；10%模量4.76 MPa"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "聚集水平随组成变化（fig. S27）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "高交联溶胀更低（fig. S22）",
+              "other": "FOW应力-应变：模量先降后升（网络密度与溶胀竞争）"
+            }
+          },
+          {
+            "label": "hydro-OECT（水凝胶基底全器件）+ GOx体积传感",
+            "structure_delta": "hydro-SC作沟道，水凝胶基底+微裂纹金，整体模量≈30.9 kPa；GOx经戊二醛交联固定于PAAm-hydro-SC体相",
+            "electrical": {
+              "gm": "未报道（给on-current）",
+              "gm_notes": "体积传感：葡萄糖100 nM–2 mM，Vth偏移法检出限500 nM",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "≈10^2",
+              "on_current": "2 mA（hydro-OECT）",
+              "cycling": "未报道",
+              "vth": "随葡萄糖浓度偏移（Fig. 5J）",
+              "stability_other": "neat p(g2T-T)表面功能化对照：仅>100 mM才有电流响应（非酶途径）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "XPS深度剖析证实GOx贯穿体相（C1s信号），neat p(g2T-T)仅表面；GOx密度782 nmol/cm³（QCM）",
+              "swelling_in_situ": "",
+              "other": "光热：178 mW/cm²下PCE高于neat p(g2T-T)；625 nm光电化学电流显著更高（多孔界面）"
+            }
+          }
+        ],
+        "before_after_summary": "溶剂交换使p(g2T-T)从DMSO凝胶中被「挤出」成互连渗流网络，电学从stage2的两个数量级崩塌中恢复至µ≈1.2–1.4 cm²/V/s，同时模量降至81 kPa、可150%拉伸，并具备体积生物传感与增强光调制能力。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "DMSO中p(g2T-T)已预聚集成核（cryo-EM）→UV交联PAAc打断分子渗流（SEM颗粒仍在）→水作非溶剂使p(g2T-T)快速析出并互连成纤维网络嵌于多孔PAAc（SEM/STEM/C-AFM）；GIXD无长程结晶、UV-vis短程聚集增强。",
+        "morphology_to_electrical": "互连p(g2T-T)纤维=电子通道，恢复µ；多孔PAAc=离子/水通道+超软力学（81 kPa）；无结晶反而利于软化而短程聚集保迁移率。多孔高比表面增强光电化学/光热与GOx体积固定→更高传感灵敏度。",
+        "net_effect": "「先成凝胶再换溶剂」两步法解耦了水凝胶形成与水溶胀，使任意水不溶半导体都能做成双网络水凝胶半导体，软而不失电。",
+        "evidence_quality": "强（cryo-EM/SEM/STEM-EDS/C-AFM/GIXD/UV-vis三阶段追踪 + OECT逐阶段电学 + FOW力学 + 生物传感/光调制应用）"
+      },
+
+      "design_takeaways": [
+        "配方：p(g2T-T) 20 mg/mL + AAc 200 mg/mL 于DMSO，TEGDMA 0.5 wt%(相对AAc) + 光引发剂0.5 wt%，UV 380 nm 10 min，水交换2 min",
+        "交联密度0.2 wt%迁移率最高（1.22 cm²/V/s）；p(g2T-T):AAc从5/100提高到13.3/100使µ升至1.43",
+        "水交换驱动半导体析出是形成渗流网络的关键，不可省略",
+        "GOx体积固定：戊二醛+胺反应，24 h孵育，GOx密度782 nmol/cm³，葡萄糖LOD 500 nM"
+      ],
+      "limitations": [
+        "膜厚µm级导致体积传感/离子路径较长，on/off仅~10²（hydro-OECT）",
+        "溶胀比定量未在正文给出",
+        "PAAc带负电可能影响生物传感界面化学，葡萄糖实验改用PAAm网络",
+        "长期植入仅4周异物反应数据，电学长期漂移未系统报道"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "We developed a solvent affinity–induced assembly method that incorporates water-insoluble polymer semiconductors into double-network hydrogels.", "why": "核心方法：溶剂亲和诱导组装双网络"},
+        {"page": 2, "text": "The hydro-SC was prepared with a weight ratio of 10/100 between p(g2T-T) and AAc, and the added cross-linker of 0.2 wt % to the AAc monomer.", "why": "默认组成与交联剂量"},
+        {"page": 4, "text": "the lowest cross-linking ratio gives the highest μ of 1.22 cm2 V−1 s−1, which could be attributed to the more ordered assembly of p(g2T-T) in a looser PAAc network.", "why": "交联密度→组装有序度→迁移率因果"},
+        {"page": 4, "text": "For the lowest modulus of 81 kPa achieved from hydro-SCs, it is a decrease by more than three orders of magnitude than the neat p(g2T-T)", "why": "软度数量级提升"},
+        {"page": 7, "text": "the detection limit can be determined as 500 nM. In comparison, the surface-functionalized p(g2T-T) only shows a current decrease when the glucose concentration is >100 mM", "why": "体积传感 vs 表面传感灵敏度对比"}
+      ],
+      "notes": "正文与SI合并条目；SI文件：hyd_sc_xl_net__2024-Wang-Science-水凝胶半导体双网络-SI.txt（Materials and Methods、Figs. S1–S60、Tables S1–S5）。"
+    },
+
+    "2025-fabiano-am-pegda-solid-electrolyte": {
+      "id": "2025-fabiano-am-pegda-solid-electrolyte",
+      "title_en": "A Photo-Patternable Solid-State Electrolyte for High-Performance, Miniaturized, and Implantable Organic Electrochemical Transistor-Based Circuits",
+      "title_cn": "面向高性能微型可植入OECT电路的光图案化固态电解质",
+      "short_name": "2025 Fabiano AM PEGDA固态电解质网络",
+      "authors": "M. Xiong, C.-Y. Yang, J. Ji, A. S. Caravaca, et al.",
+      "corr_author": "Chi-Yuan Yang / Simone Fabiano",
+      "year": 2025,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.202509314",
+      "pdf": "pdf/2025-Fabiano-AM-PEGDA固态电解质网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "用ι-carrageenan（ι-CGN）作离子导体、PEGDA光交联成可图案化固态电解质，离子电导媲美0.1 M NaCl，实现无液体泄漏、可微型化集成的p/n OECT互补电路与可植入神经刺激。",
+
+      "structure": {
+        "semiconductor": "p型 P(g2T-TT)（oligo(ethylene glycol)功能化聚噻吩）；n型 BBL（poly(benzimidazobenzophenanthroline)）",
+        "semiconductor_type": "亲水（P(g2T-TT)）+ 疏水/酸溶（BBL）",
+        "crosslinker": "PEGDA（poly(ethylene glycol) diacrylate, 700 Da）；光引发剂 PI-2959（2-hydroxy-4′-(2-hydroxyethoxy)-2-methylpropiophenone）",
+        "crosslinker_amount": "PEGDA 1.5 g / 10 g H2O；PI-2959 0.2 g（器件配方）；ι-CGN 0.18 g（约1.6–1.8 wt%量级），甘油0.3 g；NaCl补至0.1 M离子浓度",
+        "network_monomer": "ι-carrageenan（ι-CGN，天然硫酸化多糖）为离子导电网络组分，PEGDA为光交联网络",
+        "network_monomer_amount": "ι-CGN 0.6–1.6 wt%（水相）；表征系列60–160 mg / 10 g H2O",
+        "ratio_sc_monomer_xl": "PEGDA:ι-CGN:H2O ≈ 1.5 g:0.18 g:10 g（器件配方，推算质量比）",
+        "crosslink_type": "光交联（365 nm 40 mW/cm² 15 s 或390 nm 5000 mJ/cm²光刻）",
+        "film_prep": "100–110°C加热30 min成均匀溶液→冷却成凝胶→旋涂1500 rpm 15 s得~1 µm膜→UV光刻图案→水显影→0.1 M NaCl甘油液浸泡30 min",
+        "notes": "未曝光区水溶可显影，实现15 µm分辨率图案；溶胶-凝胶转变温度61°C；甘油提升离子电导/保水/可加工性。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "ι-CGN/PEGDA固态电解质（内含NaCl至0.1 M离子浓度+甘油）；对照为0.1 M NaCl水溶液",
+          "solvent": "水+甘油（凝胶内）",
+          "ions": "Na+/Cl-（并含ι-CGN硫酸根/Na+）",
+          "concentration": "NaCl匹配0.1 M；ι-CGN 1.4 wt%时离子电导>17 mS/cm（交联后>10 mS/cm）"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道",
+          "notes": "水凝胶网络含水；封装（石蜡/Parylene）后稳定性测试"
+        },
+        "electrodes": {
+          "source_drain": "Cr 5 nm / Au 50 nm（光刻图案）",
+          "gate": "Ag/AgCl（100 nm Ag经1 mM HCl 1 min转化）",
+          "geometry": "平面，Parylene C绝缘（1 µm + 2 µm牺牲层工艺）"
+        },
+        "device": {
+          "architecture": "平面固态OECT；互补反相器/NAND/NOR/半加器/OECN",
+          "channel_dimensions": "表征：W=100 µm, L=10 µm，BBL d=20 nm，P(g2T-TT) d=5 nm；电路：p型W/L=50/4 µm，n型W/L=200/4 µm",
+          "vds": "-0.7 V（转移/瞬态）",
+          "vg_range": "0 ~ 0.6 V（BBL脉冲）"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "电学在0.1 m NaCl液态与ι-CGN固态电解质平行对照；gm,norm按几何归一；µC*与Vth由转移曲线；瞬态由VG脉冲0↔0.6 V指数拟合；EIS夹心金电极100 Hz–100 MHz。",
+        "states": [
+          {
+            "label": "BBL OECT + ι-CGN固态电解质",
+            "structure_delta": "用PEGDA交联ι-CGN固态电解质替代0.1 M NaCl液体",
+            "electrical": {
+              "gm": "gm,max=0.11 mS；gm,norm=6.0±0.84 S/cm",
+              "gm_notes": "几何归一（W=100 µm, L=10 µm, d=20 nm）；对照NaCl：gm=0.12 mS，gm,norm=5.50±1.02 S/cm",
+              "ton": "τON=0.66±0.02 ms（1.6 wt% ι-CGN）；τON,90%=2.28±0.18 ms",
+              "toff": "τOFF=0.18±0.01 ms；τOFF,90%=0.49±0.04 ms",
+              "ion_ioff": ">10^5",
+              "on_current": "未报道绝对值",
+              "cycling": ">98%电流保持（>600开关循环+1 h连续，封装后）",
+              "vth": "0.17±0.01 V",
+              "stability_other": "无迟滞；µC*=21.34±1.52 F cm^-1 V^-1 s^-1（NaCl对照21.15±1.48）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "电解质可光刻至15 µm线宽；流变显示剪切变稀/屈服"
+            }
+          },
+          {
+            "label": "P(g2T-TT) OECT + ι-CGN固态电解质",
+            "structure_delta": "p型沟道5 nm + 同一固态电解质",
+            "electrical": {
+              "gm": "gm,norm=24.5 S/cm（NaCl对照26 S/cm）",
+              "gm_notes": "",
+              "ton": "τON=0.21±0.01 ms（NaCl 0.19±0.02 ms）",
+              "toff": "τOFF=0.038±0.002 ms（NaCl 0.036±0.002 ms）",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "连续1 h后保持≈50%初始电流（NaCl液仅10%）",
+              "vth": "未报道",
+              "stability_other": "µC*=68.06 F cm^-1 V^-1 s^-1（NaCl 74.29）；固态电解质显著抑制p型氧化副反应失活"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": ""
+            }
+          },
+          {
+            "label": "互补电路（反相器/NAND/半加器/OECN）",
+            "structure_delta": "p/n OECT + 图案化ι-CGN共享栅",
+            "electrical": {
+              "gm": "反相器增益最高70 V/V @ VDD=0.7 V",
+              "gm_notes": "VDD可低至0.1 V，VM=0.071 V，静态功耗0.22 nW，开关峰值1.7 nW；最大功耗<2 µW",
+              "ton": "NAND工作速度0.4 s",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "OECN尖峰0.3–0.4 V，频率1–20 Hz",
+              "cycling": "封装前后放电频率稳定≈7 Hz",
+              "vth": "未报道",
+              "stability_other": "半加器2×1 mm²/18 OECT，0.6 V逻辑正确；小鼠迷走神经刺激心率降≈2–4%"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "反相器占位250×400 µm²；NAND/NOR 500×800 µm²；4输入NAND 1600×800 µm²"
+            }
+          }
+        ],
+        "before_after_summary": "ι-CGN/PEGDA固态电解质交联后离子电导仍>10 mS/cm（媲美0.1 M NaCl 9.2 mS/cm），BBL与P(g2T-TT) OECT的gm/µC*/瞬态几乎不降，p型稳定性反而大幅提升，且可15 µm光刻集成出反相器/半加器并植入小鼠刺激迷走神经。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "ι-CGN带电多糖骨架提供Na+/硫酸根离子导电通道；PEGDA光交联形成耐水网络（未曝光区水溶→负性光刻）；甘油增塑保水。交联后网络变密→离子电导略降但仍>10 mS/cm。",
+        "morphology_to_electrical": "高离子电导使RC常数接近液态电解质→τON/OFF为亚毫秒、几乎无迟滞；固态隔离避免串扰/泄漏→可密集图案化与封装植入；抑制p型聚噻吩氧化副反应→1 h保持50%（液态仅10%）。半导体本身（BBL/P(g2T-TT)）提供电子通道，ι-CGN网络提供离子通道。",
+        "net_effect": "把「离子导电网络」做成可光刻固态电解质，可在不牺牲OECT速度/增益的前提下实现微型化互补电路与全植入神经刺激。",
+        "evidence_quality": "强（EIS离子电导 + p/n OECT与液态逐项对照 + 电路逻辑 + 在体VNS演示）"
+      },
+
+      "design_takeaways": [
+        "电解质配方：PEGDA 1.5 g + PI-2959 0.2 g + ι-CGN 0.18 g + 甘油0.3 g + H2O 10 g + NaCl至0.1 M，110°C 30 min溶解后旋涂",
+        "ι-CGN 1.4 wt%离子电导峰值>17 mS/cm（交联前）；交联后>10 mS/cm即足够OECT亚毫秒响应",
+        "PEGDA浓度需精细：过低SIN太脆被洗掉，过高未曝光区不溶/边缘粗糙；700 Da对应7 mg/mL（每mL PEDOT:PSS体系另文）",
+        "BBL/P(g2T-TT)沟道厚度20/5 nm配比利于p/n电流匹配；W/L=200/4与50/4 µm用于互补电路"
+      ],
+      "limitations": [
+        "网络主体是电解质而非半导体沟道；沟道本身未交联改性",
+        "ι-CGN与PEGDA比例对力学/离子电导的系统扫描有限",
+        "长期植入（>数周）电学稳定性、体内生物降解未报道",
+        "OECN接小鼠后放电频率被负载阻尼下降，需电路补偿"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "Using ι-carrageenan (ι-CGN) as the ion conductor and poly(ethylene glycol) diacrylate (PEGDA) as the crosslinker, we developed a solid-state electrolyte that exhibits ionic conductivity exceeding 10 mS cm−1", "why": "核心材料体系与离子电导"},
+        {"page": 3, "text": "the ι-CGN-based electrolyte can be photopatterned into uniformly distributed small pixels with lateral dimensions as small as 15 μm", "why": "光刻分辨率能力"},
+        {"page": 5, "text": "A maximum gm of 0.11 mS was recorded, similar to the 0.12 mS measured for devices with NaCl liquid electrolyte.", "why": "固态电解质几乎不损gm"},
+        {"page": 5, "text": "The solid-state P(g32T-TT)-based OECTs exhibit significantly higher stability, retaining ≈50% of their initial current after over 1 h of continuous operation. In contrast, devices with NaCl aqueous electrolytes retain only 10%", "why": "固态电解质对p型稳定性反而有利"},
+        {"page": 9, "text": "1.5 g of PEGDA, 0.2 g of PI-2959, 0.18 g of ι-CGN, and 0.3 g of glycerin were added to 10 g of water", "why": "器件级固态电解质配方"}
+      ]
+    },
+
+    "2025-huang-natcommun-all-gel-pam": {
+      "id": "2025-huang-natcommun-all-gel-pam",
+      "title_en": "Stretchable all-gel organic electrochemical transistors",
+      "title_cn": "可拉伸全凝胶有机电化学晶体管",
+      "short_name": "2025 Huang NatCommun 全凝胶PAM网络",
+      "authors": "L. Lu, X. Liu, P. Gu, Z. Hu, X. Liang, et al.",
+      "corr_author": "Jie Yang / Guoqing Zu / Jia Huang",
+      "year": 2025,
+      "journal": "Nat. Commun.",
+      "doi": "10.1038/s41467-025-59240-0",
+      "pdf": "pdf/2025-Huang-NatCommun-全凝胶PAM网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "活性层与电解质均为凝胶：PEDOT:PSS/PAM双网络半导体凝胶 + 聚离子液体（PIL）离子凝胶电解质，利用全凝胶三维网络促进离子渗透/传输，同时获得86.4 mS高跨导与50%可拉伸、10000次30%应变循环稳定。",
+
+      "structure": {
+        "semiconductor": "PEDOT:PSS（PH1000）；扩展验证 p(g2T-TT) 与 BBL",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "N,N′-methylenebisacrylamide（MBA）；热引发剂 ammonium persulfate（APS）；PIL电解质用MBA + 光引发剂I-2959",
+        "crosslinker_amount": "活性层：MBA 0.0125 g + APS 0.01 g /（0.8 g AM溶液+0.5 g PEDOT:PSS分散液）；电解质：MBA 0.0018 g + I-2959 0.0036 g",
+        "network_monomer": "acrylamide（AM）→PAM双网络；电解质单体 1-vinyl-3-butylimidazolium tetrafluoroborate（[VBIm][BF4]）",
+        "network_monomer_amount": "AM:DI水:甘油=1:3:3（质量）；PEDOT:PSS含量系列0.21–0.75%（最优0.75%）；[VBIm][BF4] 1.8 g + [THMA][MeSO4] 0.9 g",
+        "ratio_sc_monomer_xl": "PEDOT:PSS 0.75 wt%（相对凝胶总量，推算自20 mg/mL×0.5 g + AM体系）；AM:MBA ≈ 0.8 g AM溶液:0.0125 g MBA",
+        "crosslink_type": "共价（MBA自由基交联PAM）+ 双网络/互穿（PEDOT:PSS与PAM共组装）；电解质为PIL离子凝胶共价网络",
+        "film_prep": "前体滴铸+旋涂（500–3000 rpm, 15 s）→60°C 30 min热聚合；电解质旋涂1000 rpm后UV交联；p(g2T-TT)/BBL凝胶需溶剂交换为[THMA][MeSO4]",
+        "notes": "PEDOT:PSS>0.75%难均匀分散；甘油作共溶剂保证环境稳定性；凝胶厚267 µm(500 rpm)、4.4 µm(1000)、1.8 µm(2000)、590 nm(3000)。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "PIL离子凝胶：poly([VBIm][BF4])网络 + [THMA][MeSO4]溶剂/自由离子",
+          "solvent": "离子液体[THMA][MeSO4]（可与水混溶）",
+          "ions": "[VBIm]+/[BF4]-、[THMA]+/[MeSO4]-",
+          "concentration": "未报道摩尔浓度（质量比1.8 g:0.9 g）"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道",
+          "notes": "凝胶本身含溶剂；离子液体可扩散入活性层改善形貌"
+        },
+        "electrodes": {
+          "source_drain": "Ag 30 nm / Au 15 nm（热蒸发，可拉伸）",
+          "gate": "Ag/Au（共面或垂直栅结构）",
+          "geometry": "共面；W=2000 µm，L=100 µm（W/L=20）；凝胶活性层~0.8 mm×2 mm，电解质~3 mm×6 mm"
+        },
+        "device": {
+          "architecture": "PU基底全凝胶OECT；压力传感有垂直栅与共面栅两种；4×4阵列电子皮肤",
+          "channel_dimensions": "W=2000 µm, L=100 µm；活性层厚590 nm–267 µm（依转速）",
+          "vds": "-0.5 V（转移）；输出Vd -1.0~2.0 V",
+          "vg_range": "转移约-1.0~+1.5 V；开关循环VG在-0.5与+1.0 V切换"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "半导体分析仪测转移/输出；扫描速率提及200 mV/s（厚膜讨论）；µCs由gm公式（面积电容）；EIS在[THMA][MeSO4]中拟合Rs(Rp//Cp)Ws；循环稳定性VG -0.5↔1.0 V、VD=-0.5 V。",
+        "states": [
+          {
+            "label": "PEDOT:PSS/PAM凝胶 1.8 µm（2000 rpm，0.75% PEDOT:PSS，最优）",
+            "structure_delta": "双网络PEDOT:PSS/PAM + PIL离子凝胶电解质",
+            "electrical": {
+              "gm": "gm,max=86.4 mS（绝对值）",
+              "gm_notes": "µCs=7118.6 µF V^-1 s^-1；µ=5.7 cm² V^-1 s^-1（正文单位印作cm−2，应为cm²）",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "1.2×10^5",
+              "on_current": "未报道（转移曲线mA量级）",
+              "cycling": "1500次开关循环电流可忽略衰减；30%应变垂直沟道方向10000次拉伸释放后转移曲线稳定；10天环境稳定",
+              "vth": "未报道",
+              "stability_other": "50%应变沿平行/垂直方向均可工作"
+            },
+            "morphology": {
+              "sem": "凝胶表面形貌（SEM）",
+              "tem": "TEM测厚/形貌",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "GIWAXS对比pristine膜与凝胶中PEDOT:PSS链堆积（fig. S25）",
+              "ftir_xps": "FTIR/XPS确认PAM+PEDOT:PSS化学组成（S 2p区分PEDOT/PSS）",
+              "swelling_in_situ": "",
+              "other": "离子液体处理后无孤立PEDOT:PSS域、富PEDOT晶粒更大（TEM，figs. S23–24）"
+            }
+          },
+          {
+            "label": "厚度系列（500/1000/2000/3000 rpm）",
+            "structure_delta": "同配方改变活性层厚度",
+            "electrical": {
+              "gm": "267 µm→48.0 mS；4.4 µm→63.5 mS；1.8 µm→86.4 mS；590 nm→29.7 mS",
+              "gm_notes": "µCs对应5715.5 / 5231.5 / 7118.6 / 2408.3 µF V^-1 s^-1",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "3.4×10^4 ~ 1.2×10^5",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "厚膜>1.8 µm在200 mV/s下难达饱和；过薄溶剂挥发多、收缩大使µC*下降"
+            },
+            "morphology": {
+              "sem": "不同转速厚度截面",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "全凝胶膜较厚导致电压迟滞大于传统薄膜OECT（作者承认待优化）"
+            }
+          },
+          {
+            "label": "PEDOT:PSS含量系列（0.21–0.75%，3000 rpm）",
+            "structure_delta": "改变PEDOT:PSS载量",
+            "electrical": {
+              "gm": "gm,max随PEDOT:PSS含量增加而增加（0.75%最高）",
+              "gm_notes": "0.75%凝胶电导53 S/cm",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": ""
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "FTIR/XPS峰强随PEDOT:PSS含量变化",
+              "swelling_in_situ": "",
+              "other": "PEDOT:PSS凝胶断裂伸长率225%；PIL离子凝胶415%"
+            }
+          },
+          {
+            "label": "对照：PAM/NaCl/甘油/H2O有机水凝胶电解质",
+            "structure_delta": "电解质从PIL离子凝胶换成常规有机水凝胶",
+            "electrical": {
+              "gm": "gm,max=11.0 mS",
+              "gm_notes": "离子液体[THMA][MeSO4]作电解质时gm≈76.2 mS，与PIL离子凝胶86.4 mS相当",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "2.8×10^3",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "证明高gm关键来自离子液体电解质（可扩散入活性层优化形貌）"
+            },
+            "morphology": {
+              "sem": "离子液体处理前后PEDOT:PSS分布对比",
+              "tem": "孤立域消失、晶粒变大",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "PEDOT:PSS在[VBIm][BF4]/[THMA][MeSO4]中不能均匀分散，故不能直接作活性层"
+            }
+          },
+          {
+            "label": "p(g2T-TT)凝胶与BBL凝胶（扩展性验证）",
+            "structure_delta": "同一AM/MBA网络包埋p(g2T-TT)或BBL",
+            "electrical": {
+              "gm": "p(g2T-TT) gm,max=46.6 mS（30%应变后）；BBL gm=1.3 mS（应变后1.2 mS）",
+              "gm_notes": "BBL µCs=245.3 µF V^-1 s^-1",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "30%应变垂直方向后电学基本保持",
+              "vth": "未报道",
+              "stability_other": "p(g2T-TT)凝胶gm在已报道同类中领先"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "p(g2T-TT)溶剂交换[THMA][MeSO4]；BBL经水+[THMA][MeSO4]交换"
+            }
+          }
+        ],
+        "before_after_summary": "全凝胶结构（PEDOT:PSS/PAM活性层+PIL离子凝胶）把gm推到86.4 mS（文献可拉伸OECT多<20 mS），on/off 1.2×10^5，50%拉伸、10000次30%循环稳定；关键是离子液体电解质可渗入活性层优化形貌并提供高效离子通路。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "AM在PEDOT:PSS存在下MBA/APS 60°C热聚形成PAM网络，与PEDOT:PSS共组装成双网络凝胶；离子液体[THMA][MeSO4]可混溶扩散入活性层，消除孤立PEDOT:PSS域、增大富PEDOT晶粒（TEM/GIWAXS）。",
+        "morphology_to_electrical": "凝胶富溶剂→离子渗透路径与界面面积大→高效掺杂；三维PEDOT:PSS渗流网络→电子通道；PIL离子凝胶→离子通道+可拉伸；离子液体形貌优化进一步提升µC*。故1.8 µm厚度（掺杂速度与收缩平衡）达gm 86.4 mS。",
+        "net_effect": "「活性层凝胶+电解质凝胶」全凝胶策略同时打开离子与电子传输，是可拉伸OECT突破gm<20 mS瓶颈的有效路线。",
+        "evidence_quality": "强（FTIR/XPS/SEM/TEM/GIWAXS + 厚度/含量系列OECT + 电解质对照 + 10000次拉伸 + 压力/突触/气敏应用）"
+      },
+
+      "design_takeaways": [
+        "活性层：AM:水:甘油=1:3:3，MBA 0.0125 g+APS 0.01 g，PEDOT:PSS 0.75%，60°C 30 min；最优厚1.8 µm（2000 rpm）",
+        "电解质：[VBIm][BF4] 1.8 g+[THMA][MeSO4] 0.9 g+MBA 0.0018 g+I-2959 0.0036 g，UV交联",
+        "离子液体电解质（而非NaCl水凝胶）是高gm关键（76–86 vs 11 mS）",
+        "W/L=2000/100 µm大尺寸换高gm；可拉伸Ag/Au（30/15 nm）与PU基底匹配50%应变"
+      ],
+      "limitations": [
+        "凝胶膜较厚导致电压迟滞大于传统薄膜OECT（作者明确指出待优化）",
+        "µ单位在正文印刷为cm−2 V−1 s−1，应为cm² V−1 s⁻¹（提取/排版问题）",
+        "on/off循环仅1500次；ton/toff未系统报道",
+        "PEDOT:PSS>0.75%分散困难，限制进一步提电导"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "The resulting OECTs exhibit an excellent combination of ultra-high transconductance of 86.4 mS, on/off ratio of 1.2 × 105, stretchability up to 50%, and high stretching stability up to 10000 cycles under 30% strain.", "why": "全文核心性能指标"},
+        {"page": 2, "text": "A double-network semiconducting polymer gel consisting of PEDOT:PSS and polyacrylamide (PAM) and a poly(ionic liquid) (PIL) ionogel are used as the active layer and electrolyte", "why": "全凝胶双网络结构定义"},
+        {"page": 5, "text": "When PAM/NaCl/glycerol/H2O organohydrogel instead of ionogel is used as the electrolyte layer, the measured gm,max and on/off ratio of the all-gel OECT based on PEDOT:PSS gel are 11.0 mS and 2.8 × 103, respectively, much lower than those of the all-gel OECTs with PIL ionogel as the electrolyte.", "why": "电解质对照证明离子液体的关键作用"},
+        {"page": 5, "text": "the ionic liquid in the ionogel electrolyte can diffuse into the semiconducting polymer gel active layer, which can enhance transconductance of OECTs by improving the morphologies of the active layer while maintaining high ion uptake", "why": "离子液体改性活性层形貌的机理"},
+        {"page": 10, "text": "AM, deionized water, and glycerol were mixed with a mass ratio of 1:3:3... followed by the addition of 0.0125 g MBA and 0.01 g APS.", "why": "Methods给出活性层配方"}
+      ]
+    },
+
+    "2026-vandeburgt-am-pedot-pegda-sin": {
+      "id": "2026-vandeburgt-am-pedot-pegda-sin",
+      "title_en": "Photo-Patternable PEDOT:PSS for High Performance Organic Electrochemical Transistors",
+      "title_cn": "面向高性能OECT的光图案化PEDOT:PSS（PEGDA半互穿网络）",
+      "short_name": "2026 vandeBurgt AM PEGDA半互穿光刻网络",
+      "authors": "C.-T. Coen, N. J. Burghoorn, J. G. Hendrikx, J. den Toonder, Y. vandeBurgt",
+      "corr_author": "Yoeri vandeBurgt",
+      "year": 2026,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.202521689",
+      "pdf": "pdf/2026-vandeBurgt-AM-PEGDA半互穿光刻网络.pdf",
+      "category_id": "hyd_sc_xl_net",
+      "design_intent": "用PEGDA光聚合形成半互穿网络（SIN）物理困住PEDOT:PSS，实现2 µm分辨率直接光刻，OECT跨导接近GOPs交联PEDOT:PSS的两倍，且批次差<5%，替代剥离/干刻图案化。",
+
+      "structure": {
+        "semiconductor": "PEDOT:PSS（Clevios PH1000）",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "PEGDA（poly(ethylene glycol) diacrylate，Mw 250/575/700 Da）——光聚合形成SIN；光引发剂 LAP（lithium phenyl-2,4,6-trimethylbenzoylphosphinate）",
+        "crosslinker_amount": "PEGDA 700: 7 mg/mL（每mL PEDOT:PSS）；575: 4.5 mg/mL；250: 2 mg/mL；LAP 1 mg/mL PEDOT:PSS",
+        "network_monomer": "PEGDA为SIN网络单体；助剂 MPTMS（(3-mercaptopropyl)trimethoxysilane）2 µL/mL、FS-30 1 µL/mL",
+        "network_monomer_amount": "MPTMS 2 µL / mL PEDOT:PSS；FS-30 1 µL / mL PEDOT:PSS",
+        "ratio_sc_monomer_xl": "PEDOT:PSS : PEGDA700 ≈ 1 mL : 7 mg（质量浓度关系，推算）；丙烯酸酯摩尔量在不同Mw下大致恒定",
+        "crosslink_type": "光交联半互穿网络（SIN，物理困住OMIEC，非直接共价接枝PEDOT）",
+        "film_prep": "PEDOT:PSS超声+1 µm过滤→与PEGDA/LAP/MPTMS/FS-30共混→旋涂1000 rpm→365 nm UV 1000 mJ/cm²曝光→水显影→75% EG后处理（1000 rpm, 180°C 5 min）增强电导",
+        "notes": "MPTMS作自由基转移剂兼附着促进剂（甲氧基硅烷→羟基、硫醇→金）；EG/DMSO不可直接加入前体（会引起PEDOT形变）；DBSA表面活性剂会破坏显影。"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M NaCl 水溶液",
+          "solvent": "水",
+          "ions": "NaCl",
+          "concentration": "0.1 M"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道（含干态/溶胀态归一化对比于SI figs. S8–S9）",
+          "method": "未报道",
+          "notes": "几何归一化默认用干态厚度d"
+        },
+        "electrodes": {
+          "source_drain": "Cr 10 nm / Au 100 nm",
+          "gate": "未在正文明确（标准OECT测试；EIS用Ag/AgCl参比）",
+          "geometry": "平面；W=2000 µm，L=1000 µm"
+        },
+        "device": {
+          "architecture": "平面OECT，SU-8绝缘；对照GOPS/HEAT用剥离法",
+          "channel_dimensions": "W=2000 µm, L=1000 µm；d_PHOTO(PEGDA700)=111 nm，d_GOPS=294 nm，d_HEAT=190 nm",
+          "vds": "未报道具体值（转移曲线）",
+          "vg_range": "未报道完整范围；栅脉冲1 s开/2 s关至IDS≈0.1 mA"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "gm,norm = (L/(dW))·δIDS/δVGS；µC*由√IDS斜率提取；C*由EIS（ITO工作电极，10 mV RMS，0.1 MHz–100 mHz，Randles拟合）；稳定性为栅脉冲循环；每条件n=3，转移曲线为10圈均值±标准差。",
+        "states": [
+          {
+            "label": "photo-PEDOT（PEGDA 700 SIN，最优）",
+            "structure_delta": "PEGDA 700 7 mg/mL + LAP + MPTMS + FS-30 光交联SIN + EG后处理",
+            "electrical": {
+              "gm": "gm,max,norm=62.3±2.4 S/cm（几何归一，干态）",
+              "gm_notes": "约GOPS的两倍；绝对gm未给（大尺寸W/L=2）",
+              "ton": "截止频率40 Hz（正弦栅输入，大尺寸限制）",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "1200次栅脉冲后PEGDA 700衰减8.54%/1000次；PEGDA 250仅4.31%/1000次",
+              "vth": "未报道",
+              "stability_other": "批次间gm,norm与µC*变异<5%；器件间<5%（95%CI）；迟滞低于传统配方"
+            },
+            "morphology": {
+              "sem": "光刻图形光学显微：分辨率2 µm；10×10 µm²方点可在玻璃/金/Parylene C/Si上",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "C*=44.1±5.1 F/cm³（EIS，PEGDA 700）；µC*=83.5±3.2 F cm^-1 V^-1 s^-1"
+            }
+          },
+          {
+            "label": "GOPS交联PEDOT:PSS（对照，剥离法）",
+            "structure_delta": "10 µL GOPS + 60 µL EG / mL PEDOT:PSS，120°C 20 min",
+            "electrical": {
+              "gm": "gm,max,norm=33.2±1.0 S/cm",
+              "gm_notes": "厚度不确定（剥离边缘效应，中心-边缘差可达55%）",
+              "ton": "截止频率32.5 Hz",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "1000次脉冲仅衰减2.51%（最稳定）",
+              "vth": "未报道",
+              "stability_other": "µC*=52.2±1.2 F cm^-1 V^-1 s^-1"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "C*=27.9±2.7 F/cm³（EIS独立测）"
+            }
+          },
+          {
+            "label": "HEAT处理PEDOT:PSS（对照）",
+            "structure_delta": "60 µL EG/mL PEDOT:PSS，180°C 2 min相分离不溶",
+            "electrical": {
+              "gm": "gm,max,norm=53.7±2.1 S/cm",
+              "gm_notes": "",
+              "ton": "截止频率29 Hz",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未单列数值",
+              "vth": "未报道",
+              "stability_other": "µC*=86.6±2.6 F cm^-1 V^-1 s^-1（与photo相当）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "C*=63.4±3.6 F/cm³（EIS独立测，高于文献因测量方式不同）"
+            }
+          },
+          {
+            "label": "PEGDA Mw系列（250 / 575 / 700）",
+            "structure_delta": "改变PEGDA分子量，丙烯酸酯总量近似恒定",
+            "electrical": {
+              "gm": "gm,max,norm：250=52.6±2.3，575=55.9±1.4，700=62.3±2.4 S/cm",
+              "gm_notes": "µC*：74.0±3.4 / 77.7±2.0 / 83.5±3.2 F cm^-1 V^-1 s^-1",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "脉冲稳定性相近；PEGDA 250更紧网络稳定性更好（4.31%/1000次 vs 700的8.54%）",
+              "vth": "未报道",
+              "stability_other": "C*：PEGDA 700最低44.1 F/cm³，但µC*最高（几何估计敏感）"
+            },
+            "morphology": {
+              "sem": "图案质量：PEGDA 700需7 mg/mL（10 mg/mL时未曝光区不溶、边缘粗糙）",
+              "tem": "",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "",
+              "other": "Mw/load比近似恒定→所需丙烯酸酯量与Mw无关"
+            }
+          }
+        ],
+        "before_after_summary": "PEGDA SIN光刻PEDOT:PSS在保留离子/电子混合传输的同时，几何归一跨导62.3 S/cm接近GOPS（33.2）的两倍、µC* 83.5 vs 52.2，批次差<5%；代价是脉冲稳定性略逊GOPS（8.54% vs 2.51%/1000次），可用更紧的PEGDA 250改善至4.31%。"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "UV引发PEGDA丙烯酸酯自由基聚合形成SIN网络物理困住PEDOT:PSS（MPTMS作自由基转移剂使富氧环境下聚合高效）；未曝光区仍水溶→负性光刻2 µm；EG后处理提升PEDOT排列/电导。",
+        "morphology_to_electrical": "SIN不直接破坏PEDOT:PSS共轭/掺杂，C*（44 F/cm³）高于GOPS（28），故µC*与gm,norm显著更高；批次差低来自光刻对沟道厚度的精确控制（对比剥离法边缘效应导致厚度误差达55%）。PEGDA过量引起PEDOT物理交联/π-π压缩则图案变差。",
+        "net_effect": "光图案化SIN是PEDOT:PSS OECT「可光刻且不伤性能、甚至优于GOPS」的工艺路线，厚度可控性优于剥离法。",
+        "evidence_quality": "强（多种图案化工艺对照 + GOPS/HEAT/Mw系列电学 + EIS独立C* + 批次统计 + 截止频率/脉冲稳定性）"
+      },
+
+      "design_takeaways": [
+        "前体（每mL PEDOT:PSS）：PEGDA700 7 mg、LAP 1 mg、MPTMS 2 µL、FS-30 1 µL；旋涂后365 nm曝光1000 mJ/cm²，水显影，75% EG后处理180°C 5 min",
+        "PEGDA浓度窗口关键：700 Da用7 mg/mL；10 mg/mL会物理交联PEDOT导致显影失败",
+        "分辨率2 µm可在玻璃/金/Parylene/Si上实现；厚度需在EG处理后实测（勿用平膜估算剥离器件）",
+        "脉冲稳定性用PEGDA 250（更紧SIN）可从8.54%降至4.31%/1000次"
+      ],
+      "limitations": [
+        "SIN仅针对水分散PEDOT:PSS；多数OMIEC溶于氯仿等有机溶剂，需另开发光刻体系",
+        "脉冲稳定性仍逊于GOPS（2.51%/1000次）",
+        "截止频率40 Hz受大尺寸（W=2000 µm, L=1000 µm）限制，微缩后需重测",
+        "未做离子凝胶/固态电解质图案化（作者列为未来工作）"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "a photo-patternable PEDOT:PSS is developed by blending it with a photo-sensitive interpenetrating network, allowing features down to 2 µm to be patterned using photolithography", "why": "半互穿网络光刻能力"},
+        {"page": 2, "text": "the photo-PEDOT shows almost double the transconductance compared to GOPS-cross-linked PEDOT:PSS, reaching above 60 S cm−1.", "why": "相对GOPS的性能优势"},
+        {"page": 7, "text": "GOPS OECTs show the lowest value with 33.2 ± 1.0 S cm−1, while HEAT and PHOTO OECTs exceed these values with 53.7 ± 2.1 and 62.3 ± 2.4 S cm−1, respectively.", "why": "三方对照的几何归一跨导"},
+        {"page": 7, "text": "GOPS-cross-linked PEDOT:PSS show the lowest volumetric capacitance with 27.9 ± 2.7 F cm−3 followed by the PHOTO (44.1 ± 5.1 F cm−3) and HEAT (63.4 ± 3.6 F cm−3) blends.", "why": "C*差异解释gm差异来源"},
+        {"page": 9, "text": "The PEGDA is put in a 20 mL vial (2 mg mL−1 for PEGDA 250, 4.5 mg mL−1 for PEGDA 575 and 7 mg mL−1 for PEGDA 700).", "why": "Methods给出PEGDA用量配方"}
+      ]
+    }
+  }
+}

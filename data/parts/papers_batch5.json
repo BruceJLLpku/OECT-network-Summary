@@ -1,0 +1,1624 @@
+{
+  "papers": {
+    "2016-zhao-am-paam-alginate-dn-background": {
+      "id": "2016-zhao-am-paam-alginate-dn-background",
+      "title_en": "Stretchable Hydrogel Electronics and Devices",
+      "title_cn": "可拉伸水凝胶电子器件",
+      "short_name": "2016 Zhao AM PAAm藻酸双网络背景",
+      "authors": "S. Lin, H. Yuk, T. Zhang, G. A. Parada, H. Koo, C. Yu, X. Zhao",
+      "corr_author": "Xuanhe Zhao",
+      "year": 2016,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.201504152",
+      "pdf": "pdf/hyph_sc_hyd_dn__2016-Zhao-AM-PAAm藻酸双网络背景.pdf",
+      "category_id": "hyph_sc_hyd_dn",
+      "design_intent": "建立韧性双网络水凝胶基体并集成电子元件/给药通道，为后续疏水半导体+亲水双网络OECT提供力学与网络设计背景；非OECT原文但给出PAAm-alginate双网络配方与界面锚定范式。",
+
+      "structure": {
+        "semiconductor": "无OECT半导体（集成Ti导线、PDMS芯片、CNT/温度传感器等电子元件）",
+        "semiconductor_type": "未报道（水凝胶电子学，非OMIEC）",
+        "crosslinker": "MBAA（PAAm共价交联）+ CaSO4（alginate离子交联）；另列 HA/FeCl3、chitosan/TPP 等耗散网络",
+        "crosslinker_amount": "PAAm-alginate：0.017 wt% MBAA + CaSO4 20×10⁻³ M（凝胶内）",
+        "network_monomer": "丙烯酰胺 AAm + alginate（海藻酸钠）双网络；PEGDA/HA/chitosan 为备选组合",
+        "network_monomer_amount": "12 wt% AAm + 2 wt% alginate（最优PAAm-alginate配方）",
+        "ratio_sc_monomer_xl": "AAm:MBAA:alginate ≈ 12 wt% : 0.017 wt% : 2 wt%（原文Table 1配方）",
+        "crosslink_type": "双网络：共价（MBAA/PAAm）+ 动态离子（Ca²⁺/alginate）",
+        "film_prep": "前驱体溶液浇铸于模具，UV（254 nm, 8 W）固化60 min；硅烷化（TMSPMA）界面锚定",
+        "notes": "as-prepared含水73–85 wt%，吸水后可至95 wt%；剪切模量约10 kPa"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "未报道（无OECT测试；药物扩散用2%食用色素水溶液）",
+          "solvent": "水",
+          "ions": "未报道",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "水（平衡吸水/溶胀）",
+          "swelling_ratio": "as-prepared含水73–85 wt%；吸水后可达95 wt%",
+          "method": "含水量称重",
+          "notes": "拉伸状态药物扩散系数从1.5×10⁻¹⁰升至3×10⁻¹⁰ m²/s（λ=1.6），归因于网孔增大"
+        },
+        "electrodes": {
+          "source_drain": "钛丝（D=0.08–0.2 mm，正弦波形）/ PDMS芯片 / CNT",
+          "gate": "未报道",
+          "geometry": "非FET几何；水凝胶片厚约1.5 mm"
+        },
+        "device": {
+          "architecture": "水凝胶电子器件（导线/芯片/给药通道集成），非OECT",
+          "channel_dimensions": "未报道",
+          "vds": "未报道",
+          "vg_range": "未报道"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "力学/界面/扩散数据，非电学OECT参数；条件为室温、水凝胶基体",
+        "states": [
+          {
+            "label": "PAAm-alginate 双网络（主体系）",
+            "structure_delta": "12 wt% AAm + 0.017 wt% MBAA + 2 wt% alginate + CaSO4 20 mM",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "非OECT",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "10 000次拉伸λ=3后电阻保持恒定",
+              "vth": "未报道",
+              "stability_other": "界面韧性>1500 J/m²（硅烷化）；药物扩散可持续释药"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "TMSPMA硅烷化锚定PAAm长链网络（Fig S1）",
+              "swelling_in_situ": "未报道",
+              "other": "拉伸比≈21倍，断裂韧性≈9000 J/m²；剪切模量10 kPa；药物扩散系数1.5×10⁻¹⁰ m²/s（未拉伸）"
+            }
+          },
+          {
+            "label": "备选双网络（Table 1组合）",
+            "structure_delta": "PAAm-HA / PAAm-chitosan / PEGDA-alginate / PEGDA-HA / PEGDA-chitosan",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "PEG-alginate/PEG-HA可包埋活细胞"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "PAAm-alginate可拉伸性最高（≈21×）与断裂韧性最高（≈9000 J/m²）故选为主基体"
+            }
+          }
+        ],
+        "before_after_summary": "共价PAAm网络提供弹性回弹，离子alginate网络可逆耗散能量；双网络使水凝胶同时具备高拉伸（~21×）与高韧性（~9000 J/m²），硅烷化界面将界面韧性提至>1500 J/m²"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "MBAA共价交联形成永久弹性网络，Ca²⁺/alginate离子交联形成可逆耗散网络；两网络互穿但不互溶，变形时离子交联断裂耗能、共价网络保持完整性",
+        "morphology_to_electrical": "高含水（70–95 wt%）与大网孔使离子/药物可扩散（拉伸后网孔增大、扩散系数翻倍）；非OECT但说明亲水网络对离子渗透至关重要",
+        "net_effect": "双网络（共价弹性+离子耗散）是获得韧性亲水基体的范式；后续OECT双网络设计可借鉴：亲水网络保离子通道、另一网络保力学/稳定性",
+        "evidence_quality": "强（力学测试+FEA模拟+界面韧性定量+扩散拟合）"
+      },
+
+      "design_takeaways": [
+        "PAAm-alginate配方：12 wt% AAm + 0.017 wt% MBAA + 2 wt% alginate + CaSO4 20 mM，UV 254 nm固化60 min",
+        "TMSPMA硅烷化将界面韧性从~20提升到>1500 J/m²，是元件-水凝胶集成关键",
+        "拉伸增大网孔从而提高药物/离子扩散系数（1.5→3×10⁻¹⁰ m²/s at λ=1.6）",
+        "水凝胶基体剪切模量仅10 kPa，远软于Ti线（40 GPa），可容纳波形导线变形"
+      ],
+      "limitations": [
+        "非OECT/OMIEC研究，无电学器件参数",
+        "药物扩散模型为1D简化，真实器件多维扩散更复杂",
+        "长期水环境下力学/界面疲劳未系统报道"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "biocompatible, highly stretchable, and robust hydrogel provide a soft and wet matrix for electronics and devices", "why": "双网络水凝胶作为软湿基体的设计定位"},
+        {"page": 2, "text": "the biocompatible PAAm-alginate hydrogel gives the highest stretchability (≈21 times) and fracture toughness (≈9000 J m−2)", "why": "PAAm-alginate双网络的力学优势"},
+        {"page": 2, "text": "the water concentration in hydrogels at as-prepared state ranges from 73 wt% to 85%, it may increase up to 95% after swelling in water", "why": "含水/溶胀范围数据"},
+        {"page": 4, "text": "the hydrogel conductor can sustain multiple cycles (i.e., 10 000) of high stretch (i.e., 3), while maintaining constant total measured resistance", "why": "双网络基体的循环稳定性"}
+      ]
+    },
+
+    "2025-feng-smartmat-dtfgda-separated-conduction": {
+      "id": "2025-feng-smartmat-dtfgda-separated-conduction",
+      "title_en": "Separated Ionic–Electronic Conduction in Hydrophobic Conjugated Polymer/Hydrophilic Photocrosslinker Blends for Organic Electrochemical Transistors",
+      "title_cn": "疏水共轭聚合物/亲水光交联剂共混实现离子-电子分离传导",
+      "short_name": "2025 Feng SmartMat DtFGDA离子电子分离双网络",
+      "authors": "Y. Lai, Y. Sun, J. Tian, J. Chen, W. Huang, L.-W. Feng",
+      "corr_author": "Liang-Wen Feng",
+      "year": 2025,
+      "journal": "SmartMat",
+      "doi": "10.1002/smm2.70011",
+      "pdf": "pdf/hyph_sc_hyd_dn__2025-Feng-SmartMat-DtFGDA离子电子分离双网络.pdf",
+      "category_id": "hyph_sc_hyd_dn",
+      "design_intent": "用亲水乙二醇链修饰的二氮杂环丙烷光交联剂DtFGDA与疏水共轭聚合物共混，一次完成直接光刻图案化+离子通道构建，使传统疏水半导体在水系电解液中获得高gm、低迟滞、快响应的OECT性能。",
+
+      "structure": {
+        "semiconductor": "P3HT / PQT / PBTTT / DPPDTT（四种典型p型疏水共轭聚合物）",
+        "semiconductor_type": "疏水",
+        "crosslinker": "DtFGDA（双端三氟甲基芳基二氮杂环丙烷，PEG链修饰）",
+        "crosslinker_amount": "聚合物:DtFGDA = 1:4（质量比，最优）",
+        "network_monomer": "DtFGDA自交联形成亲水网络（非传统单体聚合）",
+        "network_monomer_amount": "过量DtFGDA自交联形成连续亲水域",
+        "ratio_sc_monomer_xl": "1:4（推算自20 mg/mL聚合物+100 mg/mL交联剂溶液）",
+        "crosslink_type": "光交联（365 nm, 3 min）：二氮杂环丙烷→卡宾→插入sp³ C–H",
+        "film_prep": "旋涂（1500 rpm, 1 min）→UV曝光3 min→氯仿显影3 s；垂直vOECT结构",
+        "notes": "两种交联：交联剂-聚合物 + 交联剂自交联；图案分辨率2–5 μm"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.01 mol/L PBS（EQCM用0.1 mol/L PBS）",
+          "solvent": "水",
+          "ions": "PBS（Na⁺/K⁺, PO₄³⁻, Cl⁻）",
+          "concentration": "0.01 M（器件）/ 0.1 M（EQCM）"
+        },
+        "swelling": {
+          "test_solution": "0.1 M PBS",
+          "swelling_ratio": "EQCM：共混膜质量可逆恢复；纯膜质量变化不可逆",
+          "method": "EQCM（Sauerbrey方程）",
+          "notes": "离子/水在DtFGDA亲水域中快速进出；纯P3HT膜离子注入受阻"
+        },
+        "electrodes": {
+          "source_drain": "Au（底3 nm Cr + 150 nm Au；顶150 nm Au）",
+          "gate": "Ag/AgCl",
+          "geometry": "垂直vOECT（沟道长=膜厚）"
+        },
+        "device": {
+          "architecture": "垂直vOECT（Si/SiO₂基底）",
+          "channel_dimensions": "未报道具体W/L；膜厚由旋涂决定",
+          "vds": "未报道（转移曲线表征）",
+          "vg_range": "未报道具体范围；SEC至-0.9 V vs Ag/AgCl"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "vOECT，0.01 M PBS，Ag/AgCl栅；每组≥6个器件平均",
+        "states": [
+          {
+            "label": "纯P3HT（对照）",
+            "structure_delta": "无交联剂",
+            "electrical": {
+              "gm": "69.5 ± 21.0 mS（gm,peak）",
+              "gm_notes": "vOECT，绝对值",
+              "ton": "266.7 ± 15.5 ms",
+              "toff": "250.6 ± 9.1 ms",
+              "ion_ioff": "10⁴",
+              "on_current": "Ion 2.5±0.6×10⁻³ A；Ioff 2.0±1.3×10⁻⁷ A",
+              "cycling": "未报道",
+              "vth": "Von = -0.40 ± 0.02 V",
+              "stability_other": "迟滞 0.42 ± 0.05 V（界面静电模式）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σrms = 8.18 nm（纯膜）",
+              "uvvis": "π-π* 564 nm 仅变化4.7%（SEC, -0.9 V）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "edge-on层状：qz=0.372 Å⁻¹ (100), d=17.0 Å；(010) qxy=1.63 Å⁻¹, d=3.85 Å",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "EQCM：质量变化不可逆",
+              "other": "GIXRD显示有序层状堆积"
+            }
+          },
+          {
+            "label": "P3HT:DtFGDA = 1:4",
+            "structure_delta": "加入亲水光交联剂DtFGDA（1:4），UV交联",
+            "electrical": {
+              "gm": "131.0 ± 46.9 mS（gm,peak）",
+              "gm_notes": "vOECT，绝对值；提升约2倍",
+              "ton": "79.1 ± 4.68 ms（降低3.4倍）",
+              "toff": "5.42 ± 0.99 ms（降低46倍）",
+              "ion_ioff": "10⁶（提升100倍）",
+              "on_current": "Ion 2.7±0.9×10⁻³ A；Ioff 4.7±1.8×10⁻⁹ A",
+              "cycling": "未报道",
+              "vth": "Von = -0.23 ± 0.03 V（降低）",
+              "stability_other": "迟滞降至0.04 ± 0.01 V"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "双相结构：亮域（S信号=聚合物）/暗域（F信号=DtFGDA亲水域）",
+              "afm": "σrms = 27.0 nm（岛状相分离）",
+              "uvvis": "π-π* 560 nm 仅变化8.9%（SEC）；0-0峰增强，P3HT红移42 nm",
+              "wettability": "未报道",
+              "xrd_giwaxs": "结晶度降低：(100) FWHM 0.062→0.088 Å⁻¹；CCL 90.8→64.1 Å；(200)/(300)/(010)消失",
+              "ftir_xps": "355 nm二氮杂环丙烷峰曝光后消失（完全反应）",
+              "swelling_in_situ": "EQCM：质量可逆恢复（离子/水快速进出）",
+              "other": "EDS：S分布对齐亮域（聚合物），F对齐暗域（交联剂）"
+            }
+          },
+          {
+            "label": "PBTTT:DtFGDA = 1:4（最高gm）",
+            "structure_delta": "PBTTT + DtFGDA 1:4",
+            "electrical": {
+              "gm": "230.9 ± 10.3 mS（gm,peak）",
+              "gm_notes": "疏水聚合物OECT历史最高",
+              "ton": "94.8 ± 2.1 ms（纯膜531.5 ms）",
+              "toff": "16.7 ± 2.1 ms",
+              "ion_ioff": "纯膜5.9 mS→230.9 mS",
+              "on_current": "Ion 6.7±0.1×10⁻³ A",
+              "cycling": "未报道",
+              "vth": "Von = -0.21 ± 0.01 V",
+              "stability_other": "迟滞 0.11 ± 0.02 V"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "双相分离",
+              "afm": "σrms = 23.4 nm（岛状）",
+              "uvvis": "π-π*变化仅2.8%（SEC）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "out-of-plane (400)消失，in-plane (100)(200)出现→混合取向",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "DPPDTT:DtFGDA gm提升六个数量级（1.2×10⁻⁵→10.7 mS）"
+            }
+          }
+        ],
+        "before_after_summary": "疏水聚合物单独用作OECT时离子难注入（界面静电、高迟滞、慢响应）；混入DtFGDA后形成亲水离子通道+疏水电子通道的相分离双网络，gm最高提升六个数量级、迟滞大幅降低"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "过量DtFGDA自交联形成亲水域，与疏水聚合物发生Marangoni-like相分离：AFM粗糙度从<10 nm升至23–34 nm，TEM/EDS确认S(聚合物)/F(交联剂)双相；DtFGDA插入破坏聚合物结晶堆积（GIXRD CCL下降、高阶峰消失）",
+        "morphology_to_electrical": "亲水域允许磷酸/水快速注入，疏水域保持电子传输；界面场效应掺杂而非体相掺杂（SEC：π-π*变化<9% vs OMIEC >50%）；离子-电子分离传导使gm提升2–6个数量级、τon/τoff大幅缩短",
+        "net_effect": "在光交联剂上嫁接乙二醇链可同时实现图案化与离子通道构建；离子走亲水交联剂域、电子走疏水聚合物域的分离传导机制是全新设计自由度",
+        "evidence_quality": "强（SEC+EQCM+TEM/EDS+GIXRD+AFM多技术互证）"
+      },
+
+      "design_takeaways": [
+        "DtFGDA合成两步高产率（>99%）；聚合物:DtFGDA=1:4为最优比（再高则半导体载量不足）",
+        "365 nm曝光3 min完成二氮杂环丙烷反应；直接光刻仅旋涂-曝光-显影三步",
+        "离子-电子分离传导：SEC显示聚合物几乎不被体相掺杂，但OECT性能大幅改善——离子在交联剂域、电子在聚合物域",
+        "DPPDTT体系gm提升六个数量级，证明策略对宽禁带/难掺杂疏水聚合物尤其有效"
+      ],
+      "limitations": [
+        "循环稳定性未系统报道（原文承认需更稳健交联体系）",
+        "分离传导机制的长期运行稳定性待验证",
+        "vOECT几何，与平面cOECT的可迁移性需验证"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "maximum six orders of magnitude higher transconductance, significantly decreased hysteresis, and lower threshold voltage", "why": "DtFGDA共混对疏水聚合物OECT的性能提升幅度"},
+        {"page": 3, "text": "no obvious variations in polaron absorption peaks are observed in all conjugated polymer/crosslinker blends", "why": "SEC证据：聚合物几乎不被体相掺杂"},
+        {"page": 3, "text": "ions primarily migrate within the crosslinker while holes transport within the semiconducting polymer", "why": "离子-电子分离传导机制定义"},
+        {"page": 5, "text": "significant phase separation is identified in the blended film, which consists of domains of hydrophilic crosslinker and hydrophobic polymer", "why": "TEM确认双相结构"},
+        {"page": 6, "text": "the gm,peak of DPPDTT increased by as much as six orders of magnitude", "why": "DPPDTT体系极端提升"}
+      ]
+    },
+
+    "2026-facchetti-pnas-pegdma-hydrophilic-additive": {
+      "id": "2026-facchetti-pnas-pegdma-hydrophilic-additive",
+      "title_en": "Broadly applicable hydrophilic additive enhances electrochemical transistor function",
+      "title_cn": "广谱亲水添加剂提升电化学晶体管性能",
+      "short_name": "2026 Facchetti PNAS PEGDMA亲水网络双相",
+      "authors": "L. Gao, Y. Cho, R. Wang, Y. Yao, D. Zhang, Y. Wang, Y. Cheng, Y. Wang, Q. Ma, I. Duplessis, S. Chung, E. Wilson, K. Cho, B. Wang, L. Li, J. Rivnay, H. Wang, J. Yu, T. J. Marks, A. Facchetti",
+      "corr_author": "Antonio Facchetti / Tobin J. Marks / Jonathan Rivnay",
+      "year": 2026,
+      "journal": "PNAS",
+      "doi": "10.1073/pnas.2523877123",
+      "pdf": "pdf/hyph_sc_hyd_dn__2026-Facchetti-PNAS-PEGDMA亲水网络双相.pdf",
+      "category_id": "hyph_sc_hyd_dn",
+      "design_intent": "用商品化可光交联亲水添加剂PEGDMA与疏水半导体共混，在不牺牲电子传输的前提下建立渗流离子通道；同时实现半导体与电解质高分辨光刻、晶圆级集成与固态OECT，解决疏水半导体离子迁移率低和水系不稳定问题。",
+
+      "structure": {
+        "semiconductor": "DPP-EDOT（主测试）；泛化：P3HT, PBTTT-C14, DPP-TT, N2200, PYIT, Y6, DPP-g2T, Pg2T-T",
+        "semiconductor_type": "疏水（p型/n型）+ 两性/亲水对照",
+        "crosslinker": "PEGDMA（poly(ethylene glycol) dimethylacrylate，商品化）+ BAPO光引发剂",
+        "crosslinker_amount": "DPP-EDOT:PEGDMA = 1:1（最优质量比）",
+        "network_monomer": "PEGDMA本身为丙烯酸酯双官能团单体，光聚合形成亲水网络",
+        "network_monomer_amount": "1:1（扫描10:1至1:2，1:1最优）",
+        "ratio_sc_monomer_xl": "1:1（质量比）",
+        "crosslink_type": "光交联（365 nm，BAPO自由基聚合）",
+        "film_prep": "旋涂→UV 365 nm曝光→溶剂显影；可同时图案化半导体（<0.4 μm）和电解质（<2 μm）",
+        "notes": "GIWAXS：PEGDMA非晶halo 1.5 Å；DPP-EDOT保持π-face-on取向；rDOC随PEGDMA增加而降低但CCL增大"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M NaCl aq.（主）；泛化：KPF₆, KClO₄, EMIM-TFSI",
+          "solvent": "水 / 离子液体",
+          "ions": "Na⁺/Cl⁻；K⁺/PF₆⁻, K⁺/ClO₄⁻, EMIM⁺/TFSI⁻",
+          "concentration": "0.1 M"
+        },
+        "swelling": {
+          "test_solution": "0.1 M NaCl aq.",
+          "swelling_ratio": "未直接报道定量溶胀率；PEGDMA交联后耐电解质溶胀能力增强（>10 000圈循环稳定）",
+          "method": "循环稳定性推断",
+          "notes": "交联PEGDMA网络稳定微结构、抑制水合离子注入/抽出引起的沟道降解"
+        },
+        "electrodes": {
+          "source_drain": "Au（源/漏）",
+          "gate": "Ag/AgCl",
+          "geometry": "垂直vOECT（主）+ 平面cOECT对照；沟道宽20 μm（晶圆阵列）"
+        },
+        "device": {
+          "architecture": "vOECT + cOECT；固态全光刻APSS-OECT",
+          "channel_dimensions": "晶圆阵列：20 μm宽/深；W/L/d见各体系",
+          "vds": "-0.5 V（典型）",
+          "vg_range": "0至-0.7 V（瞬态）/ 0至-0.5 V（循环）"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "vOECT/cOECT，0.1 M NaCl，Ag/AgCl栅；DPP-EDOT基数据为6器件平均",
+        "states": [
+          {
+            "label": "纯DPP-EDOT（对照）",
+            "structure_delta": "无添加剂",
+            "electrical": {
+              "gm": "21.87 ± 2.57 mS（gm,peak）",
+              "gm_notes": "vOECT，绝对值",
+              "ton": "229.31 ± 15.36 ms",
+              "toff": "71.01 ± 3.62 ms",
+              "ion_ioff": "(1.57±0.71)×10²",
+              "on_current": "2.77 ± 1.08 mA",
+              "cycling": "<200圈后电流降24%",
+              "vth": "VON = -0.38 ± 0.03 V",
+              "stability_other": "迟滞 478 ± 37 mV（离子穿透差）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "均匀拓扑（上下表面）",
+              "afm": "σRMS = 0.56 nm",
+              "uvvis": "π-π*在>0.5 V才开始衰减；0 V恢复不完全",
+              "wettability": "表面能 17.7–17.9 mN/m",
+              "xrd_giwaxs": "π-face-on：OOP π-π (010), IP lamellar (100)；dπ=3.72 Å, dlam=22.26 Å",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "C*基线水平"
+            }
+          },
+          {
+            "label": "DPP-EDOT:PEGDMA = 1:1（未交联）",
+            "structure_delta": "加入PEGDMA 1:1 wt%",
+            "electrical": {
+              "gm": "53.42 ± 1.74 mS（gm,peak，+144%）",
+              "gm_notes": "vOECT，绝对值",
+              "ton": "7.82 ± 0.36 ms（快29倍）",
+              "toff": "1.95 ± 0.21 ms",
+              "ion_ioff": "(3.30±0.52)×10⁴（提升>200倍）",
+              "on_current": "未报道单独值",
+              "cycling": "~1 100圈",
+              "vth": "VON = +0.02 ± 0.01 V（接近0）",
+              "stability_other": "迟滞仅 9.66 ± 3.61 mV（vs PEG 80 mV, PEGDME 121 mV）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "纤维状互连DPP-EDOT相；S信号（EDS）确认半导体网络",
+              "afm": "σRMS增加至~1.91 nm（1:2比）",
+              "uvvis": "π-π*在0–0.1 V即规律衰减（氧化电位降低）；0 V完全恢复",
+              "wettability": "表面能 22.2 mN/m",
+              "xrd_giwaxs": "dπ=3.68 Å, dlam=21.38 Å（略缩）；CCLπ=36.61 Å, CCLlam=115.44 Å（增大）；rDOC降低（非晶PEGDMA增多）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "ToF-SIMS：S/O信号从顶到底均匀分布（垂直方向双连续）",
+              "other": "C*提升62倍（EIS）；阻抗随PEGDMA增加而降低"
+            }
+          },
+          {
+            "label": "DPP-EDOT:PEGDMA 光交联后（固态/液态）",
+            "structure_delta": "BAPO光交联，图案化半导体+电解质",
+            "electrical": {
+              "gm": "光刻后off电流降~10×（寄生电容减少），gm基本不变或略升",
+              "gm_notes": "0.1 M NaCl",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": ">3.0×10⁴（晶圆阵列）",
+              "on_current": "未报道",
+              "cycling": ">10 000圈（液态+固态均达；10 Hz, VD=-0.5 V）",
+              "vth": "未报道",
+              "stability_other": "0.5 Hz连续>120 min；晶圆级2 548 OECT良率100%（单die 49/49）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "FTIR：~1 610 cm⁻¹甲基丙烯酸酯C=C峰曝光后消失（交联确认）",
+              "swelling_in_situ": "交联网络抑制电解质溶胀/沟道降解",
+              "other": "图案分辨率：半导体<0.4 μm、电解质<2 μm（迄今最高）"
+            }
+          },
+          {
+            "label": "泛化体系（p/n型疏水半导体）",
+            "structure_delta": "P3HT/PBTTT-C14/DPP-TT/N2200/PYIT/Y6 + PEGDMA",
+            "electrical": {
+              "gm": "p型cOECT gm,n达63.33 S/cm³；n型0.07 S/cm³（纯膜p型0.28 S/cm³，n型无活性）",
+              "gm_notes": "cOECT体积归一化；vOECT面积归一化gm,A >335 μS/μm（p型）/ 6.08 μS/μm（n型）",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "p型>10⁵；n型>10³",
+              "on_current": "p型>10 mA；n型>0.5 mA",
+              "cycling": "未报道",
+              "vth": "p型氧化电位<0.3 V；n型还原电位<0.4 V",
+              "stability_other": "n型从无电化学活性→高性能accumulation mode"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "PEGDMA均匀增加粗糙度",
+              "uvvis": "未报道",
+              "wettability": "接触角显著降低；表面能16.0–20.3 mN/m（vs纯膜21.6–30.2）",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "兼容ClO₄⁻, PF₆⁻, TFSI⁻电解质；参数趋势一致（离子传输由PEGDMA主导）"
+            }
+          }
+        ],
+        "before_after_summary": "纯疏水DPP-EDOT离子穿透差（高迟滞478 mV、低gm 21.9 mS）；PEGDMA 1:1共混形成半导体纳米晶/非晶离子基质双相，gm提升144%、迟滞降至9.7 mV、τon快29倍；光交联后>10 000圈稳定并可晶圆级集成"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "PEGDMA作为非晶亲水基质将DPP-EDOT约束为更紧凑更大的纳米晶（CCL增大、rDOC降低）；相分离形成纤维状互连半导体网络（TEM/EDS）；ToF-SIMS确认垂直方向S/O均匀分布=双连续渗流",
+        "morphology_to_electrical": "非晶PEGDMA域提供快速离子通道（C*提升62倍、阻抗降低），π-face-on半导体晶粒保垂直方向高效电子传输；氧化电位降低、迟滞消失、瞬态加快；n型半导体也从无活性变为accumulation mode",
+        "net_effect": "商品化PEGDMA是广谱亲水添加剂：1:1共混即可让任意疏水p/n型半导体获得高性能OECT，再经光交联实现>10 000圈稳定+亚微米图案化+晶圆级集成",
+        "evidence_quality": "强（GIWAXS+TEM/EDS+ToF-SIMS+EIS+电化学/循环稳定性多技术互证）"
+      },
+
+      "design_takeaways": [
+        "DPP-EDOT:PEGDMA=1:1为最优；1:2则半导体载量不足性能下降",
+        "PEGDMA优于PEG/PEGDME：甘油极性链+可交联端基=最快瞬态（τon<8 ms）+最低迟滞（9.7 mV）+最好循环（~1 100圈，交联后>10 000）",
+        "BAPO光交联可同时图案化半导体(<0.4 μm)和离子凝胶电解质(<2 μm)",
+        "n型N2200/PYIT/Y6也可用——策略不依赖聚合物/小分子、p/n型、疏水/两性",
+        "固态全光刻OECT（APSS-OECT）实现2 548器件/2寸晶圆、100%良率、inverter/NAND/NOR"
+      ],
+      "limitations": [
+        "PEGDMA增加对O₂/湿度渗透性→可能引起非故意p掺杂（1 300 nm吸收增强）",
+        "交联后长期（>10 000圈）在体液环境的稳定性待更系统验证",
+        "PEGDMA比例过高稀释半导体，需严格控制1:1附近"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "PEGDMA establishes percolated ion pathways without compromising electronic transport, broadens electrolyte and device compatibility", "why": "PEGDMA双相设计核心：离子渗流+电子保通"},
+        {"page": 3, "text": "the average OECT performance parameter increases dramatically [transconductance (gm) = +244 to 133,900% (vOECT)]", "why": "性能提升幅度"},
+        {"page": 4, "text": "amorphous PEGDMA domains confine nano-crystals of DPP-EDOT, generating more compact and larger semiconductor crystallites", "why": "形貌机制：非晶基质约束半导体晶粒"},
+        {"page": 6, "text": "both crosslinked liquid-state and solid-state vOECTs exhibit a 10× greater cycling stability vs. noncrosslinked vOECTs, with stability exceeding 10,000 cycles", "why": "光交联抑制溶胀提升循环稳定性"}
+      ]
+    },
+
+    "2018-bao-chemmater-crosslinker-crystallinity": {
+      "id": "2018-bao-chemmater-crosslinker-crystallinity",
+      "title_en": "Tuning the Cross-Linker Crystallinity of a Stretchable Polymer Semiconductor",
+      "title_cn": "调控可拉伸聚合物半导体的交联剂结晶性",
+      "short_name": "2018 Bao ChemMater 交联剂结晶性",
+      "authors": "G.-J. N. Wang, Y. Zheng, S. Zhang, J. Kang, H.-C. Wu, A. Gasperini, H. Zhang, X. Gu, Z. Bao",
+      "corr_author": "Zhenan Bao",
+      "year": 2018,
+      "journal": "Chem. Mater.",
+      "doi": "10.1021/acs.chemmater.8b04314",
+      "pdf": "pdf/swell__2018-Bao-ChemMater-交联剂结晶性.pdf",
+      "category_id": "swell",
+      "design_intent": "系统研究PFPA交联剂自身结晶性（线性vs支化、有无脲基氢键）对DPP聚合物薄膜相分离形貌、力学拉伸性和OFET电学的影响；发现交联剂结晶会导致相分离/应力集中，支化无定形交联剂给出均匀网络和4倍断裂应变提升。",
+
+      "structure": {
+        "semiconductor": "DPP-10C5DE（长烷基侧链+柔性连接的DPP共轭聚合物）",
+        "semiconductor_type": "疏水（烷基侧链）",
+        "crosslinker": "PFPA封端：Linear（酯键直链）/ Linear-H（脲基直链）/ Branch（支化酯）/ Branch-H（支化脲基）",
+        "crosslinker_amount": "5 wt%（相对聚合物）",
+        "network_monomer": "无（仅交联半导体，无独立网络单体）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "95:5（聚合物:交联剂，wt）",
+        "crosslink_type": "热/光交联：PFPA→nitrene插入sp³ C–H（催化剂无关）",
+        "film_prep": "旋涂（10 mg/mL聚合物 + 25 mg/mL交联剂，氯苯）→150°C N₂退火30 min",
+        "notes": "TGA显示PFPA活化温度~172°C，但薄膜150°C已足；交联后氯仿不溶"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "未报道（OFET测试，非OECT）",
+          "solvent": "未报道",
+          "ions": "未报道",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道",
+          "notes": "力学测试：film-on-water（FOW）+ PDMS上crack-onset strain（COS）"
+        },
+        "electrodes": {
+          "source_drain": "CNT（可拉伸OFET）/ Au（刚性OFET）",
+          "gate": "CNT（嵌入PDMS）/ SiO₂背栅",
+          "geometry": "BGTC（bottom-gate top-contact）；L=50 μm, W=1000 μm"
+        },
+        "device": {
+          "architecture": "OFET（BGTC），非OECT",
+          "channel_dimensions": "L=50 μm, W=1000 μm",
+          "vds": "-10 V",
+          "vg_range": "未报道"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "OFET，Vds=-10 V，OTMS或BCB改性SiO₂；力学为FOW/COS；≥6器件平均",
+        "states": [
+          {
+            "label": "Neat DPP-10C5DE（对照）",
+            "structure_delta": "无交联剂",
+            "electrical": {
+              "gm": "未报道（OFET非OECT）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": ">10⁵",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "OTMS: 14.2 V；BCB: 0.2 V",
+              "stability_other": "μh OTMS 1.06 avg / 1.27 max cm²/Vs；BCB 0.24 avg / 0.27 max"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "光滑；ε=50%出现大裂纹",
+              "uvvis": "0-0振动峰~800 nm，交联后减弱（聚集度下降）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "lamellar 24.3 Å, π-π 3.5 Å",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "E=225±25 MPa；断裂应变1.2±0.5%；COS=25%"
+            }
+          },
+          {
+            "label": "5Branch（支化无定形交联剂）",
+            "structure_delta": "5 wt% Branch PFPA交联剂，150°C/30 min",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": ">10⁵",
+              "on_current": "未报道",
+              "cycling": "2000次ε=25%后μh保持0.1 cm²/Vs",
+              "vth": "OTMS: -0.8 V；BCB: -0.2 V",
+              "stability_other": "μh OTMS 0.39 avg；BCB 0.22 avg；ε=100%平行方向μh>0.2 cm²/Vs稳定"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "光滑无相分离；ε=100%无裂纹；拉伸-回复后R≤0.75（面内起皱）",
+              "uvvis": "0-0峰减弱（聚集度↓）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "lamellar 24.9 Å, π-π 3.6 Å；结晶度降低",
+              "ftir_xps": "交联后N–H峰变宽（无定形网络）",
+              "swelling_in_situ": "未报道",
+              "other": "E=204±30 MPa；断裂应变9.0±2.0%（提升4倍）；COS=100%"
+            }
+          },
+          {
+            "label": "5Linear-H（结晶性交联剂对照）",
+            "structure_delta": "5 wt% Linear-H（脲基直链，结晶）",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": ">10⁵",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "OTMS: 0.6 V；BCB: 1.6 V",
+              "stability_other": "μh OTMS 0.79 avg；BCB仅0.14 avg（粗糙度损害）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "明显相分离：交联剂域从~1 μm缩至0.1 μm；高度差70 nm",
+              "uvvis": "0-0峰减弱",
+              "wettability": "未报道",
+              "xrd_giwaxs": "交联后交联剂衍射消失（融化后无法重结晶）；lamellar 24.8 Å",
+              "ftir_xps": "脲基N–H尖峰→交联后变宽（H键无序化）",
+              "swelling_in_situ": "未报道",
+              "other": "E=230±30 MPa；断裂应变6.0±2.0%；COS仅75%（交联剂域=缺陷）"
+            }
+          }
+        ],
+        "before_after_summary": "线性/结晶性PFPA交联剂自发相分离重结晶，形成交联剂域阻碍应变分布（COS仅75%）；支化无定形交联剂与聚合物混溶好、均匀交联，断裂应变提升4倍（1.2%→9.0%）且μh在ε=100%仍稳定>0.2 cm²/Vs"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "脲基氢键促进Linear-H自组装结晶→膜内纯交联剂晶体域（DSC Tm、GIXD衍射、AFM 0.1–1 μm域）；支化+乙基位阻抑制结晶→Branch/Branch-H与聚合物混溶、均匀无定形网络",
+        "morphology_to_electrical": "结晶交联剂域成为应力集中/缺陷→COS低、BCB器件μh降至0.14；支化均匀网络应力均匀耗散→4倍断裂应变、ε=100%平行方向μh稳定；OFET迁移率整体未显著退化（BCB μh~0.2 cm²/Vs）",
+        "net_effect": "交联剂自身结晶性是可拉伸半导体设计的隐藏参数：选支化/无定形交联剂避免相分离缺陷，比氢键/脲基更重要",
+        "evidence_quality": "强（DSC+GIXD+ATR-FTIR+AFM/OM+FOW/COS+OFET多技术互证）"
+      },
+
+      "design_takeaways": [
+        "PFPA交联剂5 wt%，150°C/N₂/30 min即可完全交联（氯仿不溶）",
+        "选支化（含乙基叔碳）PFPA而非直链/脲基——避免结晶相分离",
+        "支化交联剂使断裂应变1.2%→9.0%，COS 25%→100%，且μh在100%应变下稳定",
+        "BCB界面比OTMS更可靠地评估本征迁移率（OTMS有双斜率陷阱）"
+      ],
+      "limitations": [
+        "OFET而非OECT，无离子/溶胀相关数据",
+        "FOW断裂应变远低于COS（基底/缺陷差异），绝对值不可直接跨方法比较",
+        "交联剂结晶性对OECT电化学性能（溶胀、C*）的影响未涉及"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "Branch cross-linkers with tertiary carbon on the other hand form an evenly cross-linked network in the polymer blend stemming from excellent miscibility and show a 4-fold increase in fracture strain", "why": "支化交联剂均匀网络与4倍断裂应变"},
+        {"page": 5, "text": "clear phase separation and recrystallization of Linear-H were observed on the film surface", "why": "结晶性交联剂相分离证据"},
+        {"page": 6, "text": "a stable hole mobility of 0.2 cm2 V−1 s−1 is achieved up to ε = 100%, and a stable hole mobility of 0.1 cm2 V−1 s−1 after 2000 cycles of ε = 25%", "why": "交联后电学-力学协同"},
+        {"page": 4, "text": "the cross-linker was still in the film but its azide groups were fully activated", "why": "FTIR确认交联完成"}
+      ]
+    },
+
+    "2025-chen-jmca-gel-electrolyte-review": {
+      "id": "2025-chen-jmca-gel-electrolyte-review",
+      "title_en": "Solid-state organic electrochemical transistors (OECTs) based on gel electrolytes for biosensors and bioelectronics",
+      "title_cn": "基于凝胶电解质的固态OECT用于生物传感与生物电子",
+      "short_name": "2025 Chen JMCA 凝胶电解质综述",
+      "authors": "D. Lu, H. Chen",
+      "corr_author": "Hu Chen / Dongdong Lu",
+      "year": 2025,
+      "journal": "J. Mater. Chem. A",
+      "doi": "10.1039/d4ta05288a",
+      "pdf": "pdf/swell__2025-Chen-JMCA-凝胶电解质综述.pdf",
+      "category_id": "swell",
+      "design_intent": "系统综述固态OECT中凝胶电解质（水凝胶/离子液体凝胶）的分类、性质（自愈、响应、耐温、黏附、可拉伸）与生物传感应用；对比液态电解质的泄漏/蒸发问题，梳理凝胶电解质如何通过溶胀吸液实现离子电导并匹配组织力学。",
+
+      "structure": {
+        "semiconductor": "综述覆盖的代表性体系：PEDOT:PSS（depletion）、p(g2T-T)、BBL、P3HT等OMIEC",
+        "semiconductor_type": "综述覆盖的代表性体系（亲水OMIEC与疏水对照）",
+        "crosslinker": "综述覆盖的代表性体系：物理/共价交联（PVA/PEGDA/海藻酸盐等）",
+        "crosslinker_amount": "未报道（综述不统一）",
+        "network_monomer": "综述覆盖的代表性体系：PEG / PNIPAm / PHEA / PHEMA / PVA / gelatin / chitosan / agar / PAAm-carrageenan双网络",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "未报道",
+        "crosslink_type": "共价 | 动态/可逆 | 物理（综述并列）",
+        "film_prep": "凝胶电解质通常先合成干凝胶再浸泡盐溶液（NaCl/PBS）溶胀吸液",
+        "notes": "IL凝胶：[C2MIM][EtSO4]、[BMIM][TFSI]、[EMIM][TFSI]、胆碱类（[Ch][Lac]、[Ch][Glyco]）"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "凝胶电解质（水凝胶吸NaCl/PBS；IL凝胶含[EMIM][TFSI]等）",
+          "solvent": "水 / 离子液体",
+          "ions": "Na⁺/K⁺/Li⁺/Cl⁻/PO₄³⁻；EMIM⁺/TFSI⁻；胆碱阳离子+乳酸/乙醇酸阴离子",
+          "concentration": "未报道（体系各异）"
+        },
+        "swelling": {
+          "test_solution": "盐水/电解液浸泡溶胀",
+          "swelling_ratio": "凝胶可吸液固定离子；水凝胶含水量高（具体数值依体系）",
+          "method": "溶胀吸液称重（综述讨论）",
+          "notes": "水凝胶蒸发会减少自由体积传导路径→性能衰减；IL凝胶蒸气压低更稳"
+        },
+        "electrodes": {
+          "source_drain": "Au / PEDOT:PSS / 碳材料（综述并列）",
+          "gate": "Ag/AgCl | Pt | 凝胶栅（综述并列）",
+          "geometry": "平面/固态器件"
+        },
+        "device": {
+          "architecture": "固态OECT（凝胶电解质取代液态）",
+          "channel_dimensions": "未报道",
+          "vds": "未报道",
+          "vg_range": "未报道"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "综述汇总多体系；电学数字因体系而异，引用原文条件",
+        "states": [
+          {
+            "label": "水凝胶电解质OECT（综述覆盖）",
+            "structure_delta": "PEG/PNIPAm/PHEA/PHEMA/PVA/gelatin/chitosan/agar等，吸盐水溶胀",
+            "electrical": {
+              "gm": "未报道统一值",
+              "gm_notes": "PEDOT:PSS μC*最高达1500 F cm⁻² V⁻¹ s⁻¹（引用）",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "水蒸发→性能衰减（综述指出）",
+              "vth": "未报道",
+              "stability_other": "可自愈/响应/耐温/可拉伸；PAAm-carrageenan双网络可在-20°C工作"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "溶胀吸液是离子电导前提；水分蒸发损害传导",
+              "other": "Young's modulus 1 Pa–300 MPa（覆盖皮肤/肌肉/脑组织范围）"
+            }
+          },
+          {
+            "label": "离子液体凝胶OECT（综述覆盖）",
+            "structure_delta": "[C2MIM][EtSO4] / [BMIM][TFSI] / [EMIM][TFSI] / 胆碱基IL凝胶",
+            "electrical": {
+              "gm": "未报道统一值",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "蒸气压低、热稳定好",
+              "vth": "未报道",
+              "stability_other": "高离子电导、宽电化学窗口；但含氟/毒性限制皮肤接触"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "IL凝胶固定非挥发IL",
+              "other": "胆碱类生物相容IL（[Ch][Lac]、[Ch][Glyco]）适合长期体内"
+            }
+          }
+        ],
+        "before_after_summary": "液态电解质易泄漏/蒸发/电解→固态凝胶电解质通过三维网络溶胀固定离子液，兼顾离子电导与力学/生物相容；水凝胶含水高但怕蒸发，IL凝胶更稳但需注意毒性"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "三维交联网络溶胀吸入电解液→形成含液离子传导通道；网络交联密度、亲水基团密度决定吸液量与自由体积",
+        "morphology_to_electrical": "高含水/IL固定量保证离子电导与体电容C*；蒸发减少自由体积→离子通道断→gm/稳定性下降；凝胶模量（1 Pa–300 MPa）匹配组织→界面阻抗低",
+        "net_effect": "凝胶电解质是固态OECT的关键使能层：溶胀吸液=离子电导，网络结构=力学/稳定性；水凝胶适合可穿戴/植入但需防蒸发，IL凝胶更耐环境",
+        "evidence_quality": "中（综述汇总，多源引用；非原始实验）"
+      },
+
+      "design_takeaways": [
+        "凝胶电解质制备通式：合成干凝胶→盐溶液浸泡溶胀→离子电导激活",
+        "PAAm-carrageenan双网络抗冻水凝胶可在-20°C工作——双网络兼获力学与离子电导",
+        "胆碱基IL（[Ch][Lac]/[Ch][Glyco]）是生物相容IL凝胶方向",
+        "水凝胶蒸发是长期稳定性关键短板——需封装或改用IL凝胶"
+      ],
+      "limitations": [
+        "综述未给出统一的定量溶胀率/C*对比表",
+        "制造可扩展性与响应型OECT仍是开放问题",
+        "凝胶电解质批次一致性、长期体内稳定性数据有限"
+      ],
+      "quote_evidence": [
+        {"page": 2, "text": "Gels, characterized by cross-linked three-dimensional polymer networks, possess a unique ability to swell in liquid electrolytes, effectively absorbing and immobilizing them", "why": "凝胶溶胀固定离子的核心机制"},
+        {"page": 2, "text": "water evaporation can diminish the free volume conduction path of ions, leading to performance degradation in hydrogel-based OECTs", "why": "水凝胶蒸发→离子通道受损"},
+        {"page": 2, "text": "Young's modulus ranging from 1 Pa to 300 MPa, covering the ranges of skin and muscle and brain tissue and spinal cord", "why": "凝胶力学匹配组织"},
+        {"page": 4, "text": "dual-network antifreeze hydrogel, comprising cross-linked polyacrylamide (PAAm) and carrageenan, demonstrated remarkable attributes including biocompatibility, mechanical strength, antifreeze properties, and high ion conductivity, enabling operation at −20 °C", "why": "双网络凝胶电解质案例"}
+      ]
+    },
+
+    "2025-feng-mme-photocrosslinker-review": {
+      "id": "2025-feng-mme-photocrosslinker-review",
+      "title_en": "Direct Lithography for Regulating Multiple Properties of Organic Semiconductors via Photo-Crosslinkers",
+      "title_cn": "光交联剂直接光刻调控有机半导体多重性能",
+      "short_name": "2025 Feng MME 光交联剂综述",
+      "authors": "Y. Lai, L.-W. Feng",
+      "corr_author": "Liang-Wen Feng",
+      "year": 2025,
+      "journal": "Macromol. Mater. Eng.",
+      "doi": "10.1002/mame.202500062",
+      "pdf": "pdf/swell__2025-Feng-MME-光交联剂综述.pdf",
+      "category_id": "swell",
+      "design_intent": "系统综述光交联剂在有机半导体直接光刻中的作用：按光活性基团（噁唑烷/环氧、丙烯酸酯、二苯甲酮/溴、[2+2]、卡宾/氮宾插入）分类，总结交联剂残留如何调控拉伸性、载流子迁移率、稳定性与介电性能，为新型光交联剂分子设计提供指南。",
+
+      "structure": {
+        "semiconductor": "综述覆盖的代表性体系：DPP-10C5DE、DPPTT、IDTBT、PEDOT:PSS、P(DPP2DT-TVT)、P(NDI3OT-Se₂)、PFTPA-biTPA、SiIDT-BT/PC₇₀BM等",
+        "semiconductor_type": "综述覆盖的代表性体系（p型/n型/给受体）",
+        "crosslinker": "综述覆盖的代表性体系：PFPA系列、iRUM-s（聚丁二烯氢化叠氮）、4Bx、PR/CD聚轮烷、PE123DA、1-NIPS、DAZH双叠氮、噁唑烷/环氧类",
+        "crosslinker_amount": "未报道（综述不统一）",
+        "network_monomer": "综述覆盖的代表性体系：光交联剂本身可为单体（丙烯酸酯类）或大分子交联剂",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "未报道",
+        "crosslink_type": "光交联：阳离子开环 | 自由基聚合 | 自由基偶联 | [2+2]环加成 | 卡宾/氮宾C–H插入",
+        "film_prep": "直接光刻三步：旋涂→曝光→显影（对比传统光刻6+步）",
+        "notes": "光活性基团决定曝光波长与机理；交联剂残留改变薄膜物化性质"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "未报道（综述覆盖OFET/OPV/OLED/OECT多种器件）",
+          "solvent": "未报道",
+          "ions": "未报道",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道定量溶胀率",
+          "method": "未报道",
+          "notes": "交联后薄膜更致密/更疏水→阻隔水氧扩散、抑制溶胀/降解（4Bx案例：35天后迁移率高一个数量级）"
+        },
+        "electrodes": {
+          "source_drain": "未报道（多器件类型）",
+          "gate": "未报道",
+          "geometry": "未报道"
+        },
+        "device": {
+          "architecture": "OFET / OPV / OLED / OECT（综述并列）",
+          "channel_dimensions": "未报道",
+          "vds": "未报道",
+          "vg_range": "未报道"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "综述汇总多体系；数字取自被引原文",
+        "states": [
+          {
+            "label": "拉伸性调控（综述覆盖）",
+            "structure_delta": "支化PFPA / iRUM-s / PR聚轮烷 / 1-NIPS极性链交联剂",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "DPP-10C5DE: 断裂应变2.5%→8.0%（+320%）；COS 25%→>100%；iRUM-s-3:1: 5%→45%（近10倍）；IDTBT/1-NIPS: ≤5%→18%（6倍）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "支化交联剂使FWHM最大、晶格间距最大→结晶度最低（利于拉伸）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "PR/CD聚轮烷：模量>2500→<1000 MPa；PE123DA/PEDOT:PSS：DMT模量226→10.6 MPa"
+            }
+          },
+          {
+            "label": "稳定性调控（综述覆盖）",
+            "structure_delta": "4Bx四臂交联 / DAZH双叠氮 / PFTPA-biTPA交联",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "4Bx: 35天后μh/μe比纯膜高一个数量级；DAZH: 130 h/85°C后PCE保持>80%（vs纯膜<60%）",
+              "vth": "未报道",
+              "stability_other": "PFTPA-biTPA: WCA 44.5°→99.7°（更疏水）；OLED工作稳定性>9倍"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "DAZH抑制富勒烯宏观结晶、形成纤维状微观结构；交联膜更致密均匀",
+              "uvvis": "未报道",
+              "wettability": "WCA 44.5°→99.7°（交联增强疏水）",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "交联网络减缓水氧在膜内扩散",
+              "other": "4Bx交联使膜更致密→阻隔水氧"
+            }
+          }
+        ],
+        "before_after_summary": "光交联剂残留膜中并非惰性：通过分子设计（支化/柔性链段/氢键/滑环）可同时提升拉伸性、稳定性和图案精度；但交联剂引起的形貌变化也可能损害电学——需权衡"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "支化/柔性链段/大位阻→抑制交联剂结晶聚集→均匀网络（Bao体系）；氢键/脲基→可自组装但可能相分离；滑环CD→抑制结晶+构象自由；极性链→增加非晶区",
+        "morphology_to_electrical": "均匀网络→应变均匀耗散→高拉伸+迁移率保持；致密交联膜→阻隔水氧→长期稳定；但过度交联/相分离→散射/缺陷→迁移率下降",
+        "net_effect": "光交联剂是「功能添加剂」而非单纯加工助剂：分子骨架（中心核/连接链/光活性基团）决定薄膜最终性能；设计原则=柔性连接链+与半导体相容+高交联效率",
+        "evidence_quality": "中（综述汇总多篇原始研究）"
+      },
+
+      "design_takeaways": [
+        "直接光刻仅三步（旋涂-曝光-显影），远简于传统光刻6+步",
+        "光活性基团选择：叠氮/二氮杂环丙烷/重氮→卡宾/氮宾C–H插入，效率最高；丙烯酸酯→需光引发剂",
+        "支化/柔性链段交联剂避免结晶相分离，提升拉伸性",
+        "交联后膜更致密疏水→阻隔水氧→器件稳定性提升（4Bx 35天、DAZH 130 h）",
+        "聚合物基交联剂（热塑性弹性体结构）可能进一步提升拉伸性——开放方向"
+      ],
+      "limitations": [
+        "综述未系统量化交联剂残留对OECT电化学/溶胀的影响",
+        "不同交联剂效率/最佳浓度需逐体系优化",
+        "形貌变化对电学的负面影响（相分离缺陷）需权衡"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "the photo-crosslinker remains in the blended film, subsequently influencing the crystalline structure and morphology of the semiconductor film", "why": "交联剂残留改变薄膜结构的核心论点"},
+        {"page": 2, "text": "the direct lithography process only requires three steps: spin-coating, exposure, and development", "why": "直接光刻工艺简洁性"},
+        {"page": 3, "text": "Cross-linkers that directly insert sp3 C-H with semiconductors typically exhibit higher cross-linking efficiency", "why": "卡宾/氮宾插入效率高"},
+        {"page": 4, "text": "the fracture strain increased from 2.5 ± 1.0% for the pure film to 8.0 ± 2.0% for the cross-linked film, showing a 320% improvement", "why": "交联提升拉伸性"}
+      ]
+    },
+
+    "2025-feng-ressquare-operando-swell-mapping": {
+      "id": "2025-feng-ressquare-operando-swell-mapping",
+      "title_en": "Operando High-Resolution Swell Mapping for Mixed Ionic-Electronic Channel",
+      "title_cn": "混合离子-电子沟道的原位高分辨溶胀成像",
+      "short_name": "2025 Feng ResSquare 原位溶胀成像",
+      "authors": "W. Huang, Z. Deng, S. Zhang, J. Wang, D. Li, J. Zhou, M. Xie, Y. Zhou, Y. Lai, D. Zhao, J. Chen, L. Huang, Y. Cheng, L.-W. Feng, C. Chen",
+      "corr_author": "Liang-Wen Feng / Cong Chen / Wei Huang",
+      "year": 2025,
+      "journal": "Research Square（预印本）",
+      "doi": "10.21203/rs.3.rs-7958348/v1",
+      "pdf": "pdf/swell__2025-Feng-ResSquare-原位溶胀成像.pdf",
+      "category_id": "swell",
+      "design_intent": "构建激光多普勒测振仪（LDV-M）平台实现OECT沟道原位溶胀的亚纳米/亚微秒分辨动态监测；揭示溶胀不均匀性（4–400 nm）、边缘主导溶胀（最高389%）及垂直堆叠源漏电极库仑力抑制溶胀机制，指导高保真OECT与人工神经元设计。",
+
+      "structure": {
+        "semiconductor": "BBL（n型）/ Homo-gDPP（n型）/ p(g2T-T)（p型）/ gDPP-g2T（p型）",
+        "semiconductor_type": "亲水（p(g2T-T), gDPP-g2T, Homo-gDPP）+ 疏水（BBL）",
+        "crosslinker": "DtFDA（DA）或 DtFGDA（GDA）",
+        "crosslinker_amount": "OMIEC:交联剂 = 5:1（质量比）",
+        "network_monomer": "无独立网络单体（交联剂共混）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "5:1（推算）",
+        "crosslink_type": "光交联（二氮杂环丙烷）",
+        "film_prep": "垂直vOECT：底Au→旋涂OMIEC/交联剂→顶Au→封装；侧栅结构",
+        "notes": "沟道面积80×50 μm²；电极宽50 μm；LDV-M分辨率：z~0.6 nm, x-y~3 μm, 时间<0.1 ms"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "1×PBS",
+          "solvent": "水",
+          "ions": "PBS（Na⁺/K⁺, PO₄³⁻）",
+          "concentration": "1×（约0.01–0.1 M）"
+        },
+        "swelling": {
+          "test_solution": "1×PBS（工作电解液原位）",
+          "swelling_ratio": "溶胀幅度4–400 nm（依材料/位置）；边缘最高389%（相对膜厚）；p(g2T-T):GDA总溶胀~380 nm（膜厚80 nm）",
+          "method": "LDV-M原位激光多普勒测振 + EQCM对照",
+          "notes": "溶胀不均匀：边缘>中心；高频下基线漂移（离子未完全抽出）"
+        },
+        "electrodes": {
+          "source_drain": "Au（垂直堆叠：底源50 μm宽/顶漏50 μm宽）",
+          "gate": "Ag/AgCl（侧栅）",
+          "geometry": "垂直vOECT，侧栅；沟道80×50 μm²测量网格"
+        },
+        "device": {
+          "architecture": "垂直vOECT（side-gate）",
+          "channel_dimensions": "电极宽50 μm；膜厚~80–100 nm",
+          "vds": "未报道固定值",
+          "vg_range": "切换频率3.3 / 11.1 / 111.1 Hz；循环0.4 V至-0.6 V"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "vOECT，1×PBS，侧栅；LDV-M原位监测；多频率对比",
+        "states": [
+          {
+            "label": "BBL vOECT（n型，中心点）",
+            "structure_delta": "BBL + DtFDA 5:1",
+            "electrical": {
+              "gm": "未报道具体值",
+              "gm_notes": "mA级Ion，Ion/Ioff~10⁵",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "~10⁵或更高",
+              "on_current": "mA级",
+              "cycling": "优化封装后>15 000 000次全开关（208.3 h）；p型p(g2T-T):DA 99.7%保持@100k圈（优化封装）vs 63.84%（常规）",
+              "vth": "未报道",
+              "stability_other": "无库仑力时1000圈后出现>400 nm皱褶（AFM/OM）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "无库仑力1000圈后沟道皱褶>400 nm",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "3.3 Hz: 115.9±1.5 nm活性溶胀；频率升至111.1 Hz→不完全掺杂→溶胀减小+基线漂移；掺杂比脱掺杂慢（slow on, fast off）",
+              "other": "LDV-M：亚纳米z分辨、亚微秒时间分辨；EQCM交叉验证"
+            }
+          },
+          {
+            "label": "p(g2T-T):DA / p(g2T-T):GDA vOECT（p型）",
+            "structure_delta": "p(g2T-T) + DA或GDA 5:1",
+            "electrical": {
+              "gm": "未报道具体值",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "~10⁵",
+              "on_current": "mA级",
+              "cycling": "优化封装p(g2T-T):DA: 99.7% ID保持@100k圈（0.4→-0.6 V）；GDA交联剂循环较差但瞬态更快",
+              "vth": "未报道",
+              "stability_other": "GDA（更亲水）→溶胀更显著→稳定性较低但响应更快"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "p(g2T-T):DA 3.3 Hz仅4.1±0.2 nm活性溶胀（远小于BBL）；p(g2T-T):GDA总溶胀达~380 nm（膜厚80 nm，边缘389%）；off→on先收缩后膨胀（阳离子先抽出→阴离子注入）",
+              "other": "边缘溶胀184±26 nm（3.3 Hz）vs 沟道平均125±22 nm；无底部电极处更显著"
+            }
+          },
+          {
+            "label": "封装优化 + 库仑力抑制溶胀",
+            "structure_delta": "封装开口与底电极对齐；垂直电场形成电极间库仑力",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "瞬态特性基本不受影响",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "p型15 000 000次（208.3 h）；n型2 800 000次（62.2 h）；人工神经元>15天稳定（1×PBS）",
+              "vth": "未报道",
+              "stability_other": "优化封装溶胀幅度整体降低21%；垂直电场（VD偏置）显著抑制溶胀与基线漂移"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "库仑力抑制后皱褶减少",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "边缘溶胀被封装对齐有效抑制；VS=VD=0时溶胀增大、基线漂移→有VD偏置则无",
+              "other": "vOECN漏积分发放（LIF）神经元：firing 0.5 Hz–1.1 kHz（覆盖人类神经元全频段）"
+            }
+          }
+        ],
+        "before_after_summary": "原位LDV-M揭示溶胀极不均匀（边缘389% vs 中心）且与掺杂路径相关；垂直电极库仑力+封装对齐可抑制边缘溶胀→循环稳定性从<10⁵提升至1.5×10⁷圈"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "离子/水注入从沟道边缘开始→边缘溶胀远大于中心（LDV-M映射）；高频下离子来不及抽出→基线漂移累积；无垂直电场时边缘过量水注入→1000圈后>400 nm皱褶",
+        "morphology_to_electrical": "边缘过度溶胀损害循环稳定性；库仑力/封装对齐抑制边缘溶胀→15 000 000圈稳定；溶胀-电流瞬态强相关（square→triangle波形随频率变化）",
+        "net_effect": "LDV-M是首个可原位动态监测OECT溶胀的平台；边缘主导溶胀是稳定性杀手，垂直电场库仑力是简单有效的抑制手段",
+        "evidence_quality": "强（LDV-M原位映射+EQCM对照+AFM皱褶验证+超长循环）"
+      },
+
+      "design_takeaways": [
+        "LDV-M分辨率：z~0.6 nm, x-y~3 μm, 时间<0.1 ms，可测至1 mm溶胀范围",
+        "溶胀从沟道边缘开始并向中心传播——图案/封装设计须考虑边缘效应",
+        "垂直电极间库仑力（VD偏置）可抑制溶胀——比材料改性更直接",
+        "封装开口与底电极对齐→溶胀降21%→循环稳定性大幅提升",
+        "GDA（亲水交联剂）加速响应但降低稳定性；DA更稳——需按应用权衡"
+      ],
+      "limitations": [
+        "预印本，尚未同行评审",
+        "仅vOECT侧栅结构；平面cOECT需膜面高反射",
+        "LDV-M要求沟道表面良好光反射"
+      ],
+      "quote_evidence": [
+        {"page": 3, "text": "apparent inhomogeneity in swelling magnitudes (4 nm ~ 400 nm) in different OMIECs and channel locations", "why": "溶胀不均匀性的定量范围"},
+        {"page": 4, "text": "identifying apparent edge-dominated swelling (up to 389%) that can be effectively inhibited via the Coulomb force between the vertically stacked source and drain electrodes", "why": "边缘主导溶胀+库仑力抑制机制"},
+        {"page": 7, "text": "swelling is more pronounced at the channel periphery than at the center; with time progression, swelling propagates from channel edge to channel center", "why": "溶胀时空路径的直接证据"},
+        {"page": 8, "text": "stable full switching cycles for 15 million (208.3 hours) and 2.8 million (62.2 hours) for p-type and n-type OECTs", "why": "优化后的超长循环稳定性"}
+      ]
+    },
+
+    "2025-huang-nanoscale-patterning-geometry": {
+      "id": "2025-huang-nanoscale-patterning-geometry",
+      "title_en": "Effect of channel patterning precision on the performances of vertical OECTs",
+      "title_cn": "沟道图案精度对垂直OECT性能的影响",
+      "short_name": "2025 Huang Nanoscale 图案精度几何效应",
+      "authors": "R. Wu, C. Wu, J. Zhou, L.-W. Feng, J. Chen, D. Zhao, W. Huang",
+      "corr_author": "Dan Zhao / Wei Huang",
+      "year": 2025,
+      "journal": "Nanoscale",
+      "doi": "10.1039/d4nr05239k",
+      "pdf": "pdf/swell__2025-Huang-Nanoscale-图案精度几何效应.pdf",
+      "category_id": "swell",
+      "design_intent": "定量研究vOECT沟道图案精度（边缘余量lM=2–100 μm）对Ion/gm/τ/Ioff的影响；建立边缘电场（fringing field）模型解释寄生电流来源，指导高性能/快响应/高集成密度的需求导向设计。",
+
+      "structure": {
+        "semiconductor": "BBL（n型）/ gDPP-g2T（p型）",
+        "semiconductor_type": "BBL疏水/稠环；gDPP-g2T亲水（乙二醇侧链）",
+        "crosslinker": "未报道（直接激光刻蚀DLW图案化，非光交联剂）",
+        "crosslinker_amount": "未报道",
+        "network_monomer": "无",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "未报道",
+        "crosslink_type": "非交联/物理（激光刻蚀图案化）",
+        "film_prep": "旋涂BBL/gDPP-g2T→皮秒直接激光写入（DLW）图案化→顶Au→封装；对齐精度<2 μm",
+        "notes": "BBL膜厚~100 nm；电极宽WT=WB=30 μm；lM=2/5/10/20/40/60/80/100 μm"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "未报道具体浓度（vOECT标准条件）",
+          "solvent": "水",
+          "ions": "未报道",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道",
+          "notes": "lM增大会增加电解质-沟道接触面积→更多离子注入路径"
+        },
+        "electrodes": {
+          "source_drain": "Au（顶/底各30 μm宽）",
+          "gate": "Ag/AgCl（未明确，vOECT标准）",
+          "geometry": "垂直vOECT；对称结构（源漏可互换不影响性能）"
+        },
+        "device": {
+          "architecture": "垂直vOECT（玻璃基底）",
+          "channel_dimensions": "BBL膜厚~100 nm；电极宽30 μm；lM=2–100 μm",
+          "vds": "0.1 V（转移曲线）",
+          "vg_range": "0.6 V（Ion定义点）至-0.2 V"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "vOECT，VD=0.1 V；5器件×3批次；lM从2至100 μm",
+        "states": [
+          {
+            "label": "BBL vOECT, lM = 2 μm（最高精度）",
+            "structure_delta": "DLW图案化，边缘余量仅2 μm",
+            "electrical": {
+              "gm": "1.21 ± 0.03 mS（gm,peak）",
+              "gm_notes": "vOECT，绝对值",
+              "ton": "2.16 ± 0.11 ms",
+              "toff": "0.43 ± 0.07 ms",
+              "ion_ioff": "(7.00±0.51)×10⁵（lM=20 μm时最优）",
+              "on_current": "Ion = 0.36 ± 0.01 mA（VG=0.6 V, VD=0.1 V）",
+              "cycling": "未报道",
+              "vth": "SS ~65 mV/dec（各lM基本不变）",
+              "stability_other": "Ioff = 0.75 ± 0.11 nA；IG最小"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "图案对齐精度<2 μm"
+            }
+          },
+          {
+            "label": "BBL vOECT, lM = 100 μm（最低精度）",
+            "structure_delta": "边缘余量100 μm",
+            "electrical": {
+              "gm": "2.39 ± 0.12 mS（gm,peak，+102.9%）",
+              "gm_notes": "vs lM=2 μm提升约2倍",
+              "ton": "7.64 ± 0.93 ms（增加3.5倍）",
+              "toff": "1.60 ± 0.17 ms",
+              "ion_ioff": "(1.53±0.28)×10⁵（下降）",
+              "on_current": "Ion = 0.72 ± 0.86 mA（+106.94%）",
+              "cycling": "未报道",
+              "vth": "略负移（更多离子注入路径）",
+              "stability_other": "Ioff升至4.81 ± 0.97 nA；IG增加约两个数量级"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "边缘电场模型：Ifr ∝ VD·A/d·(1/2-1/x)；Ion在lM≥60 μm饱和"
+            }
+          },
+          {
+            "label": "gDPP-g2T vOECT（p型验证）",
+            "structure_delta": "同lM系列，p型亲水OMIEC",
+            "electrical": {
+              "gm": "gm提升+92.59%（lM增加）",
+              "gm_notes": "趋势与n型一致",
+              "ton": "线性增加（数百μs至数ms）",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "Ion提升+61.46%",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "τ随lM线性增加（Bernards模型一致）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "验证边缘电场模型普适性"
+            }
+          }
+        ],
+        "before_after_summary": "lM从2→100 μm：Ion和gm各增~100%（寄生电流），但τ线性增大（寄生电容）且Ion/Ioff下降；lM≥60 μm饱和——高gm选大lM，快响应/高集成选小lM"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "lM增大→沟道外多余OMIEC面积增大→与电解质接触面积增大→更多离子注入路径；边缘电场Efr ∝ x⁻²衰减",
+        "morphology_to_electrical": "多余面积贡献寄生电流Ifr→Ion/gm上升但饱和；寄生体积电容→τ线性增加；Ioff∝lM²（二次关系）→Ion/Ioff下降",
+        "net_effect": "图案精度是vOECT性能的几何杠杆：高放大选lM~60–100 μm，快响应/高集成选lM~2–10 μm；边缘电场模型可定量预测",
+        "evidence_quality": "强（系统lM扫描+边缘电场模型拟合+n/p型验证）"
+      },
+
+      "design_takeaways": [
+        "lM=2 μm：最快τon 2.16 ms、最低Ioff、最高Ion/Ioff",
+        "lM≥60 μm：Ion/gm饱和（+107%/+103%），τ增至~7.6 ms",
+        "边缘电场模型：Ifr ∝ (1/2-1/x)，可拟合Ion vs lM",
+        "SS保持~65 mV/dec不变——亚阈值特性不受lM影响",
+        "精确图案化（lM<10 μm）需避免顶底电极短路"
+      ],
+      "limitations": [
+        "非溶胀/交联研究，聚焦几何效应",
+        "电解质浓度/种类未明确报道",
+        "lM<10 μm时可能出现电极短路导致Ion/Ioff异常"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "a larger lM leads to significantly increased ID and gm in both n- and p-type OECTs (106.94% and 61.46% enhancement of ID and 102.92% and 92.59% enhancement of gm)", "why": "lM对Ion/gm的定量影响"},
+        {"page": 1, "text": "linearly increasing τ (from hundreds of microseconds to a few milliseconds) is observed with increasing lM", "why": "lM对瞬态时间的线性效应"},
+        {"page": 2, "text": "the patterning precision of active layers alters the OECT performances tremendously and can be designed to meet different application requirements", "why": "需求导向设计结论"},
+        {"page": 4, "text": "the Ion/Ioff ratio of the BBL-based vOECT increases from (1.53 ± 0.28) × 105 to (7.00 ± 0.51) × 105", "why": "精确图案化提升开关比"}
+      ]
+    },
+
+    "2026-huang-aggregate-mw-suppress-swelling": {
+      "id": "2026-huang-aggregate-mw-suppress-swelling",
+      "title_en": "Ultra-Stable Organic Electrochemical Transistors With Suppressed Swelling via Molecular Weight Modulation",
+      "title_cn": "分子量调控抑制溶胀的超稳定OECT",
+      "short_name": "2026 Huang Aggregate 分子量抑溶胀",
+      "authors": "J. Zhou, Z. Chen, J. Cheng, Y. Zhao, L. Yu, M. Xie, Y. Lai, Z. Deng, Y. Zhou, D. Li, C. Wu, G. Hu, Y. Sun, J. Chen, L.-W. Feng, W. Huang",
+      "corr_author": "Liang-Wen Feng / Wei Huang",
+      "year": 2026,
+      "journal": "Aggregate",
+      "doi": "10.1002/agt2.70298",
+      "pdf": "pdf/swell__2026-Huang-Aggregate-分子量抑溶胀.pdf",
+      "category_id": "swell",
+      "design_intent": "通过调控p(g2T-T)分子量（7–143 kDa）抑制OMIEC溶胀、提升OECT循环稳定性；揭示低MW（~19 kDa）保持高C*、有序取向、低溶胀→3 000 000次全开关循环的机制，为耐久OECT设计提供简单有效的分子量策略。",
+
+      "structure": {
+        "semiconductor": "p(g2T-T)（p型，乙二醇侧链）系列：Mn~7–143 kDa（[g2T-T]12至[g2T-T]72）；BBL对照（BBL45 15 kDa / BBL105 35 kDa）",
+        "semiconductor_type": "亲水（乙二醇侧链OMIEC）",
+        "crosslinker": "DtFDA / DtFGDA（vOECT中5:1共混）",
+        "crosslinker_amount": "OMIEC:交联剂 = 5:1",
+        "network_monomer": "无独立网络单体",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "5:1（推算）",
+        "crosslink_type": "光交联（二氮杂环丙烷）",
+        "film_prep": "Stille偶联聚合（6–48 h调控MW）→旋涂→光交联；cOECT与vOECT并行",
+        "notes": "cOECT: W/L/d=500 μm/20 μm/55 nm；vOECT: 40 μm/55 nm/40 μm"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "NaCl aq.（浓度未明确报道）",
+          "solvent": "水",
+          "ions": "Na⁺/Cl⁻（推断）",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "NaCl电解液（EQCM原位）",
+          "swelling_ratio": "被动溶胀：5.8%（[g2T-T]15）→20.6%（[g2T-T]72）；活性溶胀：8.3%→31.8%（EQCM质量变化）",
+          "method": "EQCM（相对质量变化）+ EIS（C*）+ GIWAXS（结晶度）",
+          "notes": "溶胀-循环稳定性Pearson |r|>0.95（最强相关）"
+        },
+        "electrodes": {
+          "source_drain": "Au",
+          "gate": "Ag/AgCl",
+          "geometry": "平面cOECT + 垂直vOECT对比"
+        },
+        "device": {
+          "architecture": "cOECT + vOECT；互补反相器（VSCI）",
+          "channel_dimensions": "cOECT: 500/20/55 nm；vOECT: 40/55/40 nm (W/L/d)",
+          "vds": "-0.1 V（线性）/ -0.5 V（饱和）",
+          "vg_range": "循环：+0.3至-0.4 V（长循环）/ 0至-0.5 V"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "cOECT/vOECT，NaCl；线性区VD=-0.1 V，饱和区VD=-0.5 V；循环频率适配τ（cOECT 20 000圈/10 000 s，vOECT 200 000圈/10 000 s）",
+        "states": [
+          {
+            "label": "p(g2T-T) [g2T-T]15（MW~19 kDa，最优）",
+            "structure_delta": "低MW，高结晶度、低非晶区比例",
+            "electrical": {
+              "gm": "cOECT: 11.40 ± 0.45 mS；vOECT: 99.18 ± 6.32 mS（gm,max）",
+              "gm_notes": "cOECT/vOECT，绝对值",
+              "ton": "cOECT τON~43 ms；vOECT <10 ms",
+              "toff": "cOECT τOFF~10 ms",
+              "ion_ioff": "未报道具体值",
+              "on_current": "cOECT Ion ~13.21 mA（VD=-0.1 V）；vOECT ~14.57 mA",
+              "cycling": "cOECT 20 000圈后保持52.6% ID（线性区）；vOECT 3 000 000圈（~42 h）后保持86.22% ID / 51.45% gm（VD=-0.1 V, VG=+0.3→-0.4 V）",
+              "vth": "未报道",
+              "stability_other": "vOECT 200 000圈后保持63.13% ID（线性区）；饱和区>95% Ion/gm保持"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σRMS=1.1 nm（多晶状形貌）",
+              "uvvis": "0-0/0-1峰~610–670 nm；SEC：>0.2 V即形成polaron（MW不影响注入阈值）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "edge-on取向（Herman因子~0.6）；(100) q=4.19 nm⁻¹（最大层间距）；CCL~15 nm（各MW相同）；低MW结晶散射最强",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "EQCM被动溶胀5.8%；活性溶胀8.3%（最小）",
+              "other": "C*=299.80 F/cm³（最高）"
+            }
+          },
+          {
+            "label": "p(g2T-T) [g2T-T]72（MW~143 kDa，最差）",
+            "structure_delta": "高MW，低结晶度、高非晶区比例、tie molecules多",
+            "electrical": {
+              "gm": "cOECT: 2.20 ± 0.15 mS（-81%）；vOECT: 71.13 ± 2.14 mS",
+              "gm_notes": "vs [g2T-T]15",
+              "ton": "cOECT τON~69 ms",
+              "toff": "cOECT τOFF~10.5 ms",
+              "ion_ioff": "未报道",
+              "on_current": "cOECT Ion ~0.36 mA（-97%）；vOECT ~11.32 mA",
+              "cycling": "cOECT 20 000圈后仅14.70% ID保持；vOECT 45 000圈失效（膜破裂/短路）",
+              "vth": "未报道",
+              "stability_other": "高MW反而更不稳定——与OFET经验相反"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σRMS=2.1 nm（不规则颗粒）",
+              "uvvis": "0-0/0-1随机偏移（无MW趋势）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "(100)散射强度大幅下降（结晶度↓）；CCL仍~15 nm（折叠晶粒）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "EQCM被动溶胀20.6%；活性溶胀31.8%（最大）",
+              "other": "C*=165.52 F/cm³（最低）；高非晶区→水大量积累→层间距膨胀+tie molecule桥接破坏"
+            }
+          },
+          {
+            "label": "BBL MW对照 + VSCI反相器",
+            "structure_delta": "BBL45（15 kDa）vs BBL105（35 kDa）；低MW p(g2T-T)+BBL构建VSCI",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "VSCI on/off~10³",
+              "on_current": "未报道",
+              "cycling": "VSCI 150 000圈（~4 h）电压输出变化<5%；BBL45比BBL105更稳定（cOECT）",
+              "vth": "未报道",
+              "stability_other": "EOG生理信号监测：体液环境7天稳定"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "低MW BBL同样更稳定——MW-溶胀-稳定性关系跨材料成立",
+              "other": "vOECT垂直结构顶电极进一步抑制溶胀"
+            }
+          }
+        ],
+        "before_after_summary": "高MW p(g2T-T)非晶区多→溶胀大（被动5.8%→20.6%，活性8.3%→31.8%）→C*低、微结构破坏→循环失效；低MW~19 kDa高结晶、低溶胀→3 000 000圈超稳定；溶胀是循环稳定性的主导因素（|r|>0.95）"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "低MW→少tie molecule→易形成有序非折叠层状晶粒→高结晶度、小非晶区；高MW→折叠晶粒+tie molecule贯穿非晶区→非晶比例高→水/离子大量积累",
+        "morphology_to_electrical": "非晶区溶胀→层间距膨胀、晶粒分离→渗流通路破坏→C*下降（299.8→165.5 F/cm³）；持续溶胀-脱溶胀→膜破裂/短路→循环失效；低MW高结晶→高C*、低溶胀→稳定",
+        "net_effect": "分子量是抑制溶胀的简单有效旋钮：p(g2T-T)选~19 kDa而非更高MW；溶胀是循环稳定性的第一主导因素（|r|>0.95）",
+        "evidence_quality": "强（EQCM+GIWAXS+EIS+AFM+长循环+相关性分析多技术互证）"
+      },
+
+      "design_takeaways": [
+        "p(g2T-T)最优MW~19 kDa（[g2T-T]15）；再低（[g2T-T]12）反而因缺陷多而不稳",
+        "EQCM定量溶胀：被动5.8%、活性8.3%（低MW）vs 20.6%、31.8%（高MW）",
+        "溶胀-循环稳定性Pearson |r|>0.95——比C*或结晶度更主导",
+        "vOECT垂直结构+库仑力进一步抑制溶胀→3 000 000圈",
+        "MW影响是材料依赖的（P3MEEET高MW更好，p(g2T-T)低MW更好）——需逐体系标定"
+      ],
+      "limitations": [
+        "MW-性能关系非普适（作者明确指出材料依赖）",
+        "[g2T-T]12的GPC测值偏差大（51/32/74 kDa），由反应时间线性拟合推算",
+        "NaCl浓度未明确报道"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "more than 3,000,000 full cycles (∼42 h) with less than 15% current variation in an OECT", "why": "低MW超长循环稳定性"},
+        {"page": 1, "text": "low-MW p(g2T-T) (∼19 kDa) exhibits superior device performance and cycling stability in OECTs, outperforming those in high-MW counterparts", "why": "低MW优势结论"},
+        {"page": 6, "text": "the relative mass change due to passive swelling increases significantly, from 5.8% ([g2T-T]15) to 20.6% ([g2T-T]72)", "why": "EQCM定量溶胀差异"},
+        {"page": 6, "text": "swelling and cycling stability exhibit the highest Pearson correlation coefficients (| r | > 0.95), suggesting that swelling exerts the most significant influence on cycling stability", "why": "溶胀是循环稳定性主导因素"}
+      ]
+    },
+
+    "2025-li-group-peg-pthf-ppg-paac-water-uptake": {
+      "id": "2025-li-group-peg-pthf-ppg-paac-water-uptake",
+      "title_en": "PEG / PTHF / PPG / PAAc Equilibrium Water Uptake Comparison Report",
+      "title_cn": "PEG/PTHF/PPG/PAAc平衡吸水率对比报告",
+      "short_name": "2025 Li 组内 PEG-PTHF-PPG-PAAc吸水率对比",
+      "authors": "Jionglin Li（Yuki Group）",
+      "corr_author": "Jionglin Li",
+      "year": 2025,
+      "journal": "组内报告",
+      "doi": "未报道",
+      "pdf": "pdf/swell__PEG-PTHF-PPG-PAAc平衡吸水率对比报告.pdf",
+      "category_id": "swell",
+      "design_intent": "基于公开文献整理PAAc/PEG/PTHF/PPG四类软段的平衡吸水率/溶胀量级与化学本质对比，为OECT亲水/疏水网络软段选择提供定量参考；给出自测实验设计建议。",
+
+      "structure": {
+        "semiconductor": "无（材料对比报告，非器件）",
+        "semiconductor_type": "未报道",
+        "crosslinker": "未报道（各文献体系各异）",
+        "crosslinker_amount": "未报道",
+        "network_monomer": "PAAc（聚丙烯酸）/ PEG（聚乙二醇）/ PTHF-PTMEG（聚四氢呋喃）/ PPG（聚丙二醇）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "未报道",
+        "crosslink_type": "未报道（对比报告）",
+        "film_prep": "未报道",
+        "notes": "重复单元：PAAc -CH₂-CH(COOH)-；PEG -CH₂CH₂O-；PTHF -CH₂CH₂CH₂CH₂O-；PPG -CH₂CH(CH₃)O-"
+      },
+
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "未报道（非OECT测试）",
+          "solvent": "水（吸水率测试）",
+          "ions": "未报道",
+          "concentration": "未报道"
+        },
+        "swelling": {
+          "test_solution": "水（不同pH/介质，见各文献条件）",
+          "swelling_ratio": "PAAc: pH 6.8最高~2500%，pH 1.2近零；PEG/PEGDA: EWC~70–85%；PPG1000-PUA: 24h吸水4.1%；PTHF/PTMEG涂层: <1%",
+          "method": "干重-浸泡-称重（ASTM D570式吸水率wt%）；EWC=(m湿-m干)/m湿×100%",
+          "notes": "对比必须同介质、同pH/离子强度、同温度、尽量同Mc；不同交联密度/硬段比会改变绝对值"
+        },
+        "electrodes": {
+          "source_drain": "未报道",
+          "gate": "未报道",
+          "geometry": "未报道"
+        },
+        "device": {
+          "architecture": "未报道（材料对比）",
+          "channel_dimensions": "未报道",
+          "vds": "未报道",
+          "vg_range": "未报道"
+        }
+      },
+
+      "properties": {
+        "conditions_note": "各文献条件不同，绝对值不可直接跨文献比较；排序为同系软段相对亲水性",
+        "states": [
+          {
+            "label": "PAAc（聚丙烯酸）",
+            "structure_delta": "-CH₂-CH(COOH)-，羧基电离",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "强pH响应（pKa~4.3–4.5）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "WCA≤37°（PAA/Carbopol）",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "pH 6.8: ~2500%溶胀；pH 1.2: 近零（羧基不电离→收缩）",
+              "other": "离子化→渗透压溶胀；强pH开关"
+            }
+          },
+          {
+            "label": "PEG / PEGDA",
+            "structure_delta": "-CH₂CH₂O-，醚氧氢键受体",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "中性，无pH响应"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "EWC~70–85%（高含水）；χ(PEG-H₂O)~0.426",
+              "other": "2碳/醚氧，高密度水合；任意分子量水溶"
+            }
+          },
+          {
+            "label": "PPG（聚丙二醇）",
+            "structure_delta": "-CH₂CH(CH₃)O-，侧甲基增疏水",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "低MW部分混溶；高MW不溶"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "WCA 79.9°（PPG1000-PUA膜）",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "PPG1000-PUA 24h吸水4.1%；加5 wt%硅氧烷后降至~3.0%",
+              "other": "3碳/醚氧+侧甲基，亲水中等"
+            }
+          },
+          {
+            "label": "PTHF / PTMEG（聚四氢呋喃）",
+            "structure_delta": "-CH₂CH₂CH₂CH₂O-，长亚甲基主导",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "疏水软段"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "涂层吸水<1%（极低但非零）",
+              "other": "4碳/醚氧，醚氧弱、长亚甲基主导→疏水"
+            }
+          }
+        ],
+        "before_after_summary": "同属聚醚软段，亲水性PEG > PPG > PTHF（醚氧密度递减+侧基位阻）；PAAc因羧基电离可高出数个量级（pH开关）；选网络软段时亲水性排序为PAAc >>> PEG > PPG > PTHF"
+      },
+
+      "causal_chain": {
+        "structure_to_morphology": "醚氧密度（PEG 2C/醚 > PPG 3C/醚+甲基 > PTHF 4C/醚）决定氢键受体密度→水合能力；PAAc羧基电离→Donnan渗透压→巨量溶胀",
+        "morphology_to_electrical": "高吸水/溶胀→离子通道丰富但力学弱、易过度溶胀；低吸水→疏水稳定但离子渗透差——OECT网络设计需在亲水（离子）与疏水（稳定性）间权衡",
+        "net_effect": "软段亲水性排序PAAc >>> PEG > PPG > PTHF可直接指导OECT网络软段选择：要离子通道选PEG/PAAc，要低溶胀稳定性选PTHF/PPG",
+        "evidence_quality": "中（文献汇总对比，非原始实验；条件不完全统一）"
+      },
+
+      "design_takeaways": [
+        "亲水性排序：PAAc（pH开关，~2500%）>>> PEG（EWC 70–85%）> PPG（~4%）> PTHF（<1%）",
+        "醚氧密度决定聚醚亲水性：PEG（2C/醚）> PPG（3C/醚+甲基）> PTHF（4C/醚）",
+        "PAAc是pH响应开关（pKa~4.3–4.5）：碱/中性巨溶胀，酸收缩",
+        "PPG1000-PUA膜24h吸水4.1%、WCA 79.9°；加5 wt%硅氧烷降至3.0%",
+        "自测建议：干重称重→浸泡至恒重→24h与平衡两点；PAAc至少pH 4/7/10；PEG/PPG/PTHF用中性PBS"
+      ],
+      "limitations": [
+        "各文献交联密度/硬段比/MW不同，绝对值不可直接比较",
+        "非OECT器件数据，仅材料吸水率层面",
+        "PPG绝对值随MW/端基/硬段比例变化大"
+      ],
+      "quote_evidence": [
+        {"page": 1, "text": "同属聚醚时，醚氧密度 PEG（2C/醚氧）> PPG（3C/醚氧+甲基）> PTHF（4C/醚氧）；亲水性同序 PEG > PPG > PTHF", "why": "聚醚软段亲水性化学本质"},
+        {"page": 1, "text": "PAAc 因羧基电离，平衡吸水可高出数个量级", "why": "PAAc巨量溶胀机制"},
+        {"page": 1, "text": "PPG1000 基聚氨酯丙烯酸酯（PUA）膜，室温水浸泡 24 h 吸水率 4.1%，水接触角 79.9°", "why": "PPG定量吸水率数据"},
+        {"page": 2, "text": "PTHF 并非完全不溶胀，而是吸水极低", "why": "PTHF并非零吸水"}
+      ]
+    }
+  }
+}

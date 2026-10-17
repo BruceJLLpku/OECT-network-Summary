@@ -1,0 +1,1545 @@
+{
+  "papers": {
+    "2017-inal-mme-gops-density": {
+      "id": "2017-inal-mme-gops-density",
+      "title_en": "Tailoring the Electrochemical and Mechanical Properties of PEDOT:PSS Films for Bioelectronics",
+      "title_cn": "调控PEDOT:PSS薄膜的电化学与力学性能用于生物电子",
+      "short_name": "2017 Inal MME 交联密度GOPS",
+      "authors": "M. ElMahmoudy, S. Inal, A. Charrier, I. Uguz, G. G. Malliaras, S. Sanaur",
+      "corr_author": "Sahika Inal",
+      "year": 2017,
+      "journal": "Macromol. Mater. Eng.",
+      "doi": "10.1002/mame.201600497",
+      "pdf": "pdf/2017_Inal_MME_交联密度GOPS.pdf",
+      "category_id": "density",
+      "design_intent": "系统考察硅烷交联剂GOPS含量（0.05–5 wt%）对PEDOT:PSS薄膜电导、溶胀、阻抗、杨氏模量及OECT长期稳定性的影响，寻找电学/力学/水稳定性之间的最优折中交联密度。",
+      "structure": {
+        "semiconductor": "PEDOT:PSS（Clevios PH-1000，PEDOT:PSS质量比约1:2.5）",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "GOPS（3-glycidoxypropyltrimethoxysilane，3-缩水甘油醚氧基丙基三甲氧基硅烷）",
+        "crosslinker_amount": "0.05 / 1 / 2.5 / 3.5 / 5 wt%（相对分散液中PEDOT:PSS聚合物含量；分散液中聚合物固含量1.15 wt%）",
+        "network_monomer": "无（仅交联半导体相）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "未报道（仅给出GOPS相对PEDOT:PSS的wt%序列；5 wt% GOPS时PEDOT:PSS仅占膜总质量约18.5 wt%）",
+        "crosslink_type": "共价（环氧基与胺/硫醇/酸反应，可在水中自聚合形成多层结构；与SiO2基底亦可共价结合）",
+        "film_prep": "旋涂2500 rpm 40 s；140 °C退火1 h（器件用膜110 °C退火1 h）；分散液另含EG 5 vol%（电导增强）与DBSA 0.002 vol%（表面活性剂），超声30 min后1.2 μm滤膜过滤",
+        "notes": "GOPS与PEDOT:PSS相互作用机理文中称尚不明确；XPS文献提示GOPS可在水中聚合成多层结构。膜厚随GOPS增加而增厚（0.05与5 wt%之间约3倍差），归因于分散液粘度上升。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M NaCl水溶液（OECT电学表征与EIS）；PBS（21天长期稳定性测试）",
+          "solvent": "水",
+          "ions": "NaCl（Na+/Cl-）；长期测试为PBS (Na+/K+, PO4^3-)",
+          "concentration": "0.1 M NaCl；PBS浓度未报道"
+        },
+        "swelling": {
+          "test_solution": "去离子水（DI）或 0.1 M NaCl水溶液（与工作电解液一致）",
+          "swelling_ratio": "GOPS 0.05→5 wt%：吸水/溶胀从约397%降至约12%；同配方1 wt% GOPS文献值差异大（本文QCM约266%，Duc AFM 40±1%，Stavrinidou 35±4%）",
+          "method": "QCM-D（Q-Sense，Sauerbrey与Kelvin–Voigt双模型；第5泛音；24 °C，流速50–100 μL/min；真空干燥过夜后测试）",
+          "notes": "干膜在恒定水流下约2 h达稳态；5 wt% GOPS膜稳态时间约30 min，1 wt%约103 min。"
+        },
+        "electrodes": {
+          "source_drain": "Au（光刻图形化150 nm Au，parylene C绝缘）",
+          "gate": "Ag/AgCl pellet（Warner Instruments）",
+          "geometry": "平面共面结构；沟道W/L = 50/50 μm（转移曲线误差棒来自两条相同沟道）；长期稳定性器件文中另记 width=10 μm, length=5 μm, thickness=275±25 nm"
+        },
+        "device": {
+          "architecture": "平面底栅/共面S-D电解质栅OECT（光刻+parylene牺牲层定义沟道）",
+          "channel_dimensions": "W/L = 50/50 μm；另处W=10 μm, L=5 μm",
+          "vds": "未报道（用NI PXI测转移；未给出具体VDS数值）",
+          "vg_range": "未报道（gm在VG = 0 V处取值）"
+        }
+      },
+      "properties": {
+        "conditions_note": "电导来自四探针干膜；溶胀为QCM-D在DI水或0.1 M NaCl中；阻抗EIS在0.1 M NaCl、1 kHz归一化到100 nm膜厚；杨氏模量为水中AFM纳米压痕（压入深度10 nm）；OECT gm为VG=0 V、厚度归一化；长期稳定性在PBS中21天。",
+        "states": [
+          {
+            "label": "GOPS 0.05 wt%（最低交联密度）",
+            "structure_delta": "GOPS最少，导电通路稀释效应最弱",
+            "electrical": {
+              "gm": "未报道绝对值；图2显示该组最高（厚度归一化）",
+              "gm_notes": "gm = ∂ID/∂VG，在VG = 0 V取值，并对沟道膜厚归一化；误差棒来自两条50×50 μm沟道",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道（长期稳定性仅系统测试1 wt%与3.5 wt%）",
+              "vth": "未报道",
+              "stability_other": "体电导约460 S/cm（图1）/约530 S/cm（结论段）；空穴迁移率6.4 cm2·V-1·s-1（OECT阻抗匹配法）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "水中粗糙度：文中给1.46/1.43 nm（RMS 1.98/1.81 nm）但未明确对应GOPS浓度；杨氏模量90 MPa（水中）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道（交联证据未在本组直接给出）",
+              "swelling_in_situ": "QCM-D溶胀约397%（DI水/NaCl，双模型误差棒）",
+              "other": "纳米压痕（AFM Sneddon模型，压深10 nm）"
+            }
+          },
+          {
+            "label": "GOPS 1 wt%（综合最优）",
+            "structure_delta": "GOPS 1 wt%：兼顾电导、溶胀与软度的折中点",
+            "electrical": {
+              "gm": "未报道绝对值（图2为厚度归一化趋势下降）",
+              "gm_notes": "随GOPS增加单调下降",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "PBS中21天（亚慢性期）gm保持稳定；五只OECT统计；110 °C烘烤前先在水中浸泡过夜并多次I-V循环以去除低分子组分",
+              "vth": "未报道",
+              "stability_other": "水中结构完整性好；3.5 wt% GOPS器件5天水中性能亦稳定"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "杨氏模量约150 MPa（DI水）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "溶胀约266%（QCM-D）；文献AFM法同配方约40±1%（对比）",
+              "other": "干膜达到全水化约需103 min"
+            }
+          },
+          {
+            "label": "GOPS 5 wt%（最高交联密度）",
+            "structure_delta": "GOPS最多：导电相被稀释最重、网络最密",
+            "electrical": {
+              "gm": "未报道绝对值（图2最低）",
+              "gm_notes": "厚度归一化gm最低",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "体电导约120 S/cm（较0.05 wt%下降约4倍）；空穴迁移率1.7 cm2·V-1·s-1；1 kHz阻抗（100 nm归一化）由约15 Ω升至约20 Ω"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "杨氏模量约350 MPa（>2.5 wt%后不再明显变化；结论段写约300 MPa）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "溶胀约12%",
+              "other": "水中模量较空气中下降约25倍（与溶胀相关）；全水化时间约30 min"
+            }
+          }
+        ],
+        "before_after_summary": "GOPS从0.05升至5 wt%：电导约530→120 S/cm、溶胀约397%→12%、水中杨氏模量约90→300/350 MPa、阻抗小幅上升；1 wt%为OECT长期水稳定与电学性能的最优折中。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "GOPS增加→交联网络密度升高→PEDOT聚集受限、导电相被非导电硅烷稀释（电导与空穴迁移率同趋势下降约4倍，图1/S2）；同时膜吸水显著下降（QCM-D图3a，397%→12%），水中纳米压痕显示模量上升（图4b，90→>300 MPa）。",
+        "morphology_to_electrical": "低溶胀→离子渗透通道减少→1 kHz阻抗升高（图3b，15→20 Ω@100 nm）；同时导电通路稀释→gm下降；但网络保持膜在水/PBS中的完整性，故1 wt%器件可在PBS中稳定工作21天（图S6a）。",
+        "net_effect": "交联密度是电学—力学—水稳定性的三方折中：1 wt% GOPS可同时获得高电导、足够软度与长期水稳定，是PEDOT:PSS OECT的常用配方锚点。",
+        "evidence_quality": "强（电导+QCM-D溶胀+EIS+纳米压痕+OECT长期稳定性多技术互证；但微观形貌SEM/GIWAXS缺失）"
+      },
+      "design_takeaways": [
+        "PEDOT:PSS + GOPS体系中，1 wt% GOPS（相对聚合物）是兼顾电导/软度/水稳定的经验最优值，可直接借鉴作植入式OECT沟道配方。",
+        "GOPS会显著稀释导电相：0.05→5 wt%电导与空穴迁移率同降约4倍；若需高gm不宜盲目加交联剂。",
+        "溶胀随GOPS单调下降（QCM-D，约397%→12%），可用溶胀作为交联密度的快速表征代理量。",
+        "GOPS膜厚随含量增加（粘度所致），做阻抗/gm对比时必须厚度归一化。",
+        "器件在水/PBS中使用前先浸泡过夜并多次I-V循环，可去除低分子组分、避免初始漂移。",
+        "水中模量远低于空气中（约25倍），力学设计必须以水合态为准。"
+      ],
+      "limitations": [
+        "GOPS与PEDOT:PSS的具体反应机理未阐明（仅引文献XPS推测多层结构）。",
+        "gm仅给厚度归一化相对趋势，无绝对mS数值；ton/toff、Ion/Ioff未报道。",
+        "膜厚与粗糙度随GOPS共变，电学下降中「稀释」与「形貌/厚度」贡献未严格解耦。",
+        "溶胀绝对值与文献差异极大（1 wt%：本文约266% vs 文献40%），仅相对趋势可信。",
+        "SEM/AFM形貌图、GIWAXS未系统给出；交联度本身无直接谱学定量。",
+        "21天稳定性仅测1 wt%（及5天3.5 wt%），样本量小（五只器件）。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 3,
+          "text": "the highest conductivity (≈460 S·cm−1) is observed for the film containing the least amount of GOPS (0.05 wt%), whereas the conductivity dropped by four times (120 S·cm−1) with a GOPS concentration of 5 wt%.",
+          "why": "支撑GOPS增加导致电导显著下降（导电相稀释）"
+        },
+        {
+          "page": 4,
+          "text": "The ability of PEDOT:PSS film to uptake water drops from 397% to 12% when GOPS concentration increases from 0.05 to 5 wt%.",
+          "why": "支撑交联密度↑→溶胀↓的定量关系"
+        },
+        {
+          "page": 5,
+          "text": "the Young's modulus of the films increases from 90 MPa for the 0.05 wt% of GOPS to 150 MPa for the 1 wt% of GOPS. Above 2.5 wt%, the cross-linker does not seem to influence the elasticity of the films (≈350 MPa).",
+          "why": "支撑交联密度对水合力学模量的提升及饱和"
+        },
+        {
+          "page": 6,
+          "text": "devices that contain 1 wt% GOPS, which is a concentration that leads to film with high electrical conductivity with sufficient mechanical stability, exhibit steady performance over three weeks.",
+          "why": "支撑1 wt%为长期工作最优折中"
+        }
+      ]
+    },
+    "2024-chen-jmca-gate-window-cycling": {
+      "id": "2024-chen-jmca-gate-window-cycling",
+      "title_en": "Gate bias modulation towards organic electrochemical transistors with ultra-high cycling stability",
+      "title_cn": "栅压调控实现超高循环稳定性的有机电化学晶体管",
+      "short_name": "2024 Chen JMCA 栅压窗口交联循环",
+      "authors": "M. Xie, Y. Lai, M. Li, D. Zhao, C. Huang, L. Bai, Y. Cheng, J. Chen, L.-W. Feng, W. Huang",
+      "corr_author": "Jianhua Chen; Liang-Wen Feng; Wei Huang",
+      "year": 2024,
+      "journal": "J. Mater. Chem. A",
+      "doi": "10.1039/d4ta02276a",
+      "pdf": "pdf/2024_Chen_JMCA_栅压窗口交联循环.pdf",
+      "category_id": "density",
+      "design_intent": "揭示栅压窗口大小如何决定OECT循环退化，并用垂直结构+光交联剂DtFDA抑制活性材料不可逆消耗，实现>25万次全循环稳定；策略在p型p(g2T-T)与n型Homo-gDPP上均成立。",
+      "structure": {
+        "semiconductor": "p(g2T-T) = poly(2-(3,3'-bis(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)-[2,2'-bithiophen]-5-yl)thiophene)（p型）；对照n型 Homo-gDPP",
+        "semiconductor_type": "亲水（侧链寡聚乙二醇）",
+        "crosslinker": "DtFDA（double-end trifluoromethyl diazirines，双端三氟甲基二氮杂环丙烯）",
+        "crosslinker_amount": "p(g2T-T):DtFDA = 4:1 质量比（推算：DtFDA约占总固体20 wt%，相对半导体）；Homo-gDPP:DtFDA = 3:1（推算约25 wt%）",
+        "network_monomer": "无（仅交联半导体；封装层另用Cin-Cell:DtFDA = 4:1）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "p(g2T-T):DtFDA = 4:1；Homo-gDPP:DtFDA = 3:1",
+        "crosslink_type": "光交联（365 nm UV触发二氮杂环丙烯卡宾插入C-H）",
+        "film_prep": "氯仿溶液（p(g2T-T) 10 mg/mL，DtFDA 20 mg/mL）旋涂3000 rpm 20 s；365 nm UV（450 mW/cm2）2 min光交联+氯仿显影3 s；封装Cin-Cell:DtFDA(100 mg/mL) 5000 rpm 20 s后同样光交联",
+        "notes": "纯p(g2T-T)对照不做图形化与封装。垂直器件顶部Au蒸镀时衬底保持约5 °C（背冷）以抑制热退火。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.01 M PBS（Solarbio）",
+          "solvent": "水",
+          "ions": "PBS (Na+/K+, PO4^3-)",
+          "concentration": "0.01 M"
+        },
+        "swelling": {
+          "test_solution": "未报道（无独立溶胀定量测试）",
+          "swelling_ratio": "未报道",
+          "method": "未报道（循环后AFM粗糙度与光学显微镜观察膜剥离作为溶胀损伤间接证据）",
+          "notes": ""
+        },
+        "electrodes": {
+          "source_drain": "平面：Cr 3 nm / Au 50 nm；垂直：底源Cr 3 nm / Au 150 nm + 顶漏Au 150 nm（蒸镀时约5 °C冷却）",
+          "gate": "Ag/AgCl（World Precision Instruments EP-1）浸入电解液",
+          "geometry": "平面：沟道L=20 μm, W=200 μm；垂直：沟道长度约100 nm（由上下电极夹持OMIEC），S/D宽度均30 μm"
+        },
+        "device": {
+          "architecture": "平面共面OECT 与 垂直OECT（vOECT，sandwich结构）对照",
+          "channel_dimensions": "平面 L=20 μm, W=200 μm；垂直 L≈100 nm, 电极宽30 μm",
+          "vds": "-0.1 V（循环稳定性测试）",
+          "vg_range": "循环方波：+0.4↔-0.4 / +0.4↔-0.5 / +0.4↔-0.6 V，频率25 Hz；转移曲线统一扫+0.4→-0.6→+0.4 V；n型为0↔+0.7/+0.8/+0.9 V"
+        }
+      },
+      "properties": {
+        "conditions_note": "所有电学数据在0.01 M PBS、VD=-0.1 V、方波VG频率25 Hz下测得；每5000圈插测一条转移曲线（统一扫描范围便于对比）；ION定义为VG=-0.6 V, VD=-0.1 V下的ID；gm_peak来自转移曲线。AFM为循环前后对比；CV在0.01 M PBS、50 mV/s、Ag/AgCl参比。",
+        "states": [
+          {
+            "label": "平面 p(g2T-T):DtFDA，VG窗口 +0.4↔-0.6 V",
+            "structure_delta": "平面结构 + 最大栅压摆幅（高压应力）",
+            "electrical": {
+              "gm": "gm_peak 10万圈后衰减88.25%",
+              "gm_notes": "转移曲线每5000圈取一次；ION定义VG=-0.6 V",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION 10万圈衰减88.52%；瞬时最大ID从-0.18 mA（第1圈）降至-0.02 mA（第10万圈，仅余10.93%）",
+              "cycling": "100000圈后ION/gm_peak衰减约88%；最大ID仅余10.93%",
+              "vth": "VON从+0.14 V移至+0.07 V",
+              "stability_other": "IOFF基本不变；纯p(g2T-T)在该窗口下VON单调漂移（0.01→-0.09 V，5000圈）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "循环后沟道粗糙度RMS 1.27→1.89 nm；源极上半导体RMS 1.60→2.78 nm；漏极上1.30→1.50 nm（变化小）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "光学显微镜：源极侧膜出现孔洞并大面积剥离（图S8）；CV 100次（-0.4~+0.6 V, 50 mV/s）最大电流降29.02%"
+            }
+          },
+          {
+            "label": "平面 p(g2T-T):DtFDA，VG窗口 +0.4↔-0.5 V",
+            "structure_delta": "平面结构 + 中等栅压摆幅",
+            "electrical": {
+              "gm": "gm_peak 10万圈衰减33.34%",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION衰减28.74%；最大ID从-0.27 mA→-0.19 mA（71.05%保持）",
+              "cycling": "100000圈后ION/gm_peak衰减约29%/33%",
+              "vth": "VON稳定在+0.10~+0.15 V",
+              "stability_other": "窗口收窄0.1 V即显著抑制退化"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未单独给出该窗口数据",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "CV（-0.4~+0.5 V）100次最大电流降16.36%"
+            }
+          },
+          {
+            "label": "平面 p(g2T-T):DtFDA，VG窗口 +0.4↔-0.4 V（窄窗）",
+            "structure_delta": "平面结构 + 最小栅压摆幅",
+            "electrical": {
+              "gm": "gm_peak 10万圈仅变9.69%",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION仅变0.20%；最大ID稳定在-0.118~-0.122 mA",
+              "cycling": "100000圈转移特性几乎不变",
+              "vth": "VON稳定在+0.11~+0.16 V",
+              "stability_other": "窄窗下平面器件亦可保持"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未单独给出",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "CV（-0.4~+0.4 V）100次最大电流仅降8.64%"
+            }
+          },
+          {
+            "label": "垂直 vOECT p(g2T-T):DtFDA，VG窗口 +0.4↔-0.4 V",
+            "structure_delta": "垂直sandwich结构 + DtFDA交联 + 窄窗",
+            "electrical": {
+              "gm": "gm_peak 10万圈降11.55%；25万圈（10000 s）ID保持101.86%~110.98%",
+              "gm_notes": "短沟道约100 nm",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION 10万圈仅降1.33%；最大ID变化仅0.75%（-11.04→-10.95 mA）",
+              "cycling": "100000圈ION/gm变化1.33%/11.55%；>250000圈仍稳定",
+              "vth": "VON从+0.33 V→+0.25 V",
+              "stability_other": "IOFF略有上升但仍<10-6 A（短沟道效应）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未单独给出",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "顶Au覆盖面积越大CV衰减越小（1.0×3.0/2.0×3.5/3.0×4.0 mm对应衰减24.00%/21.03%/16.69%），证明sandwich保护作用"
+            }
+          },
+          {
+            "label": "垂直 vOECT p(g2T-T):DtFDA，VG窗口 +0.4↔-0.6 V",
+            "structure_delta": "垂直结构 + 交联 + 最大栅压摆幅",
+            "electrical": {
+              "gm": "gm_peak 10万圈降15.36%",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION降1.24%；最大ID变化8.24%（-11.62→-12.58 mA）",
+              "cycling": "100000圈仍高度稳定",
+              "vth": "VON从+0.27 V→+0.23 V",
+              "stability_other": "垂直结构对宽窗栅压亦耐受"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "未报道"
+            }
+          },
+          {
+            "label": "对照：纯p(g2T-T)无交联（垂直）",
+            "structure_delta": "去掉DtFDA交联剂",
+            "electrical": {
+              "gm": "未报道数值",
+              "gm_notes": "循环稳定性差",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "循环后顶电极/沟道剥离、活性材料快速消耗",
+              "vth": "平面纯p(g2T-T)在+0.4↔-0.6 V下VON从0.01→-0.09 V（5000圈）",
+              "stability_other": "无交联剂时反复溶胀导致delamination"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "说明DtFDA对垂直器件耐久性不可或缺"
+            }
+          },
+          {
+            "label": "n型 Homo-gDPP:DtFDA 垂直，VG 0↔+0.7 V",
+            "structure_delta": "n型半导体 + DtFDA（3:1）+ 垂直结构 + 窄正压窗",
+            "electrical": {
+              "gm": "gm_peak 10万圈仅降2.24%",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "ION降1.84%",
+              "cycling": "100000圈稳定；+0.9 V时约95000圈后不稳",
+              "vth": "VON从+0.28 V→+0.31 V",
+              "stability_other": "栅压窗口增大仍导致退化趋势（0→+0.8 V时ION/gm反而上升6.93%/15.93%）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "平面n型对照稳定性差（图S13）"
+            }
+          }
+        ],
+        "before_after_summary": "平面器件在大栅压窗（+0.4↔-0.6 V）下10万圈ION/gm掉约88%，窄窗可压到~10%；垂直+DtFDA结构在各窗口均<16%衰减，并可在+0.4↔-0.4 V下连续>25万圈。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "高VG→反复深度掺杂/去掺杂→OMIEC不可逆溶胀与微结构破坏：AFM示源极上半导体RMS 1.60→2.78 nm、光学显微镜示源极侧膜起孔并剥离（图2、图S8）；CV显示更高正电位下活性物质消耗更快（+0.6 V下电流降29.02%，图2c-e）。垂直结构把OMIEC夹在S/D之间，减小与电解液接触面积——顶Au面积越大CV衰减越小（24.00%→16.69%，图4）。",
+        "morphology_to_electrical": "活性沟道材料被消耗→ION与gm_peak大幅下降；界面未坏时IOFF/VON基本不变（平面各组）；垂直结构延缓消耗故ION/gm几乎不变。DtFDA交联抑制溶胀剥离，纯p(g2T-T)垂直器件因顶电极剥离而失效（图S10）。",
+        "net_effect": "循环寿命=栅压应力×器件几何×交联的联合结果：窄VG窗+垂直sandwich+光交联三者叠加可把OECT寿命推到25万圈以上；栅压窗口本身是可设计的「寿命旋钮」。",
+        "evidence_quality": "强（电学循环统计+AFM+光学显微镜+CV红氧稳定性+顶Au面积对照实验多证据闭环）"
+      },
+      "design_takeaways": [
+        "把栅压窗口当作寿命设计参数：p(g2T-T)体系中+0.4↔-0.4 V比+0.4↔-0.6 V的10万圈衰减小一个数量级。",
+        "垂直结构的「三明治」保护是超长循环的关键：S/D夹持减少电解液接触面积，顶Au覆盖面积越大红氧衰减越小。",
+        "光交联剂DtFDA对垂直器件必不可少：无交联剂时反复溶胀导致顶电极/沟道剥离。",
+        "评估循环稳定性不要只看ID，应同时跟踪gm_peak与VON（本文方法学贡献）。",
+        "n型Homo-gDPP同样适用「窄窗+垂直+交联」策略，但绝对栅压不宜过大（+0.9 V时约9.5万圈失效）。",
+        "顶部Au蒸镀需背冷（~5 °C）以避免沟道热退火（与Yu 2024一致）。"
+      ],
+      "limitations": [
+        "关键衰减参数无误差棒（作者称数据量太大，仅多组趋势一致）。",
+        "溶胀本身未定量（无QCM/吸水率），仅有AFM/显微镜/间接证据。",
+        "平面与垂直器件几何（L差200倍）严格对比困难；垂直IOFF升高归因短沟道但未深入。",
+        "纯p(g2T-T)垂直对照未封装/未图形化，与交联组工艺不对等。",
+        "ORR/双氧水等电化学副反应未直接检测（仅引用文献讨论）。",
+        "转移曲线统一扫到-0.6 V，可能对已循环器件构成额外应力。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 2,
+          "text": "when VG switches between +0.4 V and −0.6 V, significantly decreased ID is observed, where maximum ID in Fig. S3a decreases from −0.18 mA (1st cycle) to −0.02 mA (100 000th cycle), remaining only 10.93% of the initial ID.",
+          "why": "支撑大栅压窗导致严重循环退化"
+        },
+        {
+          "page": 3,
+          "text": "the surface of the channel material becomes slightly rougher after 100 000 cycles of gate pulse [root-mean-square roughness (sRMS) = 1.27 nm and 1.89 nm for the pristine film and the cycled film, respectively].",
+          "why": "支撑循环导致微结构不可逆变化（AFM证据）"
+        },
+        {
+          "page": 5,
+          "text": "vOECT can operate continuously for over 250 000 cycles (10 000 s) with a VG switch from +0.4 V to −0.4 V, retaining a narrow ID range of 101.86% to 110.98%.",
+          "why": "支撑垂直+交联+窄窗的超长循环记录"
+        },
+        {
+          "page": 5,
+          "text": "as the area of the top Au layer increases from 1.0×3.0 mm to 2.0×3.5 mm and 3.0×4.0 mm, the degradation trend of the maximum current is gradually inhibited, showing 24.00%, 21.03%, and 16.69% decreases, respectively.",
+          "why": "支撑sandwich结构保护机制（顶电极遮蔽面积对照实验）"
+        }
+      ]
+    },
+    "2024-yu-nanoenergy-high-loading-dtfda": {
+      "id": "2024-yu-nanoenergy-high-loading-dtfda",
+      "title_en": "High-loading homogeneous crosslinking enabled ultra-stable vertical organic electrochemical transistors for implantable neural interfaces",
+      "title_cn": "高装载均匀交联实现用于植入式神经接口的超稳定垂直有机电化学晶体管",
+      "short_name": "2024 Yu NanoEnergy 高装载DtFDA密度",
+      "authors": "L. Gao, Q. Zhang, Y. Lai, M. Xie, C. Liu, D. Zhang, Y. Peng, L. Bai, M. Wu, L.-W. Feng, W. Huang, J. Yu, X. Yu",
+      "corr_author": "Mengge Wu; Liang-Wen Feng; Wei Huang; Junsheng Yu; Xinge Yu",
+      "year": 2024,
+      "journal": "Nano Energy",
+      "doi": "10.1016/j.nanoen.2024.110062",
+      "pdf": "pdf/2024_Yu_NanoEnergy_高装载DtFDA密度.pdf",
+      "category_id": "density",
+      "design_intent": "系统改变OMIEC:DtFDA质量比（neat/6:1/3:1/1:1/1:3），证明高装载（1:1）交联可在不牺牲gm的前提下锁定非晶形貌、抑制热与循环退化，实现>20万圈循环、耐100 °C热应力的p/n型vOECT，并完成大鼠ECoG 4周稳定记录。",
+      "structure": {
+        "semiconductor": "p型 P(g2T-T) = poly(2,5-bis(3-triethylene-glycoloxythiophen-2-yl)-co-thiophene)；n型 PEG-N2200 = polyethylene glycol substituted poly((N,N'-bis(2-octyldodecyl)-1,4,5,8-naphthalenedicarboximide-2,6-diyl)-alt-5,5'-(2,2'-bithiophene))",
+        "semiconductor_type": "亲水（侧链寡聚乙二醇/PEG）",
+        "crosslinker": "DtFDA（double-end functionalized trifluoromethyl-substituted diazirine，双端三氟甲基二氮杂环丙烯）",
+        "crosslinker_amount": "OMIEC:DtFDA质量比 = neat / 6:1 / 3:1 / 1:1 / 1:3；1:1即DtFDA占总固体50 wt%（高装载）",
+        "network_monomer": "无（仅交联半导体；封装层为cinnamate-cellulose (Cin-Cell) + DtFDA）",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "6:1 / 3:1 / 1:1 / 1:3（质量比）",
+        "crosslink_type": "光交联（365 nm UV，diazirine生成nitrene卡宾插入EG侧链sp3 C-H，不破坏主链共轭）",
+        "film_prep": "氯仿溶液（OMIEC 15 mg/mL，DtFDA 20 mg/mL）旋涂3000 rpm 30 s（干燥箱10% RH, 25 °C）；365 nm UV 1500 mW 2 min + 氯仿显影1 s；膜厚约60 nm；顶Au 150 nm蒸镀（可选背冷5 °C）；Cin-Cell封装5000 rpm 30 s",
+        "notes": "最小光刻线宽<1 μm；光刻胶光引发剂体系未详述于正文（引Zheng Science 2021）。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "PBS（1× phosphate buffer, Solarbio）",
+          "solvent": "水",
+          "ions": "PBS (Na+/K+, PO4^3-)",
+          "concentration": "1×（原文写PBS, 1×；未给molarity）"
+        },
+        "swelling": {
+          "test_solution": "未报道（无独立溶胀定量）",
+          "swelling_ratio": "未报道",
+          "method": "未报道（以循环后性能与热稳定性间接体现抗溶胀能力）",
+          "notes": "PDMS井中约5 μL电解液保持循环条件一致"
+        },
+        "electrodes": {
+          "source_drain": "底源 Cr 3 nm / Au 150 nm；顶漏 Au 150 nm（热蒸发，可选冷却台5 °C）",
+          "gate": "Ag/AgCl",
+          "geometry": "垂直结构（vOECT）；S/D电极宽均30 μm；沟道区域200×200 μm²；沟道长≈60 nm（膜厚决定）"
+        },
+        "device": {
+          "architecture": "垂直OECT（vOECT），Cin-Cell封装（沟道与探针焊盘开口）",
+          "channel_dimensions": "S/D宽30 μm；沟道200×200 μm²；沟道膜厚约60 nm",
+          "vds": "转移/输出：p型VD=-0.5 V，n型VD=+0.5 V；循环稳定性：VD=-0.1 V",
+          "vg_range": "转移扫描未统一写出；循环方波VG在+0.4~-0.4 V，频率12.5 Hz"
+        }
+      },
+      "properties": {
+        "conditions_note": "电学表征用FS-Pro半导体分析仪+探针台；转移曲线VG扫描速率10 mV/s；迟滞以半电流点电压差量化（p型|IDS|=10-4 A，n型10-6 A）；瞬态/循环在大气室温、PDMS井~5 μL PBS中；热应力为器件40–100 °C退火后复测；错误棒多为10器件/多器件统计。",
+        "states": [
+          {
+            "label": "p型 neat P(g2T-T)（无交联，冷却台制备）",
+            "structure_delta": "无DtFDA对照",
+            "electrical": {
+              "gm": "gm_peak = 342.9 ± 27.3 mS（绝对值）；面积归一化gm最高报道值378 μS/μm²（1:1样品）",
+              "gm_notes": "VD=-0.5 V；垂直器件",
+              "ton": "τon = 6.09 ± 0.86 ms",
+              "toff": "τoff = 9.58 ± 1.46 ms",
+              "ion_ioff": "1.3 ± 0.4 × 10^5",
+              "on_current": "ION = 9.5 ± 0.5 × 10^-2 A",
+              "cycling": "约39000圈后无法关断（IOFF~1 mA，短路风险）；测试条件方波+0.4~-0.4 V, 12.5 Hz, VD=-0.1 V",
+              "vth": "VON = +0.38 ± 0.02 V；VG(gm_peak) = +0.02 ± 0.03 V",
+              "stability_other": "无背冷时τon升至20.90±1.15 ms（约3倍）；热退火后τoff显著变长（11.1→21.0 ms @100 °C, fresh）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σRMS = 0.71 nm（as-cast）；150 °C/10 min后升至1.19 nm（形貌重组）",
+              "uvvis": "0-0/0-1峰清晰；热退火后0-0增强（聚集增加）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "强(h00)峰，高结晶；edge-on主导；热退火后衍射增强",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "AFM相图：热应力后出现明显晶粒特征（非晶→更晶态）"
+            }
+          },
+          {
+            "label": "p型 P(g2T-T):DtFDA = 1:1（高装载，推荐配方）",
+            "structure_delta": "DtFDA占总固体50 wt%，UV交联+Cin-Cell封装",
+            "electrical": {
+              "gm": "gm_peak = 339.7 ± 21.4 mS（绝对值）；与neat相当；面积归一化378 μS/μm²",
+              "gm_notes": "VD=-0.5 V",
+              "ton": "τon = 1.88 ± 0.32 ms（冷却台）；无冷却台2.93 ± 0.41 ms",
+              "toff": "τoff = 0.48 ± 0.19 ms",
+              "ion_ioff": "2.3 ± 0.2 × 10^5",
+              "on_current": "ION = 9.4 ± 0.5 × 10^-2 A",
+              "cycling": ">200000圈稳定切换（图3g），性能退化可忽略；代表当时OECT循环记录",
+              "vth": "VON = +0.30 ± 0.01 V；VG(gm_peak) = -0.16 ± 0.01 V",
+              "stability_other": "40–100 °C退火后fresh/unfresh转移曲线几乎不变；热应力后τon≤2.3 ms, τoff≤1.1 ms"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σRMS = 0.55 nm（as-cast）→0.63 nm（热应力后，变化小）",
+              "uvvis": "0-0/0-1相对强度下降（有序度降低）；热退火后仍无明显分裂峰",
+              "wettability": "未报道",
+              "xrd_giwaxs": "结晶度显著下降；高装载使堆积由edge-on转向face-on主导；(h00)双峰分裂提示更宽d间距；热应力后衍射图案几乎不变（锁定as-cast形貌）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "AFM相图热应力前后无显著变化（抗热形貌重组）"
+            }
+          },
+          {
+            "label": "p型 P(g2T-T):DtFDA = 6:1 / 3:1（中低装载）",
+            "structure_delta": "DtFDA较少（14.3 wt% / 25 wt%，推算）",
+            "electrical": {
+              "gm": "6:1: 333.5 ± 20.4 mS；3:1: 331.2 ± 24.9 mS",
+              "gm_notes": "",
+              "ton": "6:1 τon=3.76±0.61 ms；3:1 τon=3.04±0.54 ms",
+              "toff": "6:1 τoff=4.56±0.92 ms；3:1 τoff=0.73±0.23 ms",
+              "ion_ioff": "6:1: 2.3±0.3×10^5；3:1: 2.2±0.3×10^5",
+              "on_current": "6:1: 9.5±0.4×10^-2 A；3:1: 9.4±0.4×10^-2 A",
+              "cycling": "未单独给出循环曲线（整体趋势：装载越高越稳）",
+              "vth": "6:1 VON=+0.35±0.01 V；3:1 VON=+0.33±0.02 V",
+              "stability_other": "热应力后σRMS上升但仍低于neat"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "6:1 σRMS 0.67→1.13 nm；3:1 0.59→0.72 nm（热应力后）",
+              "uvvis": "0-0/0-1随DtFDA增加而减弱",
+              "wettability": "未报道",
+              "xrd_giwaxs": "结晶度随DtFDA增加而降低；热应力后衍射增强（≥3:1时明显）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "迟滞随DtFDA增加而减小（22.5/20.1 mV）"
+            }
+          },
+          {
+            "label": "p型 P(g2T-T):DtFDA = 1:3（超高装载）",
+            "structure_delta": "DtFDA过量（75 wt%，推算）",
+            "electrical": {
+              "gm": "gm_peak = 220.7 ± 25.6 mS（明显下降）",
+              "gm_notes": "过多绝缘交联剂损害传输",
+              "ton": "τon = 1.04 ± 0.18 ms（最快）",
+              "toff": "τoff = 0.16 ± 0.09 ms",
+              "ion_ioff": "1.1 ± 0.2 × 10^5",
+              "on_current": "ION = 5.2 ± 0.3 × 10^-2 A",
+              "cycling": "未单独给出",
+              "vth": "VON = +0.24 ± 0.02 V",
+              "stability_other": "gm/ION损失过大，不推荐"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "σRMS = 0.45 nm（最平滑）",
+              "uvvis": "吸收峰严重偏离，仅剩563 nm单峰",
+              "wettability": "未报道",
+              "xrd_giwaxs": "结晶度最低；热应力后无明显衍射变化",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "迟滞6.8±1.9 mV"
+            }
+          },
+          {
+            "label": "n型 PEG-N2200 neat vs PEG-N2200:DtFDA = 1:1",
+            "structure_delta": "n型体系同策略对照",
+            "electrical": {
+              "gm": "neat 5.4±0.4 mS → 1:1 4.5±0.4 mS；1:3 2.2±0.3 mS",
+              "gm_notes": "VD=+0.5 V",
+              "ton": "neat τon=21.79±0.9 ms → 1:1 τon=1.92±0.28 ms（冷却台）；无冷却台neat升至121.16±3.99 ms（约6倍），1:1仅4.28±0.21 ms",
+              "toff": "neat τoff=3.99±0.50 ms → 1:1 τoff=0.56±0.06 ms",
+              "ion_ioff": "neat 4.1±0.2×10^5 → 1:1 3.9±0.2×10^6（提升）",
+              "on_current": "neat 1.1±0.1×10^-3 A → 1:1 0.8±0.2×10^-3 A",
+              "cycling": "1:1 >200000圈稳定（图3h）",
+              "vth": "neat VON=+0.02±0.01 V → 1:1 +0.04±0.01 V",
+              "stability_other": "1:1热应力后τon≤1.9 ms, τoff≤0.7 ms"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未单独列出n型数值",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未单独列出n型GIWAXS",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "fresh neat n型热应力后转移曲线正移（离子注入势垒升高）"
+            }
+          }
+        ],
+        "before_after_summary": "DtFDA从0加到1:1：gm基本保持（~340 mS）、迟滞26→5 mV、τon/τoff数倍加快、循环3.9万圈失效→>20万圈稳定、热应力影响被锁定；过量1:3时gm/ION明显受损。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "高装载DtFDA（UV交联）抑制结晶：GIWAXS显示(h00)200/300峰随DtFDA消失、010转向face-on、(h00)双峰分裂提示更宽d间距（图1e-g）；AFM/UV-vis同证有序度下降；150 °C热应力后高装载膜形貌几乎不变（图S3b/S5b）。",
+        "morphology_to_electrical": "更宽d间距+非晶主导→水合/离子注入更易→迟滞减小、τon/τoff加快（图3a）；face-on利于垂直方向载流子传输→gm不降；锁定的网络抗溶胀→>20万圈稳定并保护与顶电极附着。",
+        "net_effect": "交联剂不是越少越好：OMIEC:DtFDA=1:1的「高装载均匀交联」可在保持~340 mS gm的同时换来热/循环双稳定性，是vOECT可植入场景的关键配方。",
+        "evidence_quality": "强（AFM+UV-vis+GIWAXS+电学瞬态/循环/热应力+在体ECoG+组织学多维互证）"
+      },
+      "design_takeaways": [
+        "vOECT沟道采用OMIEC:DtFDA=1:1质量比（DtFDA 50 wt%）可同时保持高gm与超长循环/耐热，是本文核心可抄配方。",
+        "高DtFDA降低结晶、拓宽d间距、诱导face-on——离子与电子传输双赢的形貌设计。",
+        "顶部Au蒸镀必须背冷（~5 °C）；若无冷却台，neat器件τon恶化3–6倍，而1:1配方对工艺热扰动不敏感。",
+        "封装（Cin-Cell:DtFDA）与图形化对降低寄生电容、提升IOFF/IOFF与一致性很重要。",
+        "装载比1:3过量会明显掉gm/ION，1:1是拐点。",
+        "评价热稳定性要区分fresh（未注入离子）与un-fresh（已活化）器件，预形成离子通道后热敏感性下降。"
+      ],
+      "limitations": [
+        "电解液仅写PBS 1×，未给精确浓度；溶胀/吸水率未定量。",
+        "1:3与部分对照的长期循环未完整展示。",
+        "neat对照未图形化/未封装，与交联组寄生电容条件不对等（作者已注明影响τ）。",
+        "在体实验样本量与统计细节有限（单次示例性ECoG）。",
+        "交联密度本身未用谱学/溶胀定量，仅以质量比代理。",
+        "面积归一化gm的「378 μS/μm²」量纲/定义需自行核对原文图表。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 1,
+          "text": "highly loaded crosslinkers (OMIEC:DtFDA = 1:1 in mass) triggered by ultraviolet can facilitate the formation of stable and homogeneous transistor channel, which holds lower crystallinity, wider d spacing, and face-on dominated packing",
+          "why": "支撑高装载交联→形貌（低结晶/宽d/face-on）的设计结论"
+        },
+        {
+          "page": 5,
+          "text": "peak gm remain higher than 300 mS in these vOECTs based on P(g2T-T)/DtFDA blend channel (342.9 ± 27.3, 333.5 ± 20.4, 331.2 ± 24.9, and 339.7 ± 21.4 mS for neat P(g2T-T), P(g2T-T):DtFDA = 6:1, 3:1, and 1:1, respectively)",
+          "why": "支撑1:1高装载不损失gm"
+        },
+        {
+          "page": 6,
+          "text": "vOECT based on P(g2T-T):DtFDA = 1:1 enables stable operation over 200,000 cycles ... which represents the highest record value of cycling stability for OECTs.",
+          "why": "支撑高装载交联带来的循环稳定性飞跃"
+        },
+        {
+          "page": 6,
+          "text": "Turn-on transient time (τON) of OECTs based on P(g2T-T) decreases more than 5 times, from 6.09 ± 0.86 ms in neat P(g2T-T) to ... 1.04 ± 0.18 ms in P(g2T-T):DTFDA = 6:1, 3:1, 1:1 and 1:3, respectively.",
+          "why": "支撑高DtFDA→非晶→更快离子传输"
+        }
+      ]
+    },
+    "2025-wang-am-pr-trace-dual-crosslink": {
+      "id": "2025-wang-am-pr-trace-dual-crosslink",
+      "title_en": "Trace Dual-Crosslinkable Additives Enable Direct Microlithography for Enhanced Organic Electrochemical Transistors",
+      "title_cn": "痕量双交联添加剂实现增强型OECT的直接微光刻",
+      "short_name": "2025 Wang AM PR痕量双交联密度",
+      "authors": "J. Zhang, Y. Zhong, H. Jiang, Z. Zhao, H. Wang, R. Wang, Z. Chen, Q. Liang, X. Wang, F. Sun, Y. Xing, X. Duan, H. Li, L.-W. Feng, M. Zhu, H. Sun, G. Wang",
+      "corr_author": "Liang-Wen Feng; Hengda Sun; Gang Wang",
+      "year": 2025,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.202417452",
+      "pdf": "pdf/2025_Wang_AM_PR痕量双交联密度.pdf",
+      "category_id": "density",
+      "design_intent": "用聚轮烷（PR）超分子+共价双交联，在<0.1 wt%痕量装载下实现PBFDO直接微光刻，同时PR作为性能增强剂提升分子有序度与离子输运，打破「高交联剂=电学劣化」的权衡。",
+      "structure": {
+        "semiconductor": "PBFDO = poly(benzodifurandione)（n型OMIEC，主链含苯并二呋喃二酮）",
+        "semiconductor_type": "亲水（含羟基/羰基，可与PR氢键）",
+        "crosslinker": "PR = polyrotaxane超分子交联剂：PEG主链穿9–10个环糊精(CD)环，两端金刚烷封端；CD羟基与PBFDO氢键；部分羟基接PEGMA光交联侧链（每PR分子平均5–6条）",
+        "crosslinker_amount": "PBFDO:PR质量比 = 1:0 / 1:0.001 / 1:0.05 / 1:0.5 / 1:1；1:0.001即<0.1 wt%（文中称迄今DML最低交联剂装载）",
+        "network_monomer": "PEGMA（甲基丙烯酸聚乙二醇酯）侧链光聚合；光引发剂1173（与PR质量比1:2）",
+        "network_monomer_amount": "光引发剂1173 : PR = 1:2（质量比）",
+        "ratio_sc_monomer_xl": "1:0.001 ~ 1:1（质量比）；最优电学在1:0.5",
+        "crosslink_type": "共价（UV引发PEGMA链增长聚合，C=C消失）+ 超分子（CD-OH与PBFDO C=O/C-O-C氢键；DFT结合能27.45 / 4.31 kJ/mol；MD显示1 PR ~ 45 H-bonds）",
+        "film_prep": "PBFDO与PR氯仿/合适溶剂混合，手套箱旋涂1000 rpm，真空除溶剂；SUSS MA6曝光；DMSO显影；100 °C热板退火10 min；PR合成细节见SI",
+        "notes": "纯PBFDO无光刻能力，沟道用刮擦/擦拭法成形作对照。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "[EMIM]+[TFSI]- 离子液体（1-ethyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide）",
+          "solvent": "有机（离子液体，无水）",
+          "ions": "[EMIM]+ / [TFSI]-",
+          "concentration": "纯离子液体（未报道稀释浓度）"
+        },
+        "swelling": {
+          "test_solution": "同一离子液体体系（EQCM-D）",
+          "swelling_ratio": "未给单一数值；PR加入后被动溶胀与主动（电化学充放电）溶胀均下降（图S35–S46, 表S9）；1:1时层间距过度扩张反而加剧溶胀",
+          "method": "EQCM-D（Q-sense QE401，金膜石英晶体）",
+          "notes": "分passive swelling（非充电）与active swelling（充电中）"
+        },
+        "electrodes": {
+          "source_drain": "Cr 3 nm / Au 100 nm（光刻图形化）",
+          "gate": "Ag/AgCl pellet",
+          "geometry": "平面共面；W=L=500 μm（故意用大沟道以减慢掺杂、便于比较去掺杂速率）；膜厚d=30–50 nm"
+        },
+        "device": {
+          "architecture": "平面OECT，Si/100 nm SiO2衬底，耗尽模式工作",
+          "channel_dimensions": "W=L=500 μm，d=30–50 nm（逐器件实测厚度）",
+          "vds": "0.6 V（转移/稳定性）；VG=-1 V用于初始去掺杂比较",
+          "vg_range": "未完整写出扫描范围；阈值VTH约-0.81~-0.94 V（耗尽模式）"
+        }
+      },
+      "properties": {
+        "conditions_note": "OECT电学：Keithley 2450×2，室温空气；µC*由ID^1/2 vs VG线性区提取（公式含W,d,L）；C*由不同扫速CV测得；μ为计算迁移率；稳定性为5000次电压脉冲；阵列gm来自8×8抽样。每参数>6器件。",
+        "states": [
+          {
+            "label": "PBFDO:PR = 1:0（pristine对照）",
+            "structure_delta": "无PR，沟道非光刻（擦拭成形）",
+            "electrical": {
+              "gm": "gm,norm = 0.97 ± 0.07 × 10^3 S/cm（即约1016 S/cm，文中亦写1016 S cm-1）",
+              "gm_notes": "归一化电导（厚度/几何归一）；VD=0.6 V",
+              "ton": "未报道",
+              "toff": "turn-off delay最长（图4a趋势起点）",
+              "ion_ioff": "ION/IOFF = 0.33 ± 0.07 × 10^3（最低）",
+              "on_current": "ION = 3.62 ± 0.36 mA；IOFF = 12.53 ± 3.57 μA",
+              "cycling": "5000脉冲循环电流衰减最快（图4e）",
+              "vth": "VTH = -0.94 ± 0.04 V",
+              "stability_other": "µC* = 1.73 ± 0.20 × 10^3 F cm-1 V-1 s-1（1730）；C* = 139.65 F/cm3；μ ≈ 12.39–14.29 cm2 V-1 s-1"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "均匀性作对照（图S13）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "π-π距离3.28 Å（qxy=1.92 Å-1）；d-spacing 11.10 Å（qz=0.57 Å-1）；Lc与g随PR变化的基点；Hermans取向函数0.942",
+              "ftir_xps": "Raman：C=O ~1621 cm-1、C-O-C ~1107 cm-1为未氢键参考",
+              "swelling_in_situ": "EQCM-D被动/主动溶胀最大（相对含PR样品）",
+              "other": "原位电化学UV-vis：1.1 V vs Ag/AgCl下ICT带（650–950 nm）增强"
+            }
+          },
+          {
+            "label": "PBFDO:PR = 1:0.001（痕量，光刻可行）",
+            "structure_delta": "PR <0.1 wt%即可耐DMSO显影",
+            "electrical": {
+              "gm": "gm,norm = 1.02 ± 0.15 × 10^3 S/cm（约1056 S/cm，较pristine已提升）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "turn-off delay随PR增加而缩短",
+              "ion_ioff": "2.57 ± 0.21 × 10^3（ON/OFF约一个数量级提升）",
+              "on_current": "ION = 2.42 ± 0.18 mA；IOFF = 1.54 ± 0.46 μA",
+              "cycling": "5000脉冲衰减慢于pristine",
+              "vth": "VTH = -0.88 ± 0.02 V",
+              "stability_other": "µC* = 1.86 ± 0.29 × 10^3（1860，+约7%）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "薄膜均匀（图S13）",
+              "uvvis": "原位UV-vis ICT增强（图S20b）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "d-spacing略增；π-π基本不变",
+              "ftir_xps": "Raman红移微弱（氢键起始）",
+              "swelling_in_situ": "溶胀开始下降",
+              "other": "图案分辨率2 μm（掩模限制；更高PR可至约600 nm）"
+            }
+          },
+          {
+            "label": "PBFDO:PR = 1:0.5（性能最优）",
+            "structure_delta": "PR 33 wt%（推算：PR/(PBFDO+PR)=0.5/1.5≈33%）——有序度与掺杂平衡点",
+            "electrical": {
+              "gm": "gm,norm = 1.33 ± 0.10 × 10^3 S/cm（1421 S cm-1，较pristine约+40%）",
+              "gm_notes": "VD=0.6 V",
+              "ton": "未报道",
+              "toff": "turn-off delay明显缩短",
+              "ion_ioff": "2.82 ± 0.12 × 10^3（最高之一）",
+              "on_current": "ION = 3.67 ± 0.33 mA；IOFF = 1.31 ± 0.01 μA",
+              "cycling": "5000脉冲电流衰减最慢",
+              "vth": "VTH = -0.81 ± 0.02 V",
+              "stability_other": "µC* = 2.46 ± 0.17 × 10^3 F cm-1 V-1 s-1（2460，+42%）；C* = 191.14 F/cm3（峰值）；μ最高约14.29 cm2 V-1 s-1"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道具体Rq",
+              "uvvis": "原位电化学UV-vis：1.1 V去掺杂时ICT吸收显著增强（图3e）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "d-spacing增至11.58 Å（qz=0.54 Å-1）；π-π 3.28 Å不变（共轭未破坏）；Lc(010)最大、g最小；Hermans 0.986（edge-on更有序）",
+              "ftir_xps": "Raman：C=O 1621→1617 cm-1、C-O-C 1107→1100 cm-1红移（氢键）；FTIR示UV后C=C 1637 cm-1衰减（共价交联）",
+              "swelling_in_situ": "被动+主动溶胀显著低于pristine；1:1反而恶化",
+              "other": "DFT/MD：约45 H-bonds/PR，总氢键能约1235 kJ/mol"
+            }
+          },
+          {
+            "label": "PBFDO:PR = 1:1（过量）",
+            "structure_delta": "PR过量，层间距过度扩张",
+            "electrical": {
+              "gm": "gm,norm = 0.91 ± 0.14 × 10^3 S/cm（下降）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "1.17 ± 0.17 × 10^3（下降）",
+              "on_current": "ION = 2.11 ± 0.53 mA；IOFF = 2.10 ± 0.09 μA",
+              "cycling": "溶胀加剧，稳定性反而变差",
+              "vth": "VTH = -0.89 ± 0.05 V",
+              "stability_other": "µC* = 1.51 ± 0.23 × 10^3（1510，低于pristine）；C* = 105.64 F/cm3"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "1.1 V下ICT强度下降（图S20d）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "过量交联引入缺陷、结晶度下降（Lc降、g升）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "层间距过大→水合离子快速进出→溶胀恶化（图4f）",
+              "other": "证明交联密度存在最优值"
+            }
+          },
+          {
+            "label": "阵列级验证（PBFDO:PR光刻阵列）",
+            "structure_delta": "2英寸晶圆全光刻集成",
+            "electrical": {
+              "gm": "平均gm = 1.22 ± 0.03 mS（8×8抽样，64器件跨全片）",
+              "gm_notes": "器件密度 2.2×10^5 cm^-2；1000×1000阵列（1M器件）演示",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "均匀性优异，体现DML可放大性"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "特征尺寸可至600 nm（高PR时，受掩模限制）"
+            }
+          }
+        ],
+        "before_after_summary": "加入痕量PR即可光刻并提升ON/OFF；1:0.5时µC*达2460 F cm-1 V-1 s-1（+42%）、gm,norm约+40%、循环与溶胀俱佳；1:1过量则溶胀与电学双双恶化。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "PR的CD-OH与PBFDO羰基/醚氧形成氢键网络（Raman红移、DFT/MD），UV下PEGMA共价聚合加固→痕量即可耐DMSO显影（膜保留率跃升，图1e）。适当PR（1:0.5）插入链间使层间距11.10→11.58 Å、edge-on更有序（HF 0.942→0.986）而π-π不变（共轭完整）；过量PR引入缺陷、过度撑开层间。",
+        "morphology_to_electrical": "更大d-spacing利于离子在链间迁移+更优edge-on结晶域利于电子输运→C*与μ同时提升（µC*+42%）、去掺杂加快、ON/OFF提高；适度交联又降低被动/主动溶胀→5000脉冲更稳；过量时离子冲刷加剧溶胀、性能回落。",
+        "net_effect": "「痕量双交联」把交联剂从被动图案化助剂变成主动性能增强剂：<0.1 wt%可光刻，~33 wt%（1:0.5）达到电学最优——交联密度存在非单调最优点。",
+        "evidence_quality": "强（Raman/FTIR/DFT/MD + GIWAXS + 原位UV-vis + EQCM-D + OECT电学 + 晶圆阵列统计）"
+      },
+      "design_takeaways": [
+        "超分子（氢键）+光共价双网络可在极低装载下提供溶胀抗性——打破「交联剂越多越绝缘」困境的设计模板。",
+        "PBFDO:PR = 1:0.5 是电学/离子/稳定性最优比；1:1 过量有害，交联密度必须扫出最优点。",
+        "PR同时增大d-spacing并提升edge-on有序度，是少见的「离子+电子」双赢形貌调控。",
+        "评估交联剂不要只看图案分辨率：应同步看µC*、C*、EQCM-D主动溶胀与脉冲循环。",
+        "阵列均匀性（gm 1.22±0.03 mS，2.2×10^5 cm^-2）是DML可放大的关键证据。",
+        "工作电解质为离子液体[EMIM][TFSI]，与水系体系对比时注意不可直接外推。"
+      ],
+      "limitations": [
+        "电学测试在离子液体中，非生理/水系电解质，生物适用性外推有限。",
+        "沟道故意取500×500 μm²以减慢掺杂，不代表高gm器件几何。",
+        "被动/主动溶胀仅有相对趋势（SI表S9），正文无绝对吸水率数值。",
+        "ton/toff未以标准瞬态时间常数给出（仅turn-off delay趋势）。",
+        "PR合成与分子量分布细节在SI，正文难以复现精确交联密度。",
+        "纯PBFDO对照为擦拭沟道，与光刻样品工艺不对等。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 1,
+          "text": "The PR forms a hydrogen bonding network with PBFDO and undergoes UV-triggered covalent crosslinking among its molecules, providing solvent resistance even at trace loading levels (<0.1 wt%).",
+          "why": "支撑痕量双交联即可获得耐溶剂/光刻能力"
+        },
+        {
+          "page": 6,
+          "text": "the maximum normalized transconductance (gm,norm) of OECTs based on PBFDO:PR = 1:0.5 film (1421 S cm−1) increased by ≈40% compared to pristine PBFDO OECTs (1016 S cm−1)",
+          "why": "支撑最优PR比例带来的gm提升"
+        },
+        {
+          "page": 6,
+          "text": "the µC* values are 2180, 2460, and 1510 F cm−1 V−1 s−1, respectively, showing an initial increase followed by a decrease at higher blending ratios, with the peak µC* value observed at the PBFDO:PR mass ratio of 1:0.5.",
+          "why": "支撑交联密度非单调最优值（1:0.5）"
+        },
+        {
+          "page": 6,
+          "text": "Upon the incorporation of PR, the films exhibit a reduction in both passive and active swelling ... However, when the amount of PR increases to 1:1, the excessive expansion of the interlayer distance leads to rapid ion insertion, causing an increased influx and efflux of hydrated molecules in the films that exacerbate swelling.",
+          "why": "支撑「适度交联抑溶胀、过量反加剧」的因果链"
+        }
+      ]
+    },
+    "2021-rivnay-natcommun-pthf-ion-memory": {
+      "id": "2021-rivnay-natcommun-pthf-ion-memory",
+      "title_en": "Mimicking associative learning using an ion-trapping non-volatile synaptic organic electrochemical transistor",
+      "title_cn": "基于离子俘获非易失性突触OECT的联想学习模拟",
+      "short_name": "2021 Rivnay NatCommun PTHF离子记忆非交联",
+      "authors": "X. Ji, B. D. Paulsen, G. K. K. Chik, R. Wu, Y. Yin, P. K. L. Chan, J. Rivnay",
+      "corr_author": "Paddy K. L. Chan; Jonathan Rivnay",
+      "year": 2021,
+      "journal": "Nat. Commun.",
+      "doi": "10.1038/s41467-021-22680-5",
+      "pdf": "pdf/2021_Rivnay_NatCommun_PTHF离子记忆非交联.pdf",
+      "category_id": "hyd_sc_no_net",
+      "design_intent": "用VPP沉积的PEDOT:Tos/PTHF共混（非交联）实现写电压<0.8 V、保持>200 min的非易失OECT，通过PTHF比例调控STP/LTP突触功能，并用光谱-散射揭示Na+在非晶PTHF中被俘获的记忆机制。",
+      "structure": {
+        "semiconductor": "PEDOT:Tos（气相聚合poly(3,4-ethylenedioxythiophene):tosylate）/ PTHF（polytetrahydrofuran，聚四氢呋喃）复合",
+        "semiconductor_type": "亲水/两性（PEDOT:Tos导电+PTHF疏水软段）",
+        "crosslinker": "无（非交联物理共混；PTHF为离子俘获/记忆组分，非网络交联剂）",
+        "crosslinker_amount": "无交联剂；PTHF质量分数 x = 0 / 20 / 50 / 80 / 90%（记为 P-x% PTHF）",
+        "network_monomer": "无",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "PEDOT:Tos 与 PTHF 质量比由Fe(III):Tos氧化剂与PTHF投料控制；2.25 mol Fe(III)生成1 mol PEDOT；例：P-80%用0.37 g PTHF + 1 g Fe(III)Tos + 3.63 g 正丁醇（Fe(III)Tos 20 wt%）+ 60 μL 吡啶",
+        "crosslink_type": "非交联/物理（VPP原位聚合PEDOT与PTHF共混成膜）",
+        "film_prep": "氧化剂Fe(III)Tos/PTHF正丁醇溶液旋涂→70 °C 1 min→EDOT气氛VPP 70 °C 1 h（N2 100 SCCM）→剥离牺牲parylene定义沟道→DI水洗1 h",
+        "notes": "PTHF疏水，水相电解液对其塑化有限→离子跃迁主导、Na+被俘获。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.1 M NaCl水溶液",
+          "solvent": "水",
+          "ions": "NaCl（Na+/Cl-；XPS见Tos-与Cl-交换）",
+          "concentration": "0.1 M"
+        },
+        "swelling": {
+          "test_solution": "未报道（无溶胀定量）",
+          "swelling_ratio": "未报道",
+          "method": "未报道（GIWAXS观察LRS/HRS层间距变化作为离子嵌入的结构代理）",
+          "notes": "PTHF疏水，水相几乎不塑化/溶胀PTHF相"
+        },
+        "electrodes": {
+          "source_drain": "Cr 5 nm / Au 50 nm（光刻定义）",
+          "gate": "Ag/AgCl（Warner pellet；光谱电化学中作参比/对电极）",
+          "geometry": "平面；W = 500 μm，L = 10 μm；parylene双层封装定义沟道"
+        },
+        "device": {
+          "architecture": "平面OECT（光刻+parylene牺牲层）",
+          "channel_dimensions": "W=500 μm, L=10 μm；P-90%膜厚约1.6 μm",
+          "vds": "-0.2 V（转移曲线）",
+          "vg_range": "转移：-0.8 ~ +0.8 V；编程脉冲幅度0.6/0.7/0.8 V"
+        }
+      },
+      "properties": {
+        "conditions_note": "转移/输出：Keithley 2636B，VG -0.8~+0.8 V，VDS=-0.2 V；记忆电平=编程后稳态ID相对初始-0.2 V编程后的差值；脉冲实验：Vp=0.6 V, tp=1 ms, 800 Hz（PPF/PTP）；LTM训练0.7 V/10 ms/间隔2.5 ms；瞬态采样率50 kHz；光谱电化学在0.1 M NaCl中阶跃偏压10 s。",
+        "states": [
+          {
+            "label": "PEDOT:Tos（P-0%，无PTHF）",
+            "structure_delta": "纯PEDOT:Tos对照",
+            "electrical": {
+              "gm": "未报道绝对gm",
+              "gm_notes": "",
+              "ton": "τres = 0.143 ms（响应）",
+              "toff": "τrel = 0.288 ms（离子弛豫）",
+              "ion_ioff": "未报道",
+              "on_current": "未报道（图1b对比转移）",
+              "cycling": "50次-0.8~+0.8 V扫描可重复（P-80%）；本组未突出循环数字",
+              "vth": "未报道",
+              "stability_other": "迟滞/记忆窗口小；几乎无STM→LTM转移；轻微记忆可能来自残留离子或偏压应力"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道（SI Fig.3有形貌/厚度）",
+              "uvvis": "偏压去除后光谱特征不保留（π-π*/polaron/bipolaron调制<5%）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "edge-on；层状13.7 Å，π-π 3.5 Å；相干长度<10 nm；LRS/HRS间d-spacing无持久差异",
+              "ftir_xps": "XPS：HRS中无Na 1s峰（Na+不被俘获）；Tos-被Cl-交换",
+              "swelling_in_situ": "未报道",
+              "other": "非易失性缺失的对照"
+            }
+          },
+          {
+            "label": "P-80% PTHF（最优记忆配方）",
+            "structure_delta": "PTHF 80 wt%共混",
+            "electrical": {
+              "gm": "未报道绝对gm",
+              "gm_notes": "",
+              "ton": "τres = 2.104 ms",
+              "toff": "τrel = 2.824 ms",
+              "ion_ioff": "未报道",
+              "on_current": "最大电流 1.12 ± 0.27 mA（N=6，3次独立VPP）",
+              "cycling": "转移扫描重复性好；记忆窗口0.34 ± 0.07 V（图1b为约0.39 V）",
+              "vth": "未报道",
+              "stability_other": "写偏压<0.8 V；保持>200 min（0.6/0.7/0.8 V编程）；脉冲串可逆调电导；离开电解液后状态保持8天；耦合读写下无需断开栅极"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道具体数值（SI Fig.3）",
+              "uvvis": "偏压去除后仍保留氧化态光谱特征：π-π*吸收增75.9%，polaron降14.1%，bipolaron降25.7%（-0.8 V vs +0.8 V）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "PEDOT结晶散射消失（分散于非晶/PTHF基体）；PTHF(020)*/(110)*在LRS/HRS不变；结晶PTHF额外阻碍离子输运",
+              "ftir_xps": "XPS：HRS出现强Na 1s（LRS弱）；深度剖析Na+/Cl-在HRS约0.3、LRS<0.1 →体相俘获Na+",
+              "swelling_in_situ": "未报道",
+              "other": "机制：非晶PTHF低O:C（1:4）配位点少+疏水不塑化+结晶阻滞链段运动→Na+被俘获"
+            }
+          },
+          {
+            "label": "P-50% PTHF",
+            "structure_delta": "中等PTHF，可分辨PEDOT与PTHF两相散射",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "τres = 0.387 ms",
+              "toff": "τrel = 0.692 ms",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "50脉冲后可STM→LTM（优于纯PEDOT）",
+              "vth": "未报道",
+              "stability_other": "保持>200 min（0.6/0.7/0.8 V）；记忆弱于P-80%"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未单独详述",
+              "wettability": "未报道",
+              "xrd_giwaxs": "层状距离增至约14.4 Å；HRS较LRS层间距再+0.2 Å（Na+俘获诱导）；π-stack不变",
+              "ftir_xps": "未单独详述",
+              "swelling_in_situ": "未报道",
+              "other": "证明与PEDOT紧密界面的PTHF链参与记忆"
+            }
+          },
+          {
+            "label": "P-90% PTHF",
+            "structure_delta": "PTHF过量，膜厚约1.6 μm",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "τres = 7.113 ms（过慢）",
+              "toff": "τrel = 5.659 ms",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "短脉冲(10 ms)下表观记忆电平反而下降（响应慢假象）",
+              "vth": "未报道",
+              "stability_other": "长脉冲可恢复记忆；非单调记忆 vs 组成的拐点在80%"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "膜厚约1.6 μm（SI Fig.3j）",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "PTHF散射主导",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "响应时间与膜厚/离子路径变长有关"
+            }
+          }
+        ],
+        "before_after_summary": "引入PTHF（至80%）→迟滞/记忆窗口增大（约0.34–0.39 V）、写偏压<0.8 V、保持>200 min，并可用脉冲训练实现STM→LTM；机制是Na+在非晶PTHF中被俘获（XPS/GIWAXS/UV-vis多证据），非交联即得非易失。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "VPP共混PEDOT:Tos与PTHF→PTHF进入非晶区并与PEDOT紧密接触（P-50%层状13.7→14.4 Å）；P-80%时PEDOT结晶被破坏、分散于半晶PTHF基体。偏压循环后HRS中Na+富集（XPS Na 1s、深度剖析Na+/Cl-~0.3）、层间距再涨0.2 Å（GIWAXS），而PTHF晶格不变。",
+        "morphology_to_electrical": "非晶PTHF配位点稀疏+疏水不溶剂化+结晶阻碍链段运动→Na+动力学受困→去掺杂态被「冻住」→转移曲线大迟滞/记忆窗口、写后电导保持>200 min；PTHF>80%膜变厚响应变慢，记忆窗口与速度需折中。",
+        "net_effect": "非交联的离子俘获型软段（PTHF）即可实现低压非易失记忆，是与共价交联不同的「网络设计」思路：用离子动力学受阻代替化学网络锁定。",
+        "evidence_quality": "强（电学保持/可逆性 + operando UV-Vis-NIR + XPS深度剖析 + GIWAXS LRS/HRS对比，机制闭环）"
+      },
+      "design_takeaways": [
+        "非易失性不必然依赖交联：疏水/低配位密度的聚合物相（PTHF）可俘获阳离子实现记忆，写偏压<0.8 V。",
+        "PTHF比例是记忆-速度旋钮：80 wt%记忆最佳，90%因膜厚响应变慢；设计时需同时看记忆窗口与τres。",
+        "表征记忆器件务必做operando光谱+XPS+GIWAXS三件套，区分电子受限与离子受限机制。",
+        "耦合读写下保持记忆可省去断栅/存取管，简化1T1OECT有源阵列。",
+        "VPP工艺（Fe(III)Tos氧化剂+吡啶抑制）可直接复现共混膜；2.25 mol Fe(III)/mol EDOT为投料锚点。",
+        "离开电解液后状态可保持8天，适合离线记忆演示，但体外应用仍需封装考虑。"
+      ],
+      "limitations": [
+        "无交联/无网络，薄膜力学与水稳定性未系统评估（本主题非重点）。",
+        "gm绝对值、Ion/Ioff、标准ton/toff未按OECT惯例完整给出。",
+        "双指数PPF/PTP拟合的物理意义作者明确说尚需进一步研究。",
+        "非易失机制为「更可能」的离子俘获推断，缺少原子级直接观测（如原位Na成像）。",
+        "90%组表观记忆下降部分是测量假象，需长脉冲才能公平比较。",
+        "联想学习电路含分立传感器/电阻，非单片集成。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 1,
+          "text": "we present a non-volatile organic electrochemical transistor that shows a write bias less than 0.8 V and retention time longer than 200 min without decoupling the write and read operations.",
+          "why": "支撑低压非易失+耦合读写的核心器件指标"
+        },
+        {
+          "page": 7,
+          "text": "Conversely, the π–π* transition absorbance of P-80% PTHF increased by 75.9%, the polaron absorbance of P-80% PTHF decrease by 14.1% and bipolaron absorbance of P-80% PTHF decrease by 25.7%",
+          "why": "支撑PTHF复合膜在无偏压下仍保持氧化态光谱记忆"
+        },
+        {
+          "page": 9,
+          "text": "a very strong Na 1s peak is observed in P-80% PTHF in HRS compared with the minor Na 1s peak in P-80% PTHF in LRS ... no Na 1s peak is observed in PEDOT:Tos in HRS (Fig. 6b), which confirms that PTHF is indeed the component responsible for Na+ trapping.",
+          "why": "支撑PTHF为Na+俘获组分的XPS证据"
+        },
+        {
+          "page": 9,
+          "text": "the frustrated ionic transport in the non-crystalline PTHF fraction, compounded with increased PTHF crystallinity, cause the trapping of Na+ ions, which leads to the observed non-volatility.",
+          "why": "支撑「非晶俘获+结晶阻滞」的机制结论"
+        }
+      ]
+    },
+    "2022-iyer-sd-phd-mesoporous": {
+      "id": "2022-iyer-sd-phd-mesoporous",
+      "title_en": "An engineered organic electrochemical transistor (OECT) platform with a highly ammonia-sensitive mesoporous membrane",
+      "title_cn": "具有高氨敏感介孔膜的工程化OECT平台",
+      "short_name": "2022 Iyer SD PHD介孔层非交联",
+      "authors": "I. Medhi, P. K. Iyer",
+      "corr_author": "Parameswar Krishnan Iyer",
+      "year": 2022,
+      "journal": "Sens. Diagn.",
+      "doi": "10.1039/d2sd00099g",
+      "pdf": "pdf/2022_Iyer_SD_PHD介孔层非交联.pdf",
+      "category_id": "hyd_sc_no_net",
+      "design_intent": "在PEDOT:PSS OECT上叠加聚羟基层（PHD）介孔选择层，通过氢键/腔体冷凝富集NH3并去掺杂沟道，实现室温、<1 V工作、71.6 ppb氨检测限，同时层本身提供水环境稳定性（非交联网络策略）。",
+      "structure": {
+        "semiconductor": "PEDOT:PSS（沟道，30 nm）",
+        "semiconductor_type": "PEDOT:PSS",
+        "crosslinker": "无传统交联剂；功能层为PHD（polyhydroxyl derivative，聚羟基衍生物）：glycerol + acrylic acid + p-toluene sulfonic acid 缩合/混合物，文中称「cross-linked homogeneous texture」但未给交联化学计量",
+        "crosslinker_amount": "PHD配方：0.03 mol glycerol + 0.09 mol acrylic acid + 0.05 g p-TSA（混合30 min成粘稠液后涂覆）；相对PEDOT:PSS的wt%未报道",
+        "network_monomer": "acrylic acid（丙烯酸）/ glycerol（丙三醇）为PHD构筑单体",
+        "network_monomer_amount": "见上（0.03 mol / 0.09 mol）",
+        "ratio_sc_monomer_xl": "未报道（PHD与PEDOT:PSS为上下层，非分子级共混比）",
+        "crosslink_type": "非交联/物理层（PHD为介孔选择覆盖层；稳定性归因于其「cross-linked homogeneous texture」但机理未表征）",
+        "film_prep": "玻璃片（1×2 cm）→piranha洗→Al 100 nm热蒸镀S/D→PEDOT:PSS 30 nm旋涂→130 °C 1 h→PHD涂覆→50 °C 30 min",
+        "notes": "PHD为介孔BED/BJH孔径最大约3 nm；对NH3有氢键与腔体冷凝双重富集。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "水溶液电解质，pH=7；氨/分析物加入5 ml电解液（总体10 mL烧杯）",
+          "solvent": "水",
+          "ions": "未报道具体盐（电化学CV用0.1 M NaCl；器件传感电解液仅写pH=7）",
+          "concentration": "氨测试浓度1 μM起步系列；LOD 71.6 ppb；CV用电解液0.1 M NaCl"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道（PHD稳定性以FTIR/重复扫描间接体现）",
+          "notes": ""
+        },
+        "electrodes": {
+          "source_drain": "Al 100 nm（热蒸镀）",
+          "gate": "Ag/AgCl（参比/栅）",
+          "geometry": "沟道 L = 30 mm，W = 2 mm（原文如此，毫米尺度大沟道）"
+        },
+        "device": {
+          "architecture": "平面OECT + PHD介孔覆盖层（文中亦称vertical OECT platform，结构示意为层叠膜）",
+          "channel_dimensions": "L=30 mm, W=2 mm；PEDOT:PSS 30 nm",
+          "vds": "-0.2 V",
+          "vg_range": "0 ~ +1 V（正栅扫描）"
+        }
+      },
+      "properties": {
+        "conditions_note": "Keithley 2614B，室温空气；正栅偏压调制沟道电导；NH3选择性对比多种分析物；10次扫描重复性；4器件重现性；校准曲线由系列氨浓度得到LOD。SEM/XRD/BET/FTIR为材料侧证据。",
+        "states": [
+          {
+            "label": "PHD-OECT 对 NH3（目标分析物）",
+            "structure_delta": "PEDOT:PSS + PHD介孔层",
+            "electrical": {
+              "gm": "未报道数值（图1b有转移特性）",
+              "gm_notes": "未给归一化/绝对gm",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道具体电流值",
+              "cycling": "同一器件同电解液10次扫描可重复；4器件重现",
+              "vth": "未报道",
+              "stability_other": "工作电压<1 V；LOD = 71.6 ppb NH3；对NH3选择性优于尿素/硫脲/乙醇胺/二乙胺/FeCl3/肼/NaCl/KCl"
+            },
+            "morphology": {
+              "sem": "FESEM：暴露NH3前有清晰沟槽状形貌，暴露后结构图案改变（SI Fig. S1a–c）",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "XRD：PHD粉体20.8°→28.48°、薄膜23.04°→32.08°（NH3暴露后峰移）；整体近非晶",
+              "ftir_xps": "FTIR：–OH 3406→3138 cm-1红移（氢键）；出现3172/2947 cm-1；酯羰基1732→1724 cm-1；加热后可见N–H伸缩3175 cm-1",
+              "swelling_in_situ": "未报道",
+              "other": "BET/BJH：介孔，最大孔径约3 nm，吸附-脱附滞后环示腔体冷凝；离子可穿过孔道掺杂/去掺杂PEDOT:PSS"
+            }
+          },
+          {
+            "label": "PHD-OECT 对其他分析物（选择性对照）",
+            "structure_delta": "同一器件，不同分析物",
+            "electrical": {
+              "gm": "未报道",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "灵敏度顺序：NH3最高 > 硫脲≈尿素 > FeCl3 > 肼≈NaCl≈KCl > 二乙胺 > 乙醇胺（最低）",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "NaCl/KCl灵敏度低因与聚合物作用弱；乙醇胺因分子内氢键association最少"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "Gaussian B3LYP/6-31G(d,p)：PHD静电势，region III更负（-4.58×10-2 a.u.）对NH3更敏感；HOMO-LUMO gap -6.1 eV（不导电）"
+            }
+          }
+        ],
+        "before_after_summary": "无PHD的普通PEDOT:PSS OECT未作为系统对照给出电学差异；核心对比是PHD层对NH3 vs 其他分析物的选择性——氢键+介孔腔体冷凝富集NH3→去掺杂PEDOT:PSS，LOD 71.6 ppb。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "PHD（glycerol/acrylic acid）成介孔膜（BET滞后环，孔~3 nm）且表面富–C=O/–C–O–C–亲核位点；NH3暴露后FESEM形貌改变、XRD峰位移动、FTIR红移并出现N–H，证实氢键复合物形成与腔体冷凝。",
+        "morphology_to_electrical": "介孔孔道允许电解液离子进入掺杂/去掺杂PEDOT:PSS；PHD选择性结合NH3/NH4+→增强去掺杂→ID/转移曲线随氨浓度移动→校准曲线LOD 71.6 ppb；氢键网络同时保护沟道于水环境。",
+        "net_effect": "在非交联PEDOT:PSS上叠加「智能介孔聚羟基层」可同时获得选择性、水稳定性与室温低压检测——是网络/覆盖层设计中「功能分离」的范例。",
+        "evidence_quality": "中（传感电学+FESEM/BET/FTIR/XRD+量化计算互证；但缺标准OECT参数与未涂PHD的严格电学对照）"
+      },
+      "design_takeaways": [
+        "介孔聚羟基层（glycerol + acrylic acid + p-TSA）可作OECT的选择性/保护性覆盖层，孔径~3 nm允许离子输运。",
+        "NH3检测靠氢键（C=O…H-N）+腔体冷凝双重富集，FTIR红移可作结合证据。",
+        "室温、<1 V工作、LOD 71.6 ppb，适合低成本水相氨传感原型。",
+        "选择性测试应覆盖干扰物（尿素/胺/盐/肼）并用ESP/计算解释位点差异。",
+        "大沟道（30 mm×2 mm）有利于信号但不适用于高集成度；微缩时需重标定LOD。"
+      ],
+      "limitations": [
+        "无未涂PHD的PEDOT:PSS OECT电学对照，无法量化PHD对gm/稳定性的净贡献。",
+        "gm、ton/toff、Ion/Ioff、迁移率等OECT核心参数未报道。",
+        "沟道尺寸L=30 mm、W=2 mm异常大，与常规OECT不可比；文中「vertical OECT」表述与层叠平面结构不符。",
+        "电解液离子种类/浓度（传感测试）不明确；仅CV用0.1 M NaCl。",
+        "PHD「cross-linked」无谱学/溶胀证据，交联化学不清晰。",
+        "可逆性仅定性提及（可加基线校正复用），无循环寿命数据。",
+        "样本重复性为10次扫描/4器件，统计薄弱。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 1,
+          "text": "This superior performance of the OECT device is attributed to the formation of a smart mesoporous bed with electronic properties, which helped to obtain 71.6 ppb as the limit of detection (LOD) for ammonia.",
+          "why": "支撑介孔PHD层带来71.6 ppb LOD"
+        },
+        {
+          "page": 5,
+          "text": "a maximum of 3 nm pore size was noticed. Thus, the ions in the electrolyte could easily pass through the porous selective layer to dope or de-dope the PEDOT:PSS layer.",
+          "why": "支撑介孔允许离子输运至沟道"
+        },
+        {
+          "page": 5,
+          "text": "The FTIR spectra of functional groups, –C=O, –C–O–C– and H–N related to HBs, show the red-shift in vibration frequencies of up to 268 cm−1 (3406 → 3138 cm−1)",
+          "why": "支撑PHD与NH3氢键结合的光谱证据"
+        },
+        {
+          "page": 8,
+          "text": "The polyhydroxyl film is optimal in an aqueous environment at room temperature due to its cross-linked homogeneous texture.",
+          "why": "支撑PHD层水环境稳定性（作者主张，机理未深究）"
+        }
+      ]
+    },
+    "2025-huang-am-channel-confinement": {
+      "id": "2025-huang-am-channel-confinement",
+      "title_en": "Channel Confinement: A Novel Approach to Tackle Batch Variation in Conjugated Polymers for Organic Electrochemical Transistors",
+      "title_cn": "沟道限域：解决共轭聚合物批次差异的新策略",
+      "short_name": "2025 Huang AM 沟道限域批次差",
+      "authors": "Z. Chen, K. Liu, J. Zhou, X. Wang, M. Pu, H. Jiang, G. Wang, W. Huang, L.-W. Feng",
+      "corr_author": "Gang Wang; Wei Huang; Liang-Wen Feng",
+      "year": 2025,
+      "journal": "Adv. Mater.",
+      "doi": "10.1002/adma.202510659",
+      "pdf": "pdf/2025_Huang_AM_沟道限域批次差.pdf",
+      "category_id": "hyd_sc_no_net",
+      "design_intent": "针对低结晶OMIEC（BBL、CPE-K）分子量/批次导致的OECT性能离散，提出「沟道限域」：把垂直OECT沟道长度L压到与分子链长相当（35 nm），使链直接桥连电极，消除分子量效应与批次差，并在互补反相器上验证。",
+      "structure": {
+        "semiconductor": "n型 BBL = poly(benzimidazobenzophenanthroline)（Mv 15.4–34.5 kDa，DP 45–105，BBL45–BBL105）；p型 CPE-K = poly[2,6-(4,4-bis-potassiumbutanylsulfonate-4H-cyclopenta-[2,1-b;3,4-b']-dithiophene)-alt-4,7-(2,1,3-benzothiadiazole)]（Mw 10.3/13.4/18.3 kDa，DP 16/21/28）；反相器p型用 gDPP-g2T",
+        "semiconductor_type": "亲水（BBL/CPE-K含磺酸钾/极性基团）",
+        "crosslinker": "沟道本身非交联；封装层用 Cin-Cell + DtFDA（weight ratio 4:1）",
+        "crosslinker_amount": "封装层Cin-Cell:DtFDA = 4:1（重量比）；沟道无交联剂",
+        "network_monomer": "无",
+        "network_monomer_amount": "未报道",
+        "ratio_sc_monomer_xl": "不适用（沟道非交联网络）",
+        "crosslink_type": "非交联/物理（沟道）；封装为光交联Cin-Cell:DtFDA",
+        "film_prep": "BBL/CPE-K溶于MSA（5–20 mg/mL）旋涂，去离子水洗去MSA；BBL可200 °C退火；膜厚35–250 nm由浓度/转速控制；vOECT顶/底Au 150 nm热蒸发；gDPP-g2T:DtFDA氯仿旋涂+365 nm UV 10 min光刻（反相器）",
+        "notes": "分子链长（几何优化）：BBL45–105 = 53.67–124.95 nm；CPE-K16–28 = 19.58–34.15 nm。L=35 nm < BBL最短链长，故可形成分子桥。"
+      },
+      "oect_conditions": {
+        "electrolyte": {
+          "solution": "0.01 M PBS水溶液",
+          "solvent": "水",
+          "ions": "PBS (Na+/K+, PO4^3-)",
+          "concentration": "0.01 M"
+        },
+        "swelling": {
+          "test_solution": "未报道",
+          "swelling_ratio": "未报道",
+          "method": "未报道（短平面沟道BBL未图形化时因溶胀不稳，约5次测试后失效）",
+          "notes": "稳定性循环条件VG=-0.30/0.60 V, VD=0.10 V, 2.50 Hz"
+        },
+        "electrodes": {
+          "source_drain": "pOECT: Cr 3 nm / Au 50 nm；vOECT: 底 Cr 3 nm / Au 150 nm，顶 Au 150 nm；反相器中间/顶Au 100 nm",
+          "gate": "Ag/AgCl（垂直插入0.01 M PBS）",
+          "geometry": "pOECT W/L = 100/10 μm；vOECT电极重叠区45×45 μm，L=膜厚250/200/150/100/35 nm；反相器 p型 W/d=40/40 μm，n型 80/40 μm"
+        },
+        "device": {
+          "architecture": "平面pOECT、垂直vOECT（L=膜厚）、垂直堆叠互补反相器",
+          "channel_dimensions": "vOECT L = 35–250 nm，沟道面积45×45 μm²；pOECT L=10 μm",
+          "vds": "BBL: VD = +0.50 V；CPE-K: VD = -0.50 V（反相器VDD=0.60 V；gDPP-g2T转移VD=-0.10 V）",
+          "vg_range": "BBL: VG = +0.70 V取点；CPE-K: VG = -0.70 V取点"
+        }
+      },
+      "properties": {
+        "conditions_note": "所有统计n≥8（图注）或n≥3；ION/gm_peak取VD=±0.50 V, VG=±0.70 V；EIS在0.01 M PBS求C*；CV在0.1 M n-Bu4NPF6/乙腈求能级；分子长度为mo52x/svp几何优化；循环稳定性10000圈（VG=-0.30/0.60 V, VD=0.10 V, 2.5 Hz）。",
+        "states": [
+          {
+            "label": "pOECT BBL（L=10 μm，分子量系列）",
+            "structure_delta": "长沟道，Mv 45→105",
+            "electrical": {
+              "gm": "gm_peak 从48.8 ± 6.6 μS（BBL45）增至114.0 ± 17.0 μS（BBL105）",
+              "gm_notes": "VD=+0.50 V, VG=+0.70 V",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "1.19±0.62×10^2 ~ 2.21±1.10×10^1（随Mv增大反而分散）",
+              "on_current": "ION 11.2±4.8 μA → 30.9±5.9 μA",
+              "cycling": "未报道",
+              "vth": "VON +0.010±0.019 V → -0.016±0.014 V",
+              "stability_other": "Mw效应显著：高分子量性能更好（经典趋势）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "BBL45 σRMS=3.83 nm（旋涂膜连续均匀）",
+              "uvvis": "同厚度不同批次仅约5 nm红移；同批次内减薄250→35 nm红移约20 nm且峰I强度降（聚集增强）；Eopt≈1.74 eV",
+              "wettability": "未报道",
+              "xrd_giwaxs": "高Mv更强π-π、更长CCL、更低g（更有序）",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "LUMO≈-4.38 eV, HOMO≈-4.24 eV（与Mw无关）"
+            }
+          },
+          {
+            "label": "pOECT CPE-K（L=10 μm，分子量系列）",
+            "structure_delta": "长沟道，Mw 16→28",
+            "electrical": {
+              "gm": "gm_peak 29.1±3.8 μS（CPE-K16）→ 464.0±46.0 μS（CPE-K28）",
+              "gm_notes": "VD=-0.50 V, VG=-0.70 V",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "约2×10^1",
+              "on_current": "ION 10.9±1.8 μA → 172.0±14.1 μA",
+              "cycling": "未报道",
+              "vth": "VON -0.159±0.014 V → -0.023±0.031 V",
+              "stability_other": "Mw效应更强（16→28 gm差约16倍）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "CPE-K16 σRMS=0.91 nm",
+              "uvvis": "高Mw红移（250 nm膜约30 nm，35 nm膜约20 nm）且polaron峰更强",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未单独详述CPE-K GIWAXS",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "C* 65–75 F/cm3（各批次相近）"
+            }
+          },
+          {
+            "label": "vOECT BBL，L=35 nm（限域，消除Mw效应）",
+            "structure_delta": "L压至35 nm < 最短链长53.67 nm，分子桥形成",
+            "electrical": {
+              "gm": "gm_peak = 73.6~76.1 mS（各Mv几乎相同）；BBL45 75.9±2.6 mS, BBL105 75.6±2.6 mS（差仅0.40%）",
+              "gm_notes": "VD=+0.50 V, VG=+0.70 V；较pOECT高约三个数量级",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "约10^5~10^6（BBL45 1.24×10^6）",
+              "on_current": "ION ≈27.3–31.9 mA（BBL45 28.6±1.6 mA, BBL105 31.7±1.9 mA，差10.80%）",
+              "cycling": "10000圈后电流保持>80%（图S22）",
+              "vth": "VON ≈ -0.22~-0.24 V",
+              "stability_other": "20器件×2片（Si与PI）统计：BBL45 ION=27.84 mA, gm=73.32 mS；PI上26.39 mA/76.07 mS——刚柔衬底无显著差"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "HRTEM：弱结晶、均匀分布；FIB时Au与OMIEC因应力分离，顶部有Au颗粒渗入",
+              "afm": "粗糙度批次差异小；不同粗糙度BBL膜做35 nm vOECT电学几乎相同（粗糙度非决定因素）",
+              "uvvis": "35 nm膜较250 nm红移、聚集增强",
+              "wettability": "未报道",
+              "xrd_giwaxs": "edge取向；100峰 qz=0.76–0.79 Å-1（d 8.26–7.96 Å）；010 qxy=1.85–1.89 Å-1（d 3.40–3.32 Å）；膜厚对堆积影响小；高Mv仍更晶",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "EIS：C* 300–600 F/cm3（各批次相近）；接触电阻Rline随L减小而降（BBL45 184→16.9 Ω），L=0时5.5 Ω说明Rc非主因"
+            }
+          },
+          {
+            "label": "vOECT CPE-K，L=35 nm",
+            "structure_delta": "限域；CPE-K最短链19.58 nm仍需部分链间跃迁",
+            "electrical": {
+              "gm": "gm_peak 84.10 mS（CPE-K16）→ 系列在35 nm时差收窄至13.00 mS（11.11%）；摘要写~120 mS",
+              "gm_notes": "VD=-0.50 V, VG=-0.70 V",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "约10^4",
+              "on_current": "ION 31.00 mA（CPE-K16, L=35 nm）；16 vs 28差仅2.90 mA（6.84%）",
+              "cycling": "未单独给出",
+              "vth": "VON ≈ +0.23~0.24 V（vOECT列）",
+              "stability_other": "Mw效应弱化但不如BBL彻底（因最短链<L）"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "HRTEM类似弱结晶",
+              "afm": "σRMS=0.91 nm（CPE-K16）",
+              "uvvis": "减薄红移约16 nm（CPE-K16）",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未详列",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "几何优化链长19.58–34.15 nm vs L=35 nm——解释限域效果弱于BBL"
+            }
+          },
+          {
+            "label": "BBL/gDPP-g2T 垂直互补反相器",
+            "structure_delta": "BBL不同Mv + gDPP-g2T堆叠",
+            "electrical": {
+              "gm": "gDPP-g2T vOECT gm_peak = 40.76 mS（VD=-0.10 V, VG=-0.70 V）",
+              "gm_notes": "",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "gDPP-g2T匹配ION/IOFF ~ 10^4",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "gDPP-g2T VON=0.08 V",
+              "stability_other": "VDD=0.60 V时增益：BBL45/gDPP-g2T 60.67 V/V，BBL105/gDPP-g2T 57.46 V/V——跨批次无显著差；EOG放大49.31×（BBL45）与≈44.93×（BBL105）；EOG/EMG/ECG均高保真"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "未报道",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "CPE-K与BBL溶剂不正交，故反相器p型改用gDPP-g2T"
+            }
+          },
+          {
+            "label": "对照：高结晶 p(g2T-T)系列",
+            "structure_delta": "高结晶聚合物，L=50–250 nm",
+            "electrical": {
+              "gm": "未给具体值",
+              "gm_notes": "性能几乎不受Mw与膜厚影响",
+              "ton": "未报道",
+              "toff": "未报道",
+              "ion_ioff": "未报道",
+              "on_current": "未报道",
+              "cycling": "未报道",
+              "vth": "未报道",
+              "stability_other": "说明限域策略主要惠及低结晶聚合物"
+            },
+            "morphology": {
+              "sem": "未报道",
+              "tem": "未报道",
+              "afm": "未报道",
+              "uvvis": "未报道",
+              "wettability": "未报道",
+              "xrd_giwaxs": "高结晶，晶区主导传输",
+              "ftir_xps": "未报道",
+              "swelling_in_situ": "未报道",
+              "other": "晶区降低L对电荷传输的影响"
+            }
+          }
+        ],
+        "before_after_summary": "L=10 μm时BBL/CPE-K随Mw性能差数倍至十余倍；L=35 nm时同材料不同分子量的ION/gm_peak几乎重合（BBL差<1% gm），反相器增益稳定约60 V/V——沟道限域抹平批次差。"
+      },
+      "causal_chain": {
+        "structure_to_morphology": "减小L并不显著改变膜本征形貌（GIWAXS/UV-vis显示高Mv仍更晶、C*各批次相近）；HRTEM证实体相弱晶/近非晶→传输本应链间跳跃。几何优化给出分子长度（BBL 53.67–124.95 nm）与L=35 nm的对比。",
+        "morphology_to_electrical": "当L≤分子长度时，单链可直接桥连上下电极，链间跳跃被链内传输取代→µ对Mw不敏感；同时Rline随L下降（184→16.9 Ω）但非主因（L=0时仅5.5 Ω）→性能提升主因是迁移率/桥连而非接触电阻。高结晶p(g2T-T)因晶区主导而不呈现限域红利。",
+        "net_effect": "器件工程（把L做到分子尺度）可以替代苛刻的分子量控制，是解决聚合物批次差的通用杠杆；对低结晶OMIEC尤其有效。",
+        "evidence_quality": "强（多批次电学统计+HRTEM+GIWAXS+EIS接触电阻排除+几何优化链长+反相器应用闭环）"
+      },
+      "design_takeaways": [
+        "低结晶OMIEC做OECT时，把垂直L压到≤分子链长（约35 nm）可消除分子量/批次差，低Mw材料也能到75–120 mS gm。",
+        "评价批次效应必须扫L：长沟道会放大数据离散，短沟道反而暴露材料本征一致性。",
+        "Rc不是短沟道增强主因（L=0电阻仅占1/3），应从链内桥连/迁移率解释。",
+        "粗糙度不是决定因素（BBL膜粗糙不同电学几乎同）——可放宽薄膜形貌工艺窗口。",
+        "高结晶聚合物（p(g2T-T)）本就不敏感Mw/L，限域策略主要为低结晶材料设计。",
+        "反相器跨批次增益~60 V/V、EOG/EMG/ECG放大验证了量产一致性路径。",
+        "平面亚微米EBL短沟道BBL因溶胀不稳定（约5次即坏），垂直夹持结构更耐久。"
+      ],
+      "limitations": [
+        "沟道本身非交联网络，交联/网络设计直接可借鉴点有限（封装Cin-Cell:DtFDA仅工艺角色）。",
+        "CPE-K限域效果弱于BBL（最短链19.58 nm < L=35 nm），策略上限受分子链长约束。",
+        "摘要与正文CPE-K gm数字略有出入（115 vs 120 vs 130 mS），需按表格核对。",
+        "C*测于0.01 M PBS，与实际OECT电解液一致性尚可，但溶胀/离子分布未原位跟踪。",
+        "BBL/CPE-K溶剂（MSA）与常规氯仿体系不正交，工艺迁移到其他材料需验证。",
+        "分子长度为简化构象几何优化（cis起始），真实无规线团统计链长分布未考虑。",
+        "长期稳定性仅10000圈>80%，未到20万圈级。"
+      ],
+      "quote_evidence": [
+        {
+          "page": 3,
+          "text": "when L is reduced to 35 nm by adopting vertical OECTs (vOECTs) architecture, OECTs based on BBL and CPE-K with different Mw exhibit nearly identical peak transconductance (gm,peak) of 75.00 mS ... and 115 mS",
+          "why": "支撑L=35 nm时分子量效应消失"
+        },
+        {
+          "page": 4,
+          "text": "when L = 250 nm, ION and gm,peak of BBL45 and BBL105 exhibit obvious differences of 4.77 mA and 13.16 mS, respectively (percentage changes are 172.80% and 181.70%, respectively). In contrast, as L is reduced to 35 nm, the differences of ION and gm,peak reduce to 3.10 mA and 0.30 mS, respectively (percentage changes are 10.80% and 0.40%, respectively).",
+          "why": "支撑限域对批次差的定量压缩"
+        },
+        {
+          "page": 7,
+          "text": "Geometric optimization indicates that the molecular lengths of BBL45, BBL60, BBL75, BBL90, and BBL105 are 53.67, 71.49, 89.31, 107.13, and 124.95 nm, respectively.",
+          "why": "支撑「L≈分子长度→分子桥」的几何判据"
+        },
+        {
+          "page": 7,
+          "text": "When L is approximately equal to the molecular length, chain entanglement in amorphous regions can be replaced by intramolecular transport ... regardless of Mw, a complete molecular bridge forms within the nanoscale channel.",
+          "why": "支撑沟道限域的物理图像（链内桥连）"
+        }
+      ]
+    }
+  }
+}
