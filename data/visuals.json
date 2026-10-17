@@ -415,8 +415,8 @@
           "crop": [
             0.14,
             0.45,
-            0.66,
-            0.525
+            0.64,
+            0.518
           ],
           "label": "刷状黏附单体与半导体 · Fig. 1E–F",
           "src": "assets/figures/2023-wang-science-bap-bioadhesive-dn-structure-0.webp",
